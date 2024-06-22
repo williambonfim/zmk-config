@@ -19,7 +19,7 @@
         };
 
         caps_lock {
-            bindings = <&caps_word>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <40 21>;
             layers = <0>;
         };
