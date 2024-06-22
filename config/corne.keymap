@@ -58,6 +58,28 @@
             bindings = <&tog 2>;
             key-positions = <19 8 21>;
         };
+
+        default_layer {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+        };
+
+        symbols_layer_sticky {
+            bindings = <&sl 5>;
+            key-positions = <31 33>;
+        };
+
+        dot_left {
+            bindings = <&kp PERIOD>;
+            key-positions = <27 28>;
+            layers = <2>;
+        };
+
+        dot_right {
+            bindings = <&kp PERIOD>;
+            key-positions = <31 32>;
+            layers = <3>;
+        };
     };
 
     keymap {
@@ -82,7 +104,7 @@
             bindings = <
 &none  &kp F1        &kp F3             &kp F4            &kp F5            &kp F8    &none         &kp F7  &kp F8  &kp F9  &kp F12  &none
 &none  &sk LEFT_ALT  &sk LEFT_WIN       &sk LEFT_CONTROL  &sk LEFT_SHIFT    &none     &none         &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &none         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &none     &none         &kp F1  &kp F2  &kp F3  &kp F10  &none
+&none  &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &none     &none         &kp F1  &kp F2  &kp F3  &kp F10  &none
                                         &none             &none             &none     &kp LEFT_ALT  &none   &none
             >;
         };
@@ -113,10 +135,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &none
-&kp LSHFT   &none         &none         &none         &none         &none           &none     &none     &none     &none      &none   &none
-                                        &kp LGUI      &none         &kp SPACE       &kp RET   &none     &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6   &kp N7  &kp N8    &kp N9  &kp N0  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none    &none   &none     &none   &none   &none
+&kp LSHFT   &none         &none         &none         &none         &none           &none    &none   &none     &none   &none   &none
+                                        &kp LGUI      &none         &kp SPACE       &kp RET  &none   &kp RALT
             >;
         };
 
@@ -146,10 +168,10 @@
 
         NAVIGATION_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
