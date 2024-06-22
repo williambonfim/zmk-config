@@ -125,6 +125,11 @@
             key-positions = <19 20>;
             layers = <3>;
         };
+
+        navigation_layer {
+            bindings = <&tog 7>;
+            key-positions = <14 16>;
+        };
     };
 
     keymap {
