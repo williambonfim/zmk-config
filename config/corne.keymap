@@ -238,8 +238,6 @@
 &kp DELETE  &kp Q  &kp V  &kp W      &kp D     &kp J        &kp B      &kp H    &kp FSLH  &kp DOT    &kp X    &kp RBKT
                           &kp LSHFT  &kp BSPC  &kp LCTRL    &kp LCTRL  &kp RET  &kp LGUI
             >;
-
-            label = "8";
         };
     };
 };
