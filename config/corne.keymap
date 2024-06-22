@@ -85,33 +85,28 @@
             layers = <3>;
         };
 
-        key_repeat {
-            bindings = <&key_repeat>;
-            key-positions = <4 3>;
-        };
-
         delete_num_pad_left {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
-            layers = <2>;
+            layers = <2 0>;
         };
 
         backspace_num_pad_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            layers = <2>;
+            layers = <2 0>;
         };
 
         delete_num_pad_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <3>;
+            layers = <3 0>;
         };
 
         backspace_num_pad_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <3>;
+            layers = <3 0>;
         };
 
         equal_left {
@@ -135,12 +130,18 @@
             bindings = <&tog 8>;
             key-positions = <13 15 14 16 18 19 20 21>;
         };
+
+        left_arrow_Lhand {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        DEFAULT_LAYER {
+        QWERT {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -237,6 +238,8 @@
 &kp DELETE  &kp Q  &kp V  &kp W      &kp D     &kp J        &kp B      &kp H    &kp FSLH  &kp DOT    &kp X    &kp RBKT
                           &kp LSHFT  &kp BSPC  &kp LCTRL    &kp LCTRL  &kp RET  &kp LGUI
             >;
+
+            label = "8";
         };
     };
 };
