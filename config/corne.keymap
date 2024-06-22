@@ -74,10 +74,28 @@
 
         num_pad_left {
             bindings = <
-&trans  &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH    &kp PAGE_UP    &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &kp BACKSPACE          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS     &kp HOME       &kp END         &kp BACKSPACE   &kp DELETE       &trans  &trans
-                                                &kp KP_NUMBER_0  &kp ASTERISK     &kp ENTER    &trans         &trans          &trans
+&trans  &kp LEFT_PARENTHESIS   &kp N7  &kp N8  &kp N9        &kp SLASH    &kp PAGE_UP    &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp BACKSPACE          &kp N4  &kp N5  &kp N6        &kp MINUS    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3        &kp PLUS     &kp HOME       &kp END         &kp BACKSPACE   &kp DELETE       &trans  &trans
+                                       &kp N0  &kp ASTERISK  &kp ENTER    &trans         &kp LEFT_SHIFT  &trans
+            >;
+        };
+
+        num_pad_right {
+            bindings = <
+&trans  &trans  &trans         &kp UP      &trans          &kp PAGE_UP      &kp SLASH  &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS   &trans
+&trans  &trans  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN    &kp MINUS  &kp N4        &kp N5  &kp N6  &kp BACKSPACE          &trans
+&trans  &trans  &kp BACKSPACE  &kp DELETE  &kp HOME        &kp END          &kp PLUS   &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &trans
+                               &trans      &kp LEFT_SHIFT  &trans           &kp RET    &kp ASTERISK  &kp N0
+            >;
+        };
+
+        functions {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8    &kp F9    &trans    &trans  &kp F7    &kp F8    &kp F9  &kp F12  &trans
+&trans  &kp F11  &kp F4  &kp F5    &kp F6    &trans    &trans  &kp F4    &kp F5    &kp F6  &kp F11  &trans
+&trans  &kp F10  &kp F1  &kp F2    &kp F3    &trans    &trans  &kp F1    &kp F2    &kp F3  &kp F10  &trans
+                         &kp LALT  &kp LALT  &trans    &trans  &kp LALT  &kp LALT
             >;
         };
     };
