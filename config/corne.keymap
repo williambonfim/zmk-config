@@ -89,6 +89,42 @@
             bindings = <&key_repeat>;
             key-positions = <4 3>;
         };
+
+        delete_num_pad_left {
+            bindings = <&kp DELETE>;
+            key-positions = <20 21>;
+            layers = <2>;
+        };
+
+        backspace_num_pad_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            layers = <2>;
+        };
+
+        delete_num_pad_right {
+            bindings = <&kp DELETE>;
+            key-positions = <15 16>;
+            layers = <3>;
+        };
+
+        backspace_num_pad_right {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <14 15>;
+            layers = <3>;
+        };
+
+        equal_left {
+            bindings = <&kp EQUAL>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
+
+        equal_right {
+            bindings = <&kp EQUAL>;
+            key-positions = <19 20>;
+            layers = <3>;
+        };
     };
 
     keymap {
@@ -120,10 +156,10 @@
 
         NUM_PAD_LEFT {
             bindings = <
-&none  &kp LEFT_PARENTHESIS   &kp N7  &kp N8  &kp N9        &kp SLASH      &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &none  &none
-&none  &kp BACKSPACE          &kp N4  &kp N5  &kp N6        &kp MINUS      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3        &kp PLUS       &kp HOME       &kp END         &kp BACKSPACE   &kp DELETE       &none  &none
-                                      &kp N0  &kp ASTERISK  &lt 3 ENTER    &none          &kp LEFT_SHIFT  &none
+&none  &kp LEFT_PARENTHESIS   &kp N7  &kp N8  &kp N9        &kp SLASH      &kp PAGE_UP         &kp HOME        &kp UP_ARROW      &kp END          &none  &none
+&none  &kp BACKSPACE          &kp N4  &kp N5  &kp N6        &kp MINUS      &kp PAGE_DOWN       &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none  &none
+&none  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3        &kp PLUS       &none               &none           &kp BACKSPACE     &kp DELETE       &none  &none
+                                      &kp N0  &kp ASTERISK  &lt 3 ENTER    &kp LC(LEFT_SHIFT)  &kp LEFT_SHIFT  &kp LEFT_CONTROL
             >;
         };
 
@@ -131,7 +167,7 @@
             bindings = <
 &none  &none  &kp HOME       &kp UP      &kp END         &kp PAGE_UP           &kp SLASH    &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS   &none
 &none  &none  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN         &kp MINUS    &kp N4        &kp N5  &kp N6  &kp BACKSPACE          &none
-&none  &none  &kp BACKSPACE  &kp DELETE  &kp HOME        &kp END               &kp PLUS     &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &none
+&none  &none  &kp BACKSPACE  &kp DELETE  &none           &none                 &kp PLUS     &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &none
                              &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &kp ASTERISK  &kp N0
             >;
         };
@@ -166,16 +202,16 @@
             >;
         };
 
-        SHORTCUT_LAYER {
+        SHORTCUT_LAYER_WIN {
             bindings = <
-&kp LG(A)  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none      &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none      &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                         &none  &none  &none    &none  &none  &none
+&kp LG(A)  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+&none      &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+&none      &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+                         &none  &none  &lt 2 ENTER    &none  &none  &none
             >;
         };
 
-        NAVIGATION_LAYER {
+        NAVIGATION_LAYER_WIN {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
