@@ -32,6 +32,11 @@
             bindings = <&tog 3>;
             key-positions = <19 20 21>;
         };
+
+        settings {
+            bindings = <&tog 4>;
+            key-positions = <25 26 27 28>;
+        };
     };
 
     keymap {
@@ -106,6 +111,15 @@
 &kp LCTRL  &none     &none   &none       &none      &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &none     &none   &none       &none      &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI    &none      &kp SPACE    &kp RET    &none      &kp RALT
+            >;
+        };
+
+        SHORTCUT_LAYER {
+            bindings = <
+&kp LG(A)  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none      &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none      &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                         &none  &none  &none    &none  &none  &none
             >;
         };
     };
