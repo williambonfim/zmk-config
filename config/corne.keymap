@@ -124,7 +124,7 @@
         };
 
         combo_navigation_layer {
-            bindings = <&tog 7>;
+            bindings = <&sl 7>;
             key-positions = <14 16>;
         };
 
@@ -268,10 +268,10 @@
 
         NAVIGATION_LAYER_WIN {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&kp RG(G)  &kp RG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)    &none  &none  &none  &none  &none  &none
+&kp RG(H)  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)    &none  &none  &none  &none  &none  &none
+&kp RG(I)  &kp RG(A)         &kp RG(B)         &kp RG(C)         &kp RG(D)         &kp RG(F)     &none  &none  &none  &none  &none  &none
+                                               &none             &none             &none         &none  &none  &none
             >;
         };
 
