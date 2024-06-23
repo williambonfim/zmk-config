@@ -274,6 +274,13 @@
         };
 
         ISRT {
+            // -----------------------------------------------------------------------------------------
+            // | ESC |  Y  |  C  |  L   |  M   |  K   |  Z   |  F  |  U  |  ,  |  '  |  [  |
+            // | TAB |  I  |  S  |  R   |  T   |  G   |  P   |  N  |  E  |  A  |  O  |  ;  |
+            // | DEL |  Q  |  V  |  W   |  D   |  J   |  B   |  H  |  /  |  .  |  X  |  ]  |
+            //                   | SHFT | BKSP | CTRL | CTRL | ENT | GUI |
+
+
             bindings = <
 &kp ESC     &kp Y  &kp C  &kp L      &kp M     &kp K        &kp Z      &kp F    &kp U     &kp COMMA  &kp SQT  &kp LBKT
 &kp TAB     &kp I  &kp S  &kp R      &kp T     &kp G        &kp P      &kp N    &kp E     &kp A      &kp O    &kp SEMI
