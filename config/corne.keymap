@@ -12,172 +12,170 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&led_strip {
-    chain-length = <6>;
-};
+&led_strip { chain-length = <6>; };
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        semicolon {
+        combo_semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <33 34>;
             layers = <0>;
         };
 
-        caps_lock {
+        combo_caps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <40 21>;
             layers = <0>;
         };
 
-        num_pad_right_layer {
+        combo_num_pad_right_layer {
             bindings = <&tog 2>;
             key-positions = <14 15 16>;
         };
 
-        num_pad_left_layer {
+        combo_num_pad_left_layer {
             bindings = <&tog 3>;
             key-positions = <19 20 21>;
         };
 
-        settings_layer {
+        combo_settings_layer {
             bindings = <&tog 4>;
             key-positions = <1 2 3 4>;
         };
 
-        symbols_layer {
+        combo_symbols_layer {
             bindings = <&tog 5>;
             key-positions = <31 32 33>;
         };
 
-        shortcuts_layer {
+        combo_shortcuts_layer {
             bindings = <&tog 6>;
             key-positions = <27 28 26>;
         };
 
-        num_pad_right_layer_Lhand {
+        combo_num_pad_right_layer_Lhand {
             bindings = <&tog 3>;
             key-positions = <14 3 16>;
         };
 
-        num_pad_left_layer_Rhand {
+        combo_num_pad_left_layer_Rhand {
             bindings = <&tog 2>;
             key-positions = <19 8 21>;
         };
 
-        default_layer {
+        combo_default_layer {
             bindings = <&to 0>;
             key-positions = <38 39>;
         };
 
-        symbols_layer_sticky {
+        combo_symbols_layer_sticky {
             bindings = <&sl 5>;
             key-positions = <31 33>;
         };
 
-        dot_left {
+        combo_dot_left {
             bindings = <&kp PERIOD>;
             key-positions = <27 28>;
             layers = <2>;
         };
 
-        dot_right {
+        combo_dot_right {
             bindings = <&kp PERIOD>;
             key-positions = <31 32>;
             layers = <3>;
         };
 
-        delete_num_pad_left {
+        combo_delete_num_pad_left {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
             layers = <2 0 8>;
         };
 
-        backspace_num_pad_left {
+        combo_backspace_num_pad_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             layers = <2 0 8>;
         };
 
-        delete_num_pad_right {
+        combo_delete_num_pad_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
             layers = <3 0 8>;
         };
 
-        backspace_num_pad_right {
+        combo_backspace_num_pad_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
             layers = <3 0 8>;
         };
 
-        equal_left {
+        combo_equal_left {
             bindings = <&kp EQUAL>;
             key-positions = <15 16>;
             layers = <2>;
         };
 
-        equal_right {
+        combo_equal_right {
             bindings = <&kp EQUAL>;
             key-positions = <19 20>;
             layers = <3>;
         };
 
-        navigation_layer {
+        combo_navigation_layer {
             bindings = <&tog 7>;
             key-positions = <14 16>;
         };
 
-        ISRT_layer {
+        combo_ISRT_layer {
             bindings = <&tog 8>;
             key-positions = <13 15 14 16 18 19 20 21>;
         };
 
-        left_arrow_Lhand {
+        combo_left_arrow_Lhand {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <26 27>;
             layers = <0 8>;
         };
 
-        right_arrow_Lhand {
+        combo_right_arrow_Lhand {
             bindings = <&kp RIGHT>;
             key-positions = <27 28>;
             layers = <0 8>;
         };
 
-        up_arrow_Lhand {
+        combo_up_arrow_Lhand {
             bindings = <&kp UP_ARROW>;
             key-positions = <3 4>;
             layers = <0 8>;
         };
 
-        down_arrow_Lhand {
+        combo_down_arrow_Lhand {
             bindings = <&kp DOWN>;
             key-positions = <3 2>;
             layers = <0 8>;
         };
 
-        left_arrow_Rhand {
+        combo_left_arrow_Rhand {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <32 31>;
             layers = <0 8>;
         };
 
-        right_arrow_Rhand {
+        combo_right_arrow_Rhand {
             bindings = <&kp RIGHT>;
             key-positions = <32 33>;
             layers = <0 8>;
         };
 
-        up_arrow_Rhand {
+        combo_up_arrow_Rhand {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8>;
             layers = <0 8>;
         };
 
-        down_arrow_Rhand {
+        combo_down_arrow_Rhand {
             bindings = <&kp DOWN>;
             key-positions = <8 9>;
             layers = <0 8>;
@@ -283,7 +281,6 @@
             // | TAB |  I  |  S  |  R   |  T   |  G   |  P   |  N  |  E  |  A  |  O  |  ;  |
             // | DEL |  Q  |  V  |  W   |  D   |  J   |  B   |  H  |  /  |  .  |  X  |  ]  |
             //                   | SHFT | BKSP | CTRL | CTRL | ENT | GUI |
-
 
             bindings = <
 &kp ESC     &kp Y  &kp C  &kp L      &kp M     &kp K        &kp Z      &kp F    &kp U     &kp COMMA  &kp SQT  &kp LBKT
