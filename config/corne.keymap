@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -235,10 +234,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&soft_off   &none         &none         &none         &out OUT_TOG  &ext_power EP_TOG    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,95,49)
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &bl BL_SET 20    &bl BL_DEC       &bl BL_INC       &bl BL_TOG       &bl BL_SET 70                   &rgb_ug RGB_SPI
-&kp LSHFT   &none         &none         &none         &none         &none                &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR                 &rgb_ug RGB_SPD
-                                        &kp LGUI      &none         &kp SPACE            &kp RET          &none            &kp RALT
+&soft_off   &none         &none         &none         &out OUT_TOG  &ext_power EP_TOG    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI                  &rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,95,49)
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                  &rgb_ug RGB_BRD                  &rgb_ug RGB_BRI                    &none                           &rgb_ug RGB_SPI
+&kp LSHFT   &none         &none         &none         &none         &none                &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(111,100,50)  &none                           &rgb_ug RGB_SPD
+                                        &kp LGUI      &none         &kp SPACE            &kp RET          &none                            &kp RALT
             >;
         };
 
