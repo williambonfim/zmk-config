@@ -197,6 +197,8 @@
 &kp DELETE  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M           &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
                           &kp LEFT_CONTROL  &kp LEFT_WIN  &lt 1 SPACE    &lt 3 ENTER  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
+
+            label = "QWERT";
         };
 
         FUNCTION_KEYS {
@@ -206,6 +208,8 @@
 &trans             &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &kp MINUS    &none              &kp F1  &kp F2  &kp F3  &kp F10  &none
                                                     &none             &none             &none        &kp LEFT_ALT       &none   &none
             >;
+
+            label = "FUNC";
         };
 
         NUM_PAD_LEFT {
