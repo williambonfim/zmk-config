@@ -220,7 +220,7 @@
                                       &kp N0  &kp ASTERISK  &lt 3 ENTER    &kp LC(LEFT_SHIFT)  &kp LEFT_SHIFT  &kp LEFT_CONTROL
             >;
 
-            label = "NUM_PAD_L";
+            label = "NUMPAD_L";
         };
 
         NUM_PAD_RIGHT {
@@ -231,7 +231,7 @@
                              &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &kp ASTERISK  &kp N0
             >;
 
-            label = "NUM_PAD_R";
+            label = "NUMPAD_R";
         };
 
         SETTINGS {
@@ -276,7 +276,7 @@
                                                            &kp RIGHT_SHIFT       &mo 7                 &lt 2 ENTER       &none  &none  &none
             >;
 
-            label = "SHORTCUTS";
+            label = "SHORTCUT";
         };
 
         NAVIGATION_LAYER_WIN {
