@@ -203,10 +203,10 @@
 
         FUNCTION_KEYS {
             bindings = <
-&trans             &kp F2        &kp F3             &kp F4            &kp F5            &kp F8       &none              &kp F7  &kp F8  &kp F9  &kp F12  &none
-&ext_power EP_TOG  &sk LEFT_ALT  &sk LEFT_WIN       &sk LEFT_CONTROL  &sk LEFT_SHIFT    &kp PLUS     &ext_power EP_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&trans             &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &kp MINUS    &none              &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                                    &none             &none             &none        &kp LEFT_ALT       &none   &none
+&trans           &kp F2        &kp F3             &kp F4            &kp F5            &kp F8       &none         &kp F7  &kp F8  &kp F9  &kp F12  &none
+&rgb_ug RGB_TOG  &sk LEFT_ALT  &sk LEFT_WIN       &sk LEFT_CONTROL  &sk LEFT_SHIFT    &kp PLUS     &none         &kp F4  &kp F5  &kp F6  &kp F11  &none
+&trans           &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &kp MINUS    &none         &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                                  &none             &none             &none        &kp LEFT_ALT  &none   &none
             >;
 
             label = "FUNC";
