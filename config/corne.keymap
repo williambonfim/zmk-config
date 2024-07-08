@@ -45,7 +45,7 @@
         };
 
         combo_symbols_layer {
-            bindings = <&tog 5>;
+            bindings = <&sl 5>;
             key-positions = <31 32 33>;
         };
 
