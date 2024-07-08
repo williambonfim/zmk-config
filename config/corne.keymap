@@ -270,9 +270,9 @@
 
         SHORTCUT_LAYER_WIN {
             bindings = <
-&kp RG(RC(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &none  &none  &none  &none  &none  &none
-&kp RG(RC(G))  &kp RG(RC(NUMBER_6))  &kp RG(RC(N7))  &kp RG(RC(N8))        &kp RG(RC(N9))        &kp RG(RC(N0))    &none  &none  &none  &none  &none  &none
-&kp RG(RC(H))  &kp RG(RC(A))         &kp RG(RC(B))   &kp RG(RC(C))         &kp RG(RC(D))         &kp RG(RC(E))     &none  &none  &none  &none  &none  &none
+&kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &none  &none  &none  &none  &none  &none
+&kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &none  &none  &none  &none  &none  &none
+&kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &none  &none  &none  &none  &none  &none
                                                      &kp RIGHT_SHIFT       &mo 7                 &lt 2 ENTER       &none  &none  &none
             >;
 
