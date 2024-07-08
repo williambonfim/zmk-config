@@ -203,10 +203,10 @@
 
         FUNCTION_KEYS {
             bindings = <
-&trans           &kp F2        &kp F3             &kp F4            &kp F5            &kp F8       &none         &kp F7  &kp F8  &kp F9  &kp F12  &none
-&rgb_ug RGB_TOG  &sk LEFT_ALT  &sk LEFT_WIN       &sk LEFT_CONTROL  &sk LEFT_SHIFT    &kp PLUS     &none         &kp F4  &kp F5  &kp F6  &kp F11  &none
-&trans           &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &kp MINUS    &none         &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                                  &none             &none             &none        &kp LEFT_ALT  &none   &none
+&trans           &kp F2        &kp F3            &kp F4             &kp F5           &kp F8       &none         &kp F7  &kp F8  &kp F9  &kp F12  &none
+&rgb_ug RGB_TOG  &sk LEFT_ALT  &sk LEFT_WIN      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp PLUS     &none         &kp F4  &kp F5  &kp F6  &kp F11  &none
+&trans           &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp MINUS    &none         &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                                 &none              &none            &none        &kp LEFT_ALT  &none   &none
             >;
 
             label = "FUNC";
@@ -216,7 +216,7 @@
             bindings = <
 &none  &kp LEFT_PARENTHESIS   &kp N7  &kp N8  &kp N9        &kp SLASH      &kp PAGE_UP         &kp HOME        &kp UP_ARROW      &kp END          &none  &none
 &none  &kp BACKSPACE          &kp N4  &kp N5  &kp N6        &kp MINUS      &kp PAGE_DOWN       &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none  &none
-&none  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3        &kp PLUS       &none               &none           &kp BACKSPACE     &kp DELETE       &none  &none
+&none  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3        &kp PLUS       &none               &kp AT_SIGN     &kp BACKSPACE     &kp DELETE       &none  &none
                                       &kp N0  &kp ASTERISK  &lt 3 ENTER    &kp LC(LEFT_SHIFT)  &kp LEFT_SHIFT  &kp LEFT_CONTROL
             >;
 
@@ -227,7 +227,7 @@
             bindings = <
 &none  &none  &kp HOME       &kp UP      &kp END         &kp PAGE_UP           &kp SLASH    &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS   &none
 &none  &none  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN         &kp MINUS    &kp N4        &kp N5  &kp N6  &kp BACKSPACE          &none
-&none  &none  &kp BACKSPACE  &kp DELETE  &none           &none                 &kp PLUS     &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &none
+&none  &none  &kp BACKSPACE  &kp DELETE  &kp AT_SIGN     &none                 &kp PLUS     &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &none
                              &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &kp ASTERISK  &kp N0
             >;
 
