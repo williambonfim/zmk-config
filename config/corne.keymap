@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -197,10 +196,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y        &kp U           &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H        &kp J           &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M           &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
-                          &kp LEFT_GUI  &kp LCTRL  &lt 1 SPACE    &lt 3 ENTER  &kt LEFT_SHIFT  &kp LEFT_ALT
+&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y        &kp U                    &kp I         &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H        &kp J                    &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
+&kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+                          &kp LEFT_GUI  &kp LCTRL  &lt 1 SPACE    &lt 3 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
             >;
 
             label = "QWERT";
