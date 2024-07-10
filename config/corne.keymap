@@ -131,7 +131,7 @@
             key-positions = <14 16>;
         };
 
-        combo_ISRT_layer {
+        combo_QWERTY_layer {
             bindings = <&tog 8>;
             key-positions = <36 41>;
         };
@@ -188,23 +188,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERT {
+        ISRT {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // | ESC |  Y  |  C  |  L   |  M   |  K   |   |  Z   |  F  |  U  |  ,  |  '  |  [  |
+            // | TAB |  I  |  S  |  R   |  T   |  G   |   |  P   |  N  |  E  |  A  |  O  |  ;  |
+            // | DEL |  Q  |  V  |  W   |  D   |  J   |   |  B   |  H  |  /  |  .  |  X  |  ]  |
+            //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y        &kp U                    &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H        &kp J                    &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+&kp ESC     &kp Y  &kp C  &kp L         &kp M      &kp K          &kp Z        &kp F                    &kp U     &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp TAB     &kp I  &kp S  &kp R         &kp T      &kp G          &kp P        &kp N                    &kp E     &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q  &kp V  &kp W         &kp D      &kp J          &kp B        &kp H                    &kp FSLH  &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
                           &kp LEFT_GUI  &kp LCTRL  &lt 1 SPACE    &lt 3 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
             >;
 
-            label = "QWERT";
+            label = "ISRT";
         };
-
+        
         FUNCTION_KEYS {
             bindings = <
 &bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8       &none            &kp F7  &kp F8  &kp F9  &kp F12  &none
@@ -294,21 +294,21 @@
             label = "NAV";
         };
 
-        ISRT {
+        QWERT {
             // -----------------------------------------------------------------------------------------
-            // | ESC |  Y  |  C  |  L   |  M   |  K   |   |  Z   |  F  |  U  |  ,  |  '  |  [  |
-            // | TAB |  I  |  S  |  R   |  T   |  G   |   |  P   |  N  |  E  |  A  |  O  |  ;  |
-            // | DEL |  Q  |  V  |  W   |  D   |  J   |   |  B   |  H  |  /  |  .  |  X  |  ]  |
-            //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Y  &kp C  &kp L      &kp M     &kp K        &kp Z      &kp F    &kp U     &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp TAB     &kp I  &kp S  &kp R      &kp T     &kp G        &kp P      &kp N    &kp E     &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q  &kp V  &kp W      &kp D     &kp J        &kp B      &kp H    &kp FSLH  &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                          &kp LSHFT  &kp BSPC  &kp SPACE    &kp LCTRL  &kp RET  &kp LGUI
+&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y        &kp U                    &kp I         &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H        &kp J                    &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
+&kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+                          &kp LEFT_GUI  &kp LCTRL  &lt 1 SPACE    &lt 3 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
             >;
 
-            label = "ISRT";
+            label = "QWERT";
         };
     };
 };
