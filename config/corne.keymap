@@ -196,10 +196,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp ESC     &kp Y  &kp C  &kp L         &kp M      &kp K          &kp Z        &kp F                &kp U         &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp TAB     &kp I  &kp S  &kp R         &kp T      &kp G          &kp P        &kp N                &kp E         &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q  &kp V  &kp W         &kp D      &kp J          &kp B        &kp H                &kp FSLH      &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                          &kp LEFT_GUI  &kp LCTRL  &lt 1 SPACE    &lt 3 ENTER  &mt LSHIFT CAPSLOCK  &kp LEFT_ALT
+&kp ESC     &kp Y  &kp C  &kp L         &kp M             &kp K          &kp Z        &kp F                &kp U         &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp TAB     &kp I  &kp S  &kp R         &mt LEFT_SHIFT T  &kp G          &kp P        &kp N                &kp E         &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q  &kp V  &kp W         &kp D             &kp J          &kp B        &kp H                &kp FSLH      &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
+                          &kp LEFT_GUI  &kp LCTRL         &lt 1 SPACE    &lt 3 ENTER  &mt LSHIFT CAPSLOCK  &kp LEFT_ALT
             >;
 
             label = "ISRT";
