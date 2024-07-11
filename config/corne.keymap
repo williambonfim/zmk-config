@@ -17,6 +17,8 @@
 
 &sk { release-after-ms = <2000>; };
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     combos {
         compatible = "zmk,combos";
