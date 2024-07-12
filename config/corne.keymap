@@ -15,10 +15,7 @@
 
 &sl { release-after-ms = <2000>; };
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <150>;
-};
+&mt { flavor = "tap-preferred"; };
 
 / {
     combos {
