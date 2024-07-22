@@ -208,10 +208,10 @@
 
         FUNCTION_KEYS {
             bindings = <
-&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8       &none            &kp F7  &kp F8  &kp F9  &kp F12  &none
-&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp PLUS     &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&bt BT_SEL 2  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp MINUS    &to 4            &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                              &none              &none            &none        &kp LEFT_ALT     &none   &none
+&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &none            &kp F7  &kp F8  &kp F9  &kp F12  &none
+&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&bt BT_SEL 2  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 4            &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                              &none              &none            &none             &kp LEFT_ALT     &none   &none
             >;
 
             label = "FUNC";
@@ -230,10 +230,10 @@
 
         NUM_PAD_RIGHT {
             bindings = <
-&none  &none  &kp HOME       &kp UP      &kp END         &kp PAGE_UP           &kp PLUS     &kp N7  &kp N8  &kp N9  &none         &kp LEFT_PARENTHESIS
-&none  &none  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN         &kp MINUS    &kp N4  &kp N5  &kp N6  &kp SLASH     &none
-&none  &none  &kp BACKSPACE  &kp DELETE  &kp AT_SIGN     &none                 &kp N0       &kp N1  &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
-                             &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &none   &none
+&none  &none  &kp HOME            &kp UP     &kp END              &kp PAGE_UP           &kp PLUS     &kp N7  &kp N8  &kp N9  &none         &kp LEFT_PARENTHESIS
+&none  &none  &kp LEFT            &kp DOWN   &kp RIGHT            &kp PAGE_DOWN         &kp MINUS    &kp N4  &kp N5  &kp N6  &kp SLASH     &none
+&none  &none  &kp LC(LEFT_ARROW)  &none      &kp LC(RIGHT_ARROW)  &none                 &kp N0       &kp N1  &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
+                                  &kp RCTRL  &kp LEFT_SHIFT       &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &none   &none
             >;
 
             label = "NUMPAD_R";
