@@ -196,10 +196,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &kp Y           &kp C       &kp L         &kp M             &kp K          &kp Z        &kp F                &kp U         &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_ALT I  &mt LGUI S  &mt LCTRL R   &mt LEFT_SHIFT T  &kp G          &kp P        &kp N                &kp E         &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q           &kp V       &kp W         &kp D             &kp J          &kp B        &kp H                &kp FSLH      &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                                        &kp LEFT_GUI  &kp LCTRL         &lt 1 SPACE    &lt 3 ENTER  &mt LSHIFT CAPSLOCK  &kp LEFT_ALT
+&kp TAB     &kp Y           &kp C           &kp L        &kp M             &kp K          &kp Z                    &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N      &kp E      &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q           &kp V           &kp W        &kp D             &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
+                                            &kp TAB      &kp ENTER         &lt 1 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp SPACE  &kp ENTER
             >;
 
             label = "ISRT";
@@ -229,10 +229,10 @@
 
         NUM_PAD_RIGHT {
             bindings = <
-&none  &none  &kp HOME       &kp UP      &kp END         &kp PAGE_UP           &kp SLASH    &kp N7        &kp N8  &kp N9  &kp LEFT_PARENTHESIS   &none
-&none  &none  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN         &kp MINUS    &kp N4        &kp N5  &kp N6  &kp BACKSPACE          &none
-&none  &none  &kp BACKSPACE  &kp DELETE  &kp AT_SIGN     &none                 &kp PLUS     &kp N1        &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &none
-                             &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &kp ASTERISK  &kp N0
+&none  &none  &kp HOME       &kp UP      &kp END         &kp PAGE_UP           &kp PLUS     &kp N7  &kp N8  &kp N9  &none         &kp LEFT_PARENTHESIS
+&none  &none  &kp LEFT       &kp DOWN    &kp RIGHT       &kp PAGE_DOWN         &kp MINUS    &kp N4  &kp N5  &kp N6  &kp SLASH     &none
+&none  &none  &kp BACKSPACE  &kp DELETE  &kp AT_SIGN     &none                 &kp N0       &kp N1  &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
+                             &kp RCTRL   &kp LEFT_SHIFT  &kp LC(LEFT_SHIFT)    &lt 2 ENTER  &none   &none
             >;
 
             label = "NUMPAD_R";
