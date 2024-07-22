@@ -95,24 +95,28 @@
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
             layers = <2 0 8>;
+            timeout-ms = <20>;
         };
 
         combo_backspace_num_pad_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             layers = <2 0 8>;
+            timeout-ms = <20>;
         };
 
         combo_delete_num_pad_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
             layers = <3 0 8>;
+            timeout-ms = <20>;
         };
 
         combo_backspace_num_pad_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
             layers = <3 0 8>;
+            timeout-ms = <20>;
         };
 
         combo_equal_left {
