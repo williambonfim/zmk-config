@@ -22,22 +22,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_semicolon {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <33 34>;
-            layers = <0>;
-        };
-
-        combo_caps_lock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <40 21>;
-            layers = <0>;
-        };
-
         combo_num_pad_right_layer {
             bindings = <&tog 3>;
             key-positions = <14 15 16>;
-            layers = <0 2>;
         };
 
         combo_num_pad_left_layer {
@@ -63,7 +50,6 @@
         combo_num_pad_right_layer_Lhand {
             bindings = <&tog 4>;
             key-positions = <14 3 16>;
-            layers = <0 2>;
         };
 
         combo_num_pad_left_layer_Rhand {
