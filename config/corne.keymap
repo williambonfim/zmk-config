@@ -37,6 +37,7 @@
         combo_num_pad_right_layer {
             bindings = <&tog 2>;
             key-positions = <14 15 16>;
+            layers = <0 6>;
         };
 
         combo_num_pad_left_layer {
@@ -62,6 +63,7 @@
         combo_num_pad_right_layer_Lhand {
             bindings = <&tog 3>;
             key-positions = <14 3 16>;
+            layers = <0 6>;
         };
 
         combo_num_pad_left_layer_Rhand {
@@ -190,6 +192,17 @@
         };
     };
 
+    behaviors {
+        ht: behavior_wb_hold_tapTo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BEHAVIOR_WB_HOLD_TAPTO";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -282,7 +295,7 @@
 &kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &none  &none  &none  &none  &none  &none
 &kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &none  &none  &none  &none  &none  &none
 &kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &none  &none  &none  &none  &none  &none
-                                                     &mo 3                 &mo 7                 &lt 2 ENTER       &none  &none  &none
+                                                     &ht 3 0               &lt 2 ENTER           &kp LEFT_SHIFT    &none  &none  &none
             >;
 
             label = "SHORTCUT";
