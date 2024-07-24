@@ -176,6 +176,13 @@
             key-positions = <8 9>;
             layers = <0 8>;
         };
+
+        combo_esc_shortcuts {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 15>;
+            timeout-ms = <20>;
+            layers = <4 0 8>;
+        };
     };
 
     behaviors {
