@@ -169,6 +169,7 @@
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8>;
             layers = <0 8>;
+            timeout-ms = <20>;
         };
 
         combo_down_arrow_Rhand {
