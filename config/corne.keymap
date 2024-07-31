@@ -221,7 +221,7 @@
             bindings = <
 &kp SQT     &kp COMMA       &kp C           &kp L        &kp M             &kp K          &kp Z                    &kp F      &kp U      &kp Q  &kp S  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N      &kp E      &kp A  &kp O  &kp SEMI
-&kp DELETE  &kp PERIOD      &kp SLASH       &kp W        &kp D             &kp J          &kp B                    &kp H      &kp V      &kp Y  &kp X  &kp RIGHT_PARENTHESIS
+&kp DELETE  &kp PERIOD      &kp SLASH       &kp W        &kp D             &kp J          &kp B                    &kp V      &kp H      &kp Y  &kp X  &kp RIGHT_PARENTHESIS
                                             &lt 5 TAB    &kp ENTER         &lt 2 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp SPACE
             >;
         };
