@@ -214,7 +214,6 @@
                                             &lt 3 TAB    &lt 4 ENTER       &lt 1 SPACE    &mt LEFT_SHIFT CAPSLOCK  &lt 4 ENTER  &kp SPACE
             >;
 
-            label = "ISRT";
         };
 
         FUNCTION_KEYS {
