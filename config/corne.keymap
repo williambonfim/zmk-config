@@ -22,7 +22,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_num_pad_right_layer {/b
+        combo_num_pad_right_layer {
             bindings = <&tog 3>;
             key-positions = <14 15 16>;
         };
@@ -328,7 +328,7 @@
 &kp DELETE  &kp Q           &kp V           &kp W        &kp D             &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
                                             &lt 4 TAB    &kp ENTER         &lt 1 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp SPACE
             >;
-            
+
             label = "ISRT_SS";
         };
     };
