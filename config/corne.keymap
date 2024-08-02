@@ -205,7 +205,7 @@
             // | TAB |  I  |  S  |  R   |  T   |  G   |   |  P   |  N  |  E  |  A  |  O  |  ;  |
             // | DEL |  Q  |  V  |  W   |  D   |  J   |   |  B   |  H  |  /  |  .  |  X  |  ]  |
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
-            label = "ISRT_WB"
+
             bindings = <
 &kp SQT     &kp COMMA       &kp C           &kp L        &kp M             &kp K          &kp Z                    &kp F        &kp U      &kp Q  &kp S  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N        &kp E      &kp A  &kp O  &kp SEMI
