@@ -176,6 +176,7 @@
             bindings = <&kp DOWN>;
             key-positions = <8 9>;
             layers = <0 8>;
+            timeout-ms = <20>;
         };
 
         combo_esc_shortcuts {
