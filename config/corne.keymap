@@ -205,15 +205,6 @@
             tapping-term-ms = <200>;
         };
 
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp PERIOD>;
-
-            tapping-term-ms = <300>;
-        };
-
         ht2: behavior_layer_keyrepeat {
             compatible = "zmk,behavior-hold-tap";
             label = "BEHAVIOR_LAYER_KEYREPEAT";
@@ -221,6 +212,15 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp PERIOD>;
+
+            tapping-term-ms = <300>;
         };
     };
 
