@@ -187,47 +187,63 @@
     };
 
     behaviors {
-        ht0: behavior_hold_to {
+        ht0: mo_to {
             compatible = "zmk,behavior-hold-tap";
-            label = "BEHAVIOR_HOLD_TO";
+            label = "MO_TO";
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        ht1: behavior_hold_td0 {
+        ht1: mo_td0 {
             compatible = "zmk,behavior-hold-tap";
-            label = "BEHAVIOR_HOLD_TD0";
+            label = "MO_TD0";
             bindings = <&mo>, <&td0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        ht2: behavior_layer_keyrepeat {
+        ht2: mo_keyrepeat {
             compatible = "zmk,behavior-hold-tap";
-            label = "BEHAVIOR_LAYER_KEYREPEAT";
+            label = "mo_KEYREPEAT";
             bindings = <&mo>, <&key_repeat>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        td0: tap_dance_0 {
+        td0: space_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_DOT";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp PERIOD>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
         };
 
-        td1: tap_dance_1 {
+        td1: stick_toggle_alt {
             compatible = "zmk,behavior-tap-dance";
             label = "STICK_TOGGLE_ALT";
             #binding-cells = <0>;
             bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+        };
+
+        td2: repeat_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "REPEAT_ENTER";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>, <&kp ENTER>;
+        };
+
+        ht3: mo_td2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TD2";
+            bindings = <&mo>, <&td2>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -242,10 +258,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) COMMA  &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F        &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N        &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &mt LC(A) SLASH  &kp W        &kp D             &kp J       &kp B                    &kp H        &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                              &ht2 3 0     &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &lt 4 ENTER  &lt 3 SPACE
+&kp TAB     &mt LA(P) COMMA  &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD       &mt LC(A) SLASH  &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                              &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 4 0  &lt 3 SPACE
             >;
 
             label = "ISRT_WB";
