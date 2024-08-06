@@ -187,9 +187,9 @@
     };
 
     behaviors {
-        ht0: behavior_hold_tap-to {
+        ht0: behavior_hold_to {
             compatible = "zmk,behavior-hold-tap";
-            label = "BEHAVIOR_HOLD_TAP-TO";
+            label = "BEHAVIOR_HOLD_TO";
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
@@ -204,7 +204,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-        
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
