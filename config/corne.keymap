@@ -210,6 +210,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp PERIOD>;
+
+            tapping-term-ms = <400>;
         };
     };
 
