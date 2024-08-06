@@ -187,10 +187,26 @@
     };
 
     behaviors {
-        ht: behavior_wb_hold_tapTo {
+        ht0: behavior_hold_tap-to {
             compatible = "zmk,behavior-hold-tap";
-            label = "BEHAVIOR_WB_HOLD_TAPTO";
+            label = "BEHAVIOR_HOLD_TAP-TO";
             bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp PERIOD>;
+        };
+
+        ht1: behavior_hold_td0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BEHAVIOR_HOLD_TD0";
+            bindings = <&mo>, <&td0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -208,10 +224,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp SQT     &mt LA(P) COMMA  &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K          &kp Z                    &kp F        &kp U        &kp Q  &kp S  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N        &kp E        &kp A  &kp O  &kp SEMI
-&kp DELETE  &kp PERIOD       &mt LC(A) SLASH  &kp W        &kp D             &kp J          &kp B                    &kp H        &kp V        &kp Y  &kp X  &kp RIGHT_PARENTHESIS
-                                              &lt 3 TAB    &lt 4 ENTER       &lt 1 SPACE    &mt LEFT_SHIFT CAPSLOCK  &lt 4 ENTER  &lt 3 SPACE
+&kp SQT     &mt LA(P) COMMA  &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F        &kp U        &kp Q  &kp S  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N        &kp E        &kp A  &kp O  &kp SEMI
+&kp DELETE  &kp PERIOD       &mt LC(A) SLASH  &kp W        &kp D             &kp J       &kp B                    &kp H        &kp V        &kp Y  &kp X  &kp RIGHT_PARENTHESIS
+                                              &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &lt 4 ENTER  &lt 3 SPACE
             >;
 
             label = "ISRT_WB";
@@ -233,7 +249,7 @@
 &kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &none  &none  &none  &none  &none  &none
 &kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &none  &none  &none  &none  &none  &none
 &kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &none  &none  &none  &none  &none  &none
-                                                     &ht 4 0               &lt 3 ENTER           &kp LEFT_SHIFT    &none  &none  &none
+                                                     &ht0 4 0              &lt 3 ENTER           &kp LEFT_SHIFT    &none  &none  &none
             >;
 
             label = "SHORTCUT";
