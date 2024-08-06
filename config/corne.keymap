@@ -214,6 +214,15 @@
             tapping-term-ms = <200>;
         };
 
+        ht3: mo_td2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TD2";
+            bindings = <&mo>, <&td2>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         td0: space_dot {
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_DOT";
@@ -235,15 +244,6 @@
             label = "REPEAT_ENTER";
             #binding-cells = <0>;
             bindings = <&key_repeat>, <&kp ENTER>;
-        };
-
-        ht3: mo_td2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_TD2";
-            bindings = <&mo>, <&td2>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
         };
     };
 
