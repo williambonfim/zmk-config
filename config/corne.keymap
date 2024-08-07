@@ -279,7 +279,7 @@
                 , <&macro_pause_for_release>
                 , <&macro_release &mo 1>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(300,100,50)>;
-            label = "LU"
+            label = "LU";
 
         };
     };
