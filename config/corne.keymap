@@ -184,6 +184,18 @@
             key-positions = <14 15>;
             layers = <2>;
         };
+
+        to_0_L {
+            bindings = <&to 0>;
+            key-positions = <38 15>;
+            timeout-ms = <20>;
+        };
+
+        to_0_R {
+            bindings = <&to 0>;
+            key-positions = <39 20>;
+            timeout-ms = <20>;
+        };
     };
 
     behaviors {
