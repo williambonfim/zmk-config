@@ -228,7 +228,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_DOT";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp PERIOD>;
+            bindings = <&kp SPACE>, <&duoSpace>;
 
             tapping-term-ms = <250>;
         };
@@ -245,6 +245,15 @@
             label = "REPEAT_ENTER";
             #binding-cells = <0>;
             bindings = <&key_repeat>, <&kp ENTER>;
+        };
+    };
+
+    macros {
+        duoSpace: duoSpace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp SPACE>;
+            label = "DUOSPACE";
         };
     };
 
