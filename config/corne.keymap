@@ -277,7 +277,7 @@
                 <&macro_press>,
                 <&mo 5>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(128,100,100)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(128,100,100)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 5>,
