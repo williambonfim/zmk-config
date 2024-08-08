@@ -282,7 +282,7 @@
                 <&macro_release>,
                 <&mo 5>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(300,100,50)>;
+                <&rgb_ug RGB_OFF>;
 
             label = "LU";
             #binding-cells = <0>;
