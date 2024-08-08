@@ -241,7 +241,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_DOT";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&duoSpace>;
+            bindings = <&kp SPACE>, <&dt PERIOD SPACE>;
 
             tapping-term-ms = <250>;
         };
@@ -262,11 +262,11 @@
     };
 
     macros {
-        duoSpace: duoSpace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOT &kp SPACE>;
-            label = "DUOSPACE";
+        dt: dt {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+            label = "DOUBLE_TAP";
         };
 
         lu: lu {
