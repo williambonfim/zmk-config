@@ -334,10 +334,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) SLASH    &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I     &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD         &ht4 LC(A) 0     &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                                &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 4 0  &lt 3 SPACE
+&kp TAB     &mt LA(P) SLASH  &mt LC(X) C     &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD       &ht4 LC(A) 0    &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                             &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 4 0  &lt 3 SPACE
             >;
 
             label = "ISRT_WB";
@@ -347,7 +347,7 @@
             bindings = <
 &bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &to 9            &kp F7  &kp F8  &kp F9  &kp F12  &lu 5 RGB_COLOR_HSB_VAL(116,100,79)
 &bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&bt BT_SEL 2  &kp C_MUTE    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 5            &kp F1  &kp F2  &kp F3  &kp F10  &none
+&bt BT_SEL 2  &kp LC(Z)     &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 5            &kp F1  &kp F2  &kp F3  &kp F10  &none
                                               &none              &none            &none             &kp LEFT_ALT     &none   &none
             >;
 
