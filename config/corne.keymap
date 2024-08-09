@@ -201,7 +201,7 @@
     behaviors {
         ht0: mo_to {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_TO";
+            label = "MOMENTARY LAYER_TO LAYER";
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
@@ -259,6 +259,15 @@
             #binding-cells = <0>;
             bindings = <&key_repeat>, <&kp ENTER>;
         };
+
+        ht4: ht4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_COMMA";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&comma>;
+        };
     };
 
     macros {
@@ -305,6 +314,13 @@
             label = "LAYER_UNDERGLOW";
             #binding-cells = <1>;
         };
+
+        comma: comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp SPACE>;
+            label = "COMMA";
+        };
     };
 
     keymap {
@@ -318,10 +334,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) COMMA  &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &mt LC(A) SLASH  &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                              &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 4 0  &lt 3 SPACE
+&kp TAB     &ht4 LA(P) 0    &mt LC(X) C      &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S   &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD      &mt LC(A) SLASH  &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                             &lt 3 TAB    &lt 4 ENTER       &ht1 1 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 4 0  &lt 3 SPACE
             >;
 
             label = "ISRT_WB";
