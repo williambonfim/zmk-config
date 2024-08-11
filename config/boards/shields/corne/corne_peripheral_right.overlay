@@ -6,6 +6,8 @@
 
 #include "corne.dtsi"
 
+&led_strip { chain-length = <27>; };
+
 &default_transform {
     col-offset = <6>;
 };
