@@ -1,0 +1,510 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  WB_LAYER:
+  - TAB
+  - {t: /, h: Alt+ P}
+  - {t: C, h: Ctl+ X}
+  - {t: L, h: Ctl+ C}
+  - {t: M, h: Ctl+ V}
+  - K
+  - Z
+  - F
+  - U
+  - Q
+  - ''''
+  - (
+  - ESC
+  - {t: I, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: R, h: LCTRL}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - P
+  - N
+  - E
+  - A
+  - O
+  - ;
+  - DELETE
+  - .
+  - {t: '&comma', h: Ctl+ A}
+  - W
+  - D
+  - J
+  - B
+  - H
+  - V
+  - Y
+  - X
+  - )
+  - {t: TAB, h: NUM_PAD_LEFT}
+  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: '&td0', h: FUNCTION_KEYS}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - {t: '&td2', h: NUM_PAD_RIGHT}
+  - {t: SPACE, h: NUM_PAD_LEFT}
+  FUNCTION_KEYS:
+  - {t: BT, h: '0'}
+  - F2
+  - F3
+  - F4
+  - F5
+  - F8
+  - {t: ISRT, h: toggle}
+  - F7
+  - F8
+  - F9
+  - F12
+  - '&lu 5 RGB_COLOR_HSB_VAL(116,100,79)'
+  - {t: BT, h: '1'}
+  - {t: LEFT GUI, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LEFT CONTROL, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
+  - NEXT
+  - RGB TOG
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - {t: BT, h: '2'}
+  - Ctl+ Z
+  - PLAY PAUSE
+  - VOLUME DOWN
+  - VOLUME UP
+  - PREVIOUS
+  - {t: SETTINGS, h: toggle}
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - LEFT ALT
+  - ''
+  - ''
+  SHORTCUT_LAYER_WIN:
+  - Ctl+Gui+ F
+  - Ctl+Gui+ 1
+  - Ctl+Gui+ 2
+  - Ctl+Gui+ 3
+  - Ctl+Gui+ 4
+  - Ctl+Gui+ 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Ctl+ G
+  - Ctl+Gui+ 6
+  - Ctl+Gui+ 7
+  - Ctl+Gui+ 8
+  - Gui+Ctl+ 9
+  - Gui+Ctl+ 0
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+Gui+ H
+  - Ctl+Gui+ A
+  - Ctl+Gui+ B
+  - Ctl+Gui+ C
+  - Ctl+Gui+ D
+  - Ctl+Gui+ E
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: WB_LAYER, h: NUM_PAD_RIGHT}
+  - {t: ENTER, h: NUM_PAD_LEFT}
+  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  NUM_PAD_LEFT:
+  - {t: (, h: toggle}
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - PAGE UP
+  - HOME
+  - UP ARROW
+  - END
+  - ''
+  - ''
+  - ''
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - PAGE DOWN
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - ''
+  - ''
+  - )
+  - '*'
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ''
+  - Ctl+ LEFT ARROW
+  - ''
+  - Ctl+ RIGHT ARROW
+  - ''
+  - ''
+  - {type: held}
+  - ENTER
+  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - Ctl+ LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT CONTROL
+  NUM_PAD_RIGHT:
+  - ''
+  - ''
+  - HOME
+  - UP
+  - END
+  - PAGE UP
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - (
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PAGE DOWN
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - /
+  - ''
+  - ''
+  - ''
+  - Ctl+ LEFT ARROW
+  - ''
+  - Ctl+ RIGHT ARROW
+  - ''
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - )
+  - RCTRL
+  - {t: LEFT SHIFT, type: held}
+  - Ctl+ LEFT SHIFT
+  - {t: ENTER, h: NUM_PAD_LEFT}
+  - ENTER
+  - ''
+  SETTINGS:
+  - '&soft_off'
+  - ''
+  - ''
+  - ''
+  - OUT TOG
+  - EP TOG
+  - RGB SAD
+  - RGB SAI
+  - RGB HUD
+  - RGB HUI
+  - RGB COLOR HSB(0,0,100)
+  - RGB COLOR HSB(0,95,49)
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - RGB EFF
+  - RGB TOG
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - RGB SPI
+  - ''
+  - ''
+  - ''
+  - EP OFF
+  - EP ON
+  - ''
+  - RGB EFR
+  - RGB COLOR HSB(0,100,98)
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(111,100,50)
+  - RGB COLOR HSB(263,100,50)
+  - RGB SPD
+  - ''
+  - ''
+  - {t: WB_LAYER, h: toggle}
+  - {t: WB_LAYER, h: toggle}
+  - ''
+  - ''
+  SYMBOLS:
+  - TAB
+  - '!'
+  - '@'
+  - $
+  - '#'
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - BSPC
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - 'Ctl+ #'
+  - ''
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - _
+  - {t: +, type: held}
+  - {t: '{', type: held}
+  - {t: '}', type: held}
+  - '|'
+  - '~'
+  - LGUI
+  - ''
+  - SPACE
+  - RET
+  - ''
+  - RALT
+  NAVIGATION_LAYER_WIN:
+  - Gui+ F
+  - Gui+ 1
+  - Gui+ 2
+  - Gui+ 3
+  - Gui+ 4
+  - Gui+ 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+ G
+  - Gui+ 6
+  - {t: Gui+ 7, type: held}
+  - Gui+ 8
+  - {t: Gui+ 9, type: held}
+  - Gui+ 0
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+ H
+  - Gui+ A
+  - Gui+ B
+  - Gui+ C
+  - Gui+ D
+  - Gui+ E
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  QWERT:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ESCAPE
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - (
+  - DELETE
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - )
+  - LEFT GUI
+  - LCTRL
+  - {t: SPACE, h: FUNCTION_KEYS}
+  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: LEFT SHIFT, h: CAPSLOCK}
+  - LEFT ALT
+  ISRT:
+  - TAB
+  - Y
+  - C
+  - L
+  - M
+  - K
+  - Z
+  - F
+  - U
+  - ','
+  - ''''
+  - (
+  - ESC
+  - {t: I, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: R, h: LCTRL}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - P
+  - N
+  - E
+  - A
+  - O
+  - ;
+  - DELETE
+  - Q
+  - V
+  - W
+  - D
+  - J
+  - B
+  - H
+  - /
+  - .
+  - X
+  - )
+  - {t: TAB, h: NUM_PAD_RIGHT}
+  - ENTER
+  - {t: SPACE, h: FUNCTION_KEYS}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - ENTER
+  - SPACE
+combos:
+- p: [14, 15, 16]
+  k: {t: NUM_PAD_LEFT, h: toggle}
+- p: [19, 20, 21]
+  k: {t: NUM_PAD_RIGHT, h: toggle}
+- p: [1, 2, 3, 4]
+  k: {t: SETTINGS, h: toggle}
+- p: [31, 32, 33]
+  k: {t: SYMBOLS, h: sticky}
+- p: [28, 26]
+  k: {t: SHORTCUT_LAYER_WIN, h: toggle}
+- p: [14, 3, 16]
+  k: {t: NUM_PAD_RIGHT, h: toggle}
+- p: [19, 8, 21]
+  k: {t: NUM_PAD_LEFT, h: toggle}
+- p: [38, 39]
+  k: {t: WB_LAYER, h: toggle}
+- p: [31, 33]
+  k: {t: SYMBOLS, h: sticky}
+- p: [27, 28]
+  k: .
+  l: [NUM_PAD_LEFT]
+- p: [31, 32]
+  k: .
+  l: [NUM_PAD_RIGHT]
+- p: [20, 21]
+  k: DELETE
+  l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
+- p: [19, 20]
+  k: BACKSPACE
+  l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
+- p: [15, 16]
+  k: DELETE
+  l: [NUM_PAD_RIGHT, WB_LAYER, QWERT, SHORTCUT_LAYER_WIN]
+- p: [14, 15]
+  k: BACKSPACE
+  l: [NUM_PAD_RIGHT, WB_LAYER, QWERT]
+- p: [15, 16]
+  k: '='
+  l: [NUM_PAD_LEFT]
+- p: [19, 20]
+  k: '='
+  l: [NUM_PAD_RIGHT]
+- p: [14, 16]
+  k: {t: NAVIGATION_LAYER_WIN, h: sticky}
+- p: [36, 41]
+  k: {t: QWERT, h: toggle}
+- p: [26, 27]
+  k: LEFT ARROW
+  l: [WB_LAYER, QWERT]
+- p: [27, 28]
+  k: RIGHT
+  l: [WB_LAYER, QWERT]
+- p: [3, 4]
+  k: UP ARROW
+  l: [WB_LAYER, QWERT]
+- p: [3, 2]
+  k: DOWN
+  l: [WB_LAYER, QWERT]
+- p: [32, 31]
+  k: LEFT ARROW
+  l: [WB_LAYER, QWERT]
+- p: [32, 33]
+  k: RIGHT
+  l: [WB_LAYER, QWERT]
+- p: [7, 8]
+  k: UP ARROW
+  l: [WB_LAYER, QWERT]
+- p: [8, 9]
+  k: DOWN
+  l: [WB_LAYER, QWERT]
+- p: [14, 15]
+  k: ESCAPE
+  l: [SHORTCUT_LAYER_WIN]
+- p: [38, 15]
+  k: {t: WB_LAYER, h: toggle}
+- p: [39, 20]
+  k: {t: WB_LAYER, h: toggle}
