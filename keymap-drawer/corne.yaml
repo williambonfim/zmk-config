@@ -43,6 +43,49 @@ layers:
   - {t: CAPSLOCK, h: LEFT SHIFT}
   - {t: '&td2', h: NUM_PAD_RIGHT}
   - {t: SPACE, h: NUM_PAD_LEFT}
+  MAC:
+  - TAB
+  - /
+  - {t: C, h: Gui+ X}
+  - {t: L, h: Gui+ C}
+  - {t: M, h: Gui+ V}
+  - K
+  - Z
+  - F
+  - U
+  - Q
+  - ''''
+  - (
+  - ESC
+  - {t: I, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: R, h: LCTRL}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - P
+  - N
+  - E
+  - A
+  - O
+  - ;
+  - DELETE
+  - .
+  - {t: '&comma', h: Gui+ A}
+  - W
+  - D
+  - J
+  - B
+  - H
+  - V
+  - Y
+  - X
+  - )
+  - {t: TAB, h: NUM_PAD_LEFT}
+  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: '&td0', h: FUNCTION_KEYS}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - {t: '&td2', h: NUM_PAD_RIGHT}
+  - {t: SPACE, h: NUM_PAD_LEFT}
   FUNCTION_KEYS:
   - {t: BT, h: '0'}
   - F2
@@ -55,7 +98,7 @@ layers:
   - F8
   - F9
   - F12
-  - '&lu 5 RGB_COLOR_HSB_VAL(116,100,79)'
+  - '&lu 6 RGB_COLOR_HSB_VAL(116,100,79)'
   - {t: BT, h: '1'}
   - {t: LEFT GUI, h: sticky}
   - {t: LEFT ALT, h: sticky}
