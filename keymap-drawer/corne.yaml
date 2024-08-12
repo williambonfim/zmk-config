@@ -68,7 +68,7 @@ layers:
   - F6
   - F11
   - ''
-  - {t: BT, h: '2'}
+  - OUT TOG
   - Ctl+ Z
   - PLAY PAUSE
   - VOLUME DOWN
