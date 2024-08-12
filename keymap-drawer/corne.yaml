@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   WB_LAYER:
-  - TAB
-  - {t: /, h: Alt+ P}
+  - $$mdi:keyboard-tab$$
+  - {t: /, h: Alt+ P, s: '?'}
   - {t: C, h: Ctl+ X}
   - {t: L, h: Ctl+ C}
   - {t: M, h: Ctl+ V}
@@ -11,12 +11,12 @@ layers:
   - F
   - U
   - Q
-  - ''''
+  - {t: '''', s: '"'}
   - (
-  - ESC
+  - $$mdi:keyboard-esc$$
   - {t: I, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: R, h: LCTRL}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: LEFT SHIFT}
   - G
   - P
@@ -24,9 +24,9 @@ layers:
   - E
   - A
   - O
-  - ;
-  - DELETE
-  - .
+  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
+  - PERIOD
   - {t: '&comma', h: Ctl+ A}
   - W
   - D
@@ -37,15 +37,15 @@ layers:
   - Y
   - X
   - )
-  - {t: TAB, h: NUM_PAD_LEFT}
-  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - {t: '&td0', h: FUNCTION_KEYS}
-  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
   - {t: '&td2', h: NUM_PAD_RIGHT}
-  - {t: SPACE, h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   MAC:
-  - TAB
-  - /
+  - $$mdi:keyboard-tab$$
+  - {t: /, s: '?'}
   - {t: C, h: Gui+ X}
   - {t: L, h: Gui+ C}
   - {t: M, h: Gui+ V}
@@ -54,12 +54,12 @@ layers:
   - F
   - U
   - Q
-  - ''''
+  - {t: '''', s: '"'}
   - (
-  - ESC
+  - $$mdi:keyboard-esc$$
   - {t: I, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: R, h: LCTRL}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: LEFT SHIFT}
   - G
   - P
@@ -67,9 +67,9 @@ layers:
   - E
   - A
   - O
-  - ;
-  - DELETE
-  - .
+  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
+  - PERIOD
   - {t: '&comma', h: Gui+ A}
   - W
   - D
@@ -80,14 +80,14 @@ layers:
   - Y
   - X
   - )
-  - {t: TAB, h: NUM_PAD_LEFT}
-  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - {t: '&td0', h: FUNCTION_KEYS}
-  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
   - {t: '&td2', h: NUM_PAD_RIGHT}
-  - {t: SPACE, h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   FUNCTION_KEYS:
-  - {t: BT, h: '0'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - F2
   - F3
   - F4
@@ -99,19 +99,19 @@ layers:
   - F9
   - F12
   - '&lu 6 RGB_COLOR_HSB_VAL(116,100,79)'
-  - {t: BT, h: '1'}
-  - {t: LEFT GUI, h: sticky}
-  - {t: LEFT ALT, h: sticky}
-  - {t: LEFT CONTROL, h: sticky}
-  - {t: LEFT SHIFT, h: sticky}
-  - NEXT
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {t: LEFT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LEFT ALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LEFT CONTROL, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LEFT SHIFT, h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:skip-next$$
   - RGB TOG
   - F4
   - F5
   - F6
   - F11
-  - ''
-  - OUT TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - Ctl+ Z
   - PLAY PAUSE
   - VOLUME DOWN
@@ -122,148 +122,148 @@ layers:
   - F2
   - F3
   - F10
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - LEFT ALT
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   SHORTCUT_LAYER_WIN:
   - Ctl+Gui+ F
-  - Ctl+Gui+ 1
-  - Ctl+Gui+ 2
+  - {t: Ctl+Gui+ 1, s: Ctl+Gui+ !}
+  - {t: Ctl+Gui+ 2, s: Ctl+Gui+ @}
   - Ctl+Gui+ 3
   - Ctl+Gui+ 4
-  - Ctl+Gui+ 5
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: Ctl+Gui+ 5, s: Ctl+Gui+ %}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+Ctl+ G
   - Ctl+Gui+ 6
-  - Ctl+Gui+ 7
-  - Ctl+Gui+ 8
-  - Gui+Ctl+ 9
-  - Gui+Ctl+ 0
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: Ctl+Gui+ 7, s: Ctl+Gui+ &}
+  - {t: Ctl+Gui+ 8, s: Ctl+Gui+ *}
+  - {t: Gui+Ctl+ 9, s: Gui+Ctl+ (}
+  - {t: Gui+Ctl+ 0, s: Gui+Ctl+ )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Gui+ H
   - Ctl+Gui+ A
   - Ctl+Gui+ B
   - Ctl+Gui+ C
   - Ctl+Gui+ D
   - Ctl+Gui+ E
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: WB_LAYER, h: NUM_PAD_RIGHT}
-  - {t: ENTER, h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
   - LEFT SHIFT
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM_PAD_LEFT:
   - {t: (, h: toggle}
-  - ''
-  - '7'
-  - '8'
-  - '9'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - +
   - PAGE UP
   - HOME
   - UP ARROW
   - END
-  - ''
-  - ''
-  - ''
-  - /
-  - '4'
-  - '5'
-  - '6'
-  - '-'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '-', s: _}
   - PAGE DOWN
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - )
   - '*'
-  - '1'
-  - '2'
-  - '3'
-  - '0'
-  - ''
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ LEFT ARROW
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ RIGHT ARROW
-  - ''
-  - ''
-  - {type: held}
-  - ENTER
-  - {t: ENTER, h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - Ctl+ LEFT SHIFT
   - LEFT SHIFT
-  - LEFT CONTROL
+  - {t: LEFT CONTROL, type: held alternate}
   NUM_PAD_RIGHT:
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
-  - UP
+  - $$mdi:arrow-up-bold$$
   - END
   - PAGE UP
   - +
-  - '7'
-  - '8'
-  - '9'
-  - ''
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
-  - ''
-  - ''
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - PAGE DOWN
-  - '-'
-  - '4'
-  - '5'
-  - '6'
-  - /
-  - ''
-  - ''
-  - ''
+  - {t: '-', s: _}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ LEFT ARROW
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ RIGHT ARROW
-  - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - '*'
   - )
-  - RCTRL
+  - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   - {t: LEFT SHIFT, type: held}
-  - Ctl+ LEFT SHIFT
-  - {t: ENTER, h: NUM_PAD_LEFT}
-  - ENTER
-  - ''
+  - {t: Ctl+ LEFT SHIFT, type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   SETTINGS:
   - '&soft_off'
-  - ''
-  - ''
-  - ''
-  - OUT TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - EP TOG
   - RGB SAD
   - RGB SAI
@@ -271,38 +271,38 @@ layers:
   - RGB HUI
   - RGB COLOR HSB(0,0,100)
   - RGB COLOR HSB(0,95,49)
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - RGB EFF
   - RGB TOG
   - RGB BRD
   - RGB BRI
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB SPI
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - EP OFF
   - EP ON
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB EFR
   - RGB COLOR HSB(0,100,98)
   - RGB COLOR HSB(0,100,50)
   - RGB COLOR HSB(111,100,50)
   - RGB COLOR HSB(263,100,50)
   - RGB SPD
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: WB_LAYER, h: toggle}
   - {t: WB_LAYER, h: toggle}
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYMBOLS:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - '!'
   - '@'
   - $
@@ -313,25 +313,25 @@ layers:
   - '*'
   - (
   - )
-  - BSPC
-  - LCTRL
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - 'Ctl+ #'
-  - ''
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: +, type: held}
   - {t: '{', type: held}
@@ -339,56 +339,56 @@ layers:
   - '|'
   - '~'
   - LGUI
-  - ''
-  - SPACE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
   - RET
-  - ''
-  - RALT
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   NAVIGATION_LAYER_WIN:
   - Gui+ F
   - Gui+ 1
   - Gui+ 2
   - Gui+ 3
   - Gui+ 4
-  - Gui+ 5
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: Gui+ 5, s: Gui+ %}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+ G
   - Gui+ 6
-  - {t: Gui+ 7, type: held}
-  - Gui+ 8
-  - {t: Gui+ 9, type: held}
-  - Gui+ 0
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: Gui+ 7, s: Gui+ &, type: held}
+  - {t: Gui+ 8, s: Gui+ *}
+  - {t: Gui+ 9, s: Gui+ (, type: held}
+  - {t: Gui+ 0, s: Gui+ )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+ H
   - Gui+ A
   - Gui+ B
   - Gui+ C
   - Gui+ D
   - Gui+ E
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   QWERT:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -399,7 +399,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - {t: '$$mdi:backspace$$', type: backspace}
   - ESCAPE
   - A
   - S
@@ -410,9 +410,9 @@ layers:
   - J
   - K
   - L
-  - ''''
+  - {t: '''', s: '"'}
   - (
-  - DELETE
+  - $$mdi:backspace-reverse-outline$$
   - Z
   - X
   - C
@@ -420,18 +420,18 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - )
   - LEFT GUI
-  - LCTRL
-  - {t: SPACE, h: FUNCTION_KEYS}
-  - {t: ENTER, h: NUM_PAD_RIGHT}
-  - {t: LEFT SHIFT, h: CAPSLOCK}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-space$$', h: FUNCTION_KEYS}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
+  - {t: LEFT SHIFT, h: '$$mdi:apple-keyboard-caps$$'}
   - LEFT ALT
   ISRT:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Y
   - C
   - L
@@ -440,13 +440,13 @@ layers:
   - Z
   - F
   - U
-  - ','
-  - ''''
+  - {t: ',', s: <}
+  - {t: '''', s: '"'}
   - (
-  - ESC
+  - $$mdi:keyboard-esc$$
   - {t: I, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: R, h: LCTRL}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: LEFT SHIFT}
   - G
   - P
@@ -454,8 +454,8 @@ layers:
   - E
   - A
   - O
-  - ;
-  - DELETE
+  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
   - Q
   - V
   - W
@@ -463,16 +463,16 @@ layers:
   - J
   - B
   - H
-  - /
-  - .
+  - {t: /, s: '?'}
+  - {t: ., s: '>'}
   - X
   - )
-  - {t: TAB, h: NUM_PAD_RIGHT}
-  - ENTER
-  - {t: SPACE, h: FUNCTION_KEYS}
-  - {t: CAPSLOCK, h: LEFT SHIFT}
-  - ENTER
-  - SPACE
+  - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: FUNCTION_KEYS}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
 combos:
 - p: [14, 15, 16]
   k: {t: NUM_PAD_LEFT, h: toggle}
@@ -481,7 +481,7 @@ combos:
 - p: [1, 2, 3, 4]
   k: {t: SETTINGS, h: toggle}
 - p: [31, 32, 33]
-  k: {t: SYMBOLS, h: sticky}
+  k: {t: SYMBOLS, h: '$$mdi:gesture-tap-hold$$'}
 - p: [28, 26]
   k: {t: SHORTCUT_LAYER_WIN, h: toggle}
 - p: [14, 3, 16]
@@ -491,58 +491,58 @@ combos:
 - p: [38, 39]
   k: {t: WB_LAYER, h: toggle}
 - p: [31, 33]
-  k: {t: SYMBOLS, h: sticky}
+  k: {t: SYMBOLS, h: '$$mdi:gesture-tap-hold$$'}
 - p: [27, 28]
-  k: .
+  k: PERIOD
   l: [NUM_PAD_LEFT]
 - p: [31, 32]
-  k: .
+  k: PERIOD
   l: [NUM_PAD_RIGHT]
 - p: [20, 21]
-  k: DELETE
+  k: $$mdi:backspace-reverse-outline$$
   l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
 - p: [19, 20]
-  k: BACKSPACE
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
 - p: [15, 16]
-  k: DELETE
+  k: $$mdi:backspace-reverse-outline$$
   l: [NUM_PAD_RIGHT, WB_LAYER, QWERT, SHORTCUT_LAYER_WIN]
 - p: [14, 15]
-  k: BACKSPACE
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [NUM_PAD_RIGHT, WB_LAYER, QWERT]
 - p: [15, 16]
-  k: '='
+  k: {t: '=', s: +}
   l: [NUM_PAD_LEFT]
 - p: [19, 20]
-  k: '='
+  k: {t: '=', s: +}
   l: [NUM_PAD_RIGHT]
 - p: [14, 16]
-  k: {t: NAVIGATION_LAYER_WIN, h: sticky}
+  k: {t: NAVIGATION_LAYER_WIN, h: '$$mdi:gesture-tap-hold$$'}
 - p: [36, 41]
   k: {t: QWERT, h: toggle}
 - p: [26, 27]
   k: LEFT ARROW
   l: [WB_LAYER, QWERT]
 - p: [27, 28]
-  k: RIGHT
+  k: $$mdi:arrow-right-bold$$
   l: [WB_LAYER, QWERT]
 - p: [3, 4]
   k: UP ARROW
   l: [WB_LAYER, QWERT]
 - p: [3, 2]
-  k: DOWN
+  k: $$mdi:arrow-down-bold$$
   l: [WB_LAYER, QWERT]
 - p: [32, 31]
   k: LEFT ARROW
   l: [WB_LAYER, QWERT]
 - p: [32, 33]
-  k: RIGHT
+  k: $$mdi:arrow-right-bold$$
   l: [WB_LAYER, QWERT]
 - p: [7, 8]
   k: UP ARROW
   l: [WB_LAYER, QWERT]
 - p: [8, 9]
-  k: DOWN
+  k: $$mdi:arrow-down-bold$$
   l: [WB_LAYER, QWERT]
 - p: [14, 15]
   k: ESCAPE
