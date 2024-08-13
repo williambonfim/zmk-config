@@ -13,6 +13,8 @@ if SHIELD_CORNE_CENTRAL_DONGLE || SHIELD_CORNE_CENTRAL_LEFT || SHIELD_CORNE_PERI
 config ZMK_SPLIT
     default y
 
+endif
+
 config ZMK_BLE
 	default y
 	
@@ -23,6 +25,10 @@ config I2C
 
 config SSD1306
     default y
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
 
 endif # ZMK_DISPLAY
 
@@ -115,5 +121,3 @@ config ZMK_RGB_UNDERGLOW_AUTO_OFF_USB
     depends on USB_DEVICE_STACK
 
 endif #ZMK_RGB_UNDERGLOW
-
-endif
