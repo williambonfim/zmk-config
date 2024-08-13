@@ -24,6 +24,11 @@ manifest:
     - name: zmk-auto-layer
       remote: urob
       revision: main
+    
+    # Helper Macros
+    - name: zmk-helpers
+      remote: urob
+      revision: main
 
     # modules
     #- name: zmk-rgbled-widget
