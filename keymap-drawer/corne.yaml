@@ -43,6 +43,49 @@ layers:
   - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
   - {t: '&td2', h: NUM_PAD_RIGHT}
   - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
+  MAC:
+  - $$mdi:keyboard-tab$$
+  - {t: /, s: '?'}
+  - {t: C, h: Gui+ X}
+  - {t: L, h: Gui+ C}
+  - {t: M, h: Gui+ V}
+  - K
+  - Z
+  - F
+  - U
+  - Q
+  - {t: '''', s: '"'}
+  - (
+  - $$mdi:keyboard-esc$$
+  - {t: I, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - P
+  - N
+  - E
+  - A
+  - O
+  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
+  - PERIOD
+  - {t: '&comma', h: Gui+ A}
+  - W
+  - D
+  - J
+  - B
+  - H
+  - V
+  - Y
+  - X
+  - )
+  - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_LEFT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
+  - {t: '&td0', h: FUNCTION_KEYS}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
+  - {t: '&td2', h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   FUNCTION_KEYS:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - F2
@@ -55,7 +98,7 @@ layers:
   - F8
   - F9
   - F12
-  - '&lu 5 RGB_COLOR_HSB_VAL(116,100,79)'
+  - '&lu 6 RGB_COLOR_HSB_VAL(116,100,79)'
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: LEFT GUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: LEFT ALT, h: '$$mdi:gesture-tap-hold$$'}
@@ -68,7 +111,7 @@ layers:
   - F6
   - F11
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - Ctl+ Z
   - PLAY PAUSE
   - VOLUME DOWN
