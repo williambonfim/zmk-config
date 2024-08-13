@@ -1,0 +1,22 @@
+if SHIELD_TRIKYRIA_DONGLE || SHIELD_TRIKYRIA_DONGLE_OLED
+
+config ZMK_KEYBOARD_NAME
+    default "Dongled Kyria"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_USB
+    default y
+
+endif
+
+if SHIELD_TRIKYRIA_LEFT || SHIELD_TRIKYRIA_RIGHT || SHIELD_TRIKYRIA_DONGLE || SHIELD_TRIKYRIA_DONGLE_OLED
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+endif

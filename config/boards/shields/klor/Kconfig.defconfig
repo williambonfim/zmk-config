@@ -1,0 +1,24 @@
+if SHIELD_KLOR_DONGLE
+
+    config ZMK_KEYBOARD_NAME
+        default "KLOR"
+
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
+    config ZMK_USB
+        default y
+
+endif
+
+
+
+if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT || SHIELD_KLOR_DONGLE
+
+    config ZMK_SPLIT
+        default y
+
+    config ZMK_BLE
+        default y
+
+endif

@@ -1,0 +1,9 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "totem.dtsi"
+
+// vim: expandtab softtabstop=4 shiftwidth=4 filetype=devicetree

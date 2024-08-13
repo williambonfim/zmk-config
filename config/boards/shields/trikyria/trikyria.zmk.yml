@@ -1,0 +1,17 @@
+file_format: "1"
+id: trikyria
+name: Kyria r3.1 dongle
+type: shield
+url: https://splitkb.com/products/kyria-pcb-kit
+requires:
+  - pro_micro
+  - xiao_ble
+exposes:
+  - spi_tft
+features:
+  - keys
+  - display
+siblings:
+  - trikyria_left
+  - trikyria_right
+  - trikyria_dongle
