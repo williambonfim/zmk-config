@@ -321,6 +321,13 @@
             bindings = <&kp COMMA &kp SPACE>;
             label = "COMMA";
         };
+
+        flash: dongle_bootloader_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 11 &bootloader>;
+            label = "Dongle Bootloader";
+        };
     };
 
     keymap {
@@ -334,9 +341,9 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) SLASH  &mt LC(X) C     &mt LC(C) L  &mt LC(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp TAB     &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &ht4 LC(A) 0    &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
                                              &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 5 0  &lt 4 SPACE
             >;
 
@@ -346,9 +353,9 @@
         MAC_layer {
             label = "baseM";
             bindings = <
-&kp TAB     &kp SLASH       &mt LG(X) C     &mt LG(C) L  &mt LG(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp TAB     &kp SLASH       &kp C           &kt L        &mt LG(A) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD      &ht4 LG(A) 0    &kp W        &kp D             &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+&kp DELETE  &kp PERIOD      &ht4 LG(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
                                             &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 5 0  &lt 4 SPACE
             >;
         };
@@ -468,6 +475,17 @@
             >;
 
             label = "ISRT_SS";
+        };
+
+        bootloader_layer {
+            bindings = <
+&none  &none  &none  &none        &none   &none    &none  &none  &none        &none  &none  &none
+&none  &none  &none  &bootloader  &flash  &none    &none  &none  &bootloader  &none  &none  &none
+&none  &none  &none  &none        &none   &none    &none  &none  &none        &none  &none  &none
+                     &none        &none   &none    &none  &none  &none
+            >;
+
+            label = "flash mode";
         };
     };
 };

@@ -3,9 +3,9 @@ layers:
   WB_LAYER:
   - $$mdi:keyboard-tab$$
   - {t: /, h: Alt+ P, s: '?'}
-  - {t: C, h: Ctl+ X}
-  - {t: L, h: Ctl+ C}
-  - {t: M, h: Ctl+ V}
+  - C
+  - L
+  - {t: M, h: Ctl+ A}
   - K
   - Z
   - F
@@ -27,9 +27,9 @@ layers:
   - {t: ;, s: ':'}
   - $$mdi:backspace-reverse-outline$$
   - PERIOD
-  - {t: '&comma', h: Ctl+ A}
-  - W
-  - D
+  - {t: '&comma', h: Ctl+ X}
+  - {t: W, h: Ctl+ C}
+  - {t: D, h: Ctl+ V}
   - J
   - B
   - H
@@ -46,9 +46,9 @@ layers:
   MAC:
   - $$mdi:keyboard-tab$$
   - {t: /, s: '?'}
-  - {t: C, h: Gui+ X}
-  - {t: L, h: Gui+ C}
-  - {t: M, h: Gui+ V}
+  - C
+  - {t: L, h: toggle}
+  - {t: M, h: Gui+ A}
   - K
   - Z
   - F
@@ -70,9 +70,9 @@ layers:
   - {t: ;, s: ':'}
   - $$mdi:backspace-reverse-outline$$
   - PERIOD
-  - {t: '&comma', h: Gui+ A}
-  - W
-  - D
+  - {t: '&comma', h: Gui+ X}
+  - {t: W, h: Ctl+ C}
+  - {t: D, h: Ctl+ V}
   - J
   - B
   - H
@@ -473,6 +473,49 @@ layers:
   - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  bootloader:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - '&flash'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [14, 15, 16]
   k: {t: NUM_PAD_LEFT, h: toggle}
