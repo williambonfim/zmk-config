@@ -1,0 +1,18 @@
+file_format: "1"
+id: corne
+name: Corne
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: 
+  - pro_micro
+exposes:
+  - i2c_oled
+  - spi_tft
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - corne_left
+  - corne_right
+  - corne_dongle
