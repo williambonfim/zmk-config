@@ -200,6 +200,14 @@
     };
 
     behaviors {
+ 
+        /omit-if-no-ref/ num_word: num_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            ignore-numbers;
+        };
+
         ht0: mo_to {
             compatible = "zmk,behavior-hold-tap";
             label = "MOMENTARY LAYER_TO LAYER";
