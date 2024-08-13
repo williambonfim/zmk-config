@@ -19,6 +19,11 @@
 
 &mt { flavor = "tap-preferred"; };
 
+ZMK_MOD_MORPH(smart_shft,
+    bindings = <&sk LSHFT>, <&caps_word>;
+    mods = <(MOD_LSFT)>;
+)
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -350,10 +355,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B                    &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                             &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 5 0  &lt 4 SPACE
+&kp TAB     &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K       &kp Z        &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P        &kp N     &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B        &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                             &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &smart_shft  &ht3 5 0  &lt 4 SPACE
             >;
 
             label = "BASE";
