@@ -363,10 +363,10 @@
 
         FUNCTION_KEYS {
             bindings = <
-&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &to 10           &kp F7  &kp F8  &kp F9  &kp F12  &lu 6 RGB_COLOR_HSB_VAL(116,100,79)
-&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to 11
-&out OUT_TOG  &kp LC(Z)     &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 6            &kp F1  &kp F2  &kp F3  &kp F10  &flash
-                                              &none              &none            &none             &kp LEFT_ALT     &none   &none
+&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &to 10           &kp F7         &kp F8  &kp F9  &kp F12  &lu 6 RGB_COLOR_HSB_VAL(116,100,79)
+&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4         &kp F5  &kp F6  &kp F11  &to 11
+&out OUT_TOG  &kp LC(Z)     &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 6            &kp F1         &kp F2  &kp F3  &kp F10  &flash
+                                              &none              &none            &none             &kp LEFT_ALT     &num_word 5    &none
             >;
 
             label = "FUNC";
