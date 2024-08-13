@@ -594,8 +594,7 @@ path.combo {
 </a></g>
 <g transform="translate(698, 320) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-caps"/>
-<text x="0" y="54" class="key hold"><tspan style="font-size: 62%">LEFT SH…</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;smart_…</tspan></text>
 </g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
