@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors/num_word.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -11,7 +12,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <behaviors/num_word.dtsi>
 
 //&led_strip { chain-length = <27>; };
 
@@ -480,10 +480,10 @@
 
         bootloader_layer {
             bindings = <
-&none  &none  &none  &none        &none   &none    &none  &none  &none        &none  &none  &none
-&none  &none  &none  &bootloader  &flash  &none    &none  &none  &bootloader  &none  &none  &none
-&none  &none  &none  &none        &none   &none    &none  &none  &none        &none  &none  &none
-                     &none        &none   &none    &none  &none  &none
+&none  &none  &none  &none        &none   &none    &none  &none   &none        &none  &none  &none
+&none  &none  &none  &bootloader  &flash  &none    &none  &flash  &bootloader  &none  &none  &none
+&none  &none  &none  &none        &none   &none    &none  &none   &none        &none  &none  &none
+                     &none        &none   &none    &none  &none   &none
             >;
 
             label = "flash mode";
