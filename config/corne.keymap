@@ -340,11 +340,11 @@
                                              &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 5 0  &lt 4 SPACE
             >;
 
-            label = "ISRT_WB";
+            label = "BASE";
         };
 
         MAC_layer {
-            label = "ISRT_mac";
+            label = "baseM";
             bindings = <
 &kp TAB     &kp SLASH       &mt LG(X) C     &mt LG(C) L  &mt LG(V) M       &kp K       &kp Z                    &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N     &kp E        &kp A  &kp O    &kp SEMI
@@ -372,7 +372,7 @@
                                                      &ht0 5 0              &lt 4 ENTER           &kp LEFT_SHIFT    &none  &none  &none
             >;
 
-            label = "SHORTCUT";
+            label = "SHCT";
         };
 
         NUM_PAD_LEFT {
@@ -383,7 +383,7 @@
                                              &none   &kp ENTER  &lt 5 ENTER    &kp LC(LEFT_SHIFT)  &kp LEFT_SHIFT      &kp LEFT_CONTROL
             >;
 
-            label = "NUMPAD_L";
+            label = "NUM_L";
         };
 
         NUM_PAD_RIGHT {
@@ -394,7 +394,7 @@
                                   &kp RCTRL  &kp LEFT_SHIFT       &kp LC(LEFT_SHIFT)    &lt 4 ENTER  &kp ENTER  &none
             >;
 
-            label = "NUMPAD_R";
+            label = "NUM_R";
         };
 
         SETTINGS {
@@ -411,7 +411,7 @@
                                         &none              &none             &to 0                &to 0            &none                            &none
             >;
 
-            label = "SETTINGS";
+            label = "SETT";
         };
 
         SYMBOLS {
@@ -428,7 +428,7 @@
                              &kp LGUI    &none          &kp SPACE    &kp RET    &none      &kp RALT
             >;
 
-            label = "SYMBOLS";
+            label = "SYMB";
         };
 
         NAVIGATION_LAYER_WIN {
