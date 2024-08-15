@@ -1506,9 +1506,9 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(792, 304) rotate(-15.0)" class="key enter keypos-40">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key enter tap glyph mdi:keyboard-return"/>
+<g transform="translate(792, 304) rotate(-15.0)" class="key trans keypos-40">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(880, 293)" class="key trans keypos-41">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -7820,8 +7820,8 @@ path.combo {
 <g transform="translate(420, 106)" class="key keypos-8">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(460, 102)" class="key keypos-9">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
+<g transform="translate(460, 102)" class="key held keypos-9">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
 </g>
 <g transform="translate(500, 106)" class="key keypos-10">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
@@ -7856,8 +7856,8 @@ path.combo {
 <g transform="translate(420, 146)" class="key keypos-20">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(460, 142)" class="key held keypos-21">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
+<g transform="translate(460, 142)" class="key keypos-21">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
 <g transform="translate(500, 146)" class="key held keypos-22">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
