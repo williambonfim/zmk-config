@@ -3748,14 +3748,14 @@ path.combo {
 <g transform="translate(60, 116)" class="key keypos-2">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(100, 106)" class="key keypos-3">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
+<g transform="translate(100, 106)" class="key held keypos-3">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
 </g>
-<g transform="translate(140, 102)" class="key keypos-4">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
+<g transform="translate(140, 102)" class="key held keypos-4">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
 </g>
-<g transform="translate(180, 106)" class="key keypos-5">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
+<g transform="translate(180, 106)" class="key held keypos-5">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
 </g>
 <g transform="translate(220, 112)" class="key keypos-6">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
@@ -3784,14 +3784,14 @@ path.combo {
 <g transform="translate(60, 156)" class="key keypos-14">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(100, 146)" class="key held keypos-15">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
+<g transform="translate(100, 146)" class="key keypos-15">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(140, 142)" class="key held keypos-16">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
+<g transform="translate(140, 142)" class="key keypos-16">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
-<g transform="translate(180, 146)" class="key held keypos-17">
-<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key held"/>
+<g transform="translate(180, 146)" class="key keypos-17">
+<rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>
 </g>
 <g transform="translate(220, 152)" class="key keypos-18">
 <rect rx="4" ry="4" x="-18" y="-18" width="37" height="37" class="key"/>

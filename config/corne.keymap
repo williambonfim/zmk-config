@@ -34,7 +34,8 @@
 
         combo_num_pad_right_layer {
             bindings = <&tog 9>;
-            key-positions = <14 15 16>;
+            key-positions = <2 3 4>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_num_pad_left_layer {
@@ -107,7 +108,7 @@
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
             layers = <0 14 7 5 6>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_backspace_left {
