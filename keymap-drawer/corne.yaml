@@ -129,6 +129,49 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  SHORTCUT_LAYER_WIN:
+  - Ctl+Gui+ F
+  - {t: Ctl+Gui+ 1, s: Ctl+Gui+ !}
+  - {t: Ctl+Gui+ 2, s: Ctl+Gui+ @}
+  - Ctl+Gui+ 3
+  - Ctl+Gui+ 4
+  - {t: Ctl+Gui+ 5, s: Ctl+Gui+ %}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+ G
+  - Ctl+Gui+ 6
+  - {t: Ctl+Gui+ 7, s: Ctl+Gui+ &}
+  - {t: Ctl+Gui+ 8, s: Ctl+Gui+ *}
+  - {t: Gui+Ctl+ 9, s: Gui+Ctl+ (}
+  - {t: Gui+Ctl+ 0, s: Gui+Ctl+ )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Gui+ H
+  - Ctl+Gui+ A
+  - Ctl+Gui+ B
+  - Ctl+Gui+ C
+  - Ctl+Gui+ D
+  - Ctl+Gui+ E
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: WB_LAYER, h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
+  - LEFT SHIFT
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   BASE_COPY:
   - $$mdi:keyboard-tab$$
   - {t: /, h: Alt+ P, s: '?'}
@@ -344,49 +387,6 @@ layers:
   - LEFT ALT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SHORTCUT_LAYER_WIN:
-  - Ctl+Gui+ F
-  - {t: Ctl+Gui+ 1, s: Ctl+Gui+ !}
-  - {t: Ctl+Gui+ 2, s: Ctl+Gui+ @}
-  - Ctl+Gui+ 3
-  - Ctl+Gui+ 4
-  - {t: Ctl+Gui+ 5, s: Ctl+Gui+ %}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+Ctl+ G
-  - Ctl+Gui+ 6
-  - {t: Ctl+Gui+ 7, s: Ctl+Gui+ &}
-  - {t: Ctl+Gui+ 8, s: Ctl+Gui+ *}
-  - {t: Gui+Ctl+ 9, s: Gui+Ctl+ (}
-  - {t: Gui+Ctl+ 0, s: Gui+Ctl+ )}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Gui+ H
-  - Ctl+Gui+ A
-  - Ctl+Gui+ B
-  - Ctl+Gui+ C
-  - Ctl+Gui+ D
-  - Ctl+Gui+ E
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: WB_LAYER, h: NUM_PAD_RIGHT}
-  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
-  - LEFT SHIFT
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM_PAD_LEFT:
   - {t: (, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -424,8 +424,8 @@ layers:
   - Ctl+ RIGHT ARROW
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', type: held}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - Ctl+ LEFT SHIFT
   - LEFT SHIFT
@@ -467,8 +467,8 @@ layers:
   - {t: '3', s: '#'}
   - '*'
   - )
-  - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
-  - {t: LEFT SHIFT, type: held}
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - {t: LEFT SHIFT, type: held alternate}
   - {t: Ctl+ LEFT SHIFT, type: held alternate}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
   - {t: '$$mdi:keyboard-return$$', type: held alternate}

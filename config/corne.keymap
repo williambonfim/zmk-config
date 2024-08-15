@@ -20,6 +20,8 @@
 
 &mt { flavor = "tap-preferred"; };
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -45,7 +47,7 @@
         };
 
         combo_shortcuts_layer {
-            bindings = <&tog 8>;
+            bindings = <&tog 3>;
             key-positions = <28 26>;
         };
 
@@ -98,7 +100,7 @@
         combo_delete_num_pad_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <10 0 14 8>;
+            layers = <10 0 14 3>;
             timeout-ms = <20>;
         };
 
@@ -184,7 +186,7 @@
         combo_esc_shortcuts {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
-            layers = <8>;
+            layers = <3>;
         };
 
         to_0_L {
@@ -280,6 +282,7 @@
         };
 
         /omit-if-no-ref/
+
         num_word: num_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
@@ -401,7 +404,7 @@
 &kp TAB     &mt LA(P) SLASH  &kp C           &kp L               &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E                 &kp A  &kp O    &kp SEMI
 &kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V                 &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                             &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 7 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
+                                             &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
             >;
 
             label = "BASE";
@@ -427,13 +430,24 @@
             >;
         };
 
+        SHORTCUT_LAYER_WIN {
+            bindings = <
+&kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &trans  &trans  &trans  &trans  &trans  &trans
+                                                     &ht0 10 0             &lt 9 ENTER           &kp LEFT_SHIFT    &trans  &trans  &trans
+            >;
+
+            label = "SHCT";
+        };
+
         BASE_COPY {
             label = "BASE_cp";
             bindings = <
 &kp TAB     &mt LA(P) SLASH  &kp C           &kp L               &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E                 &kp A  &kp O    &kp SEMI
 &kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V                 &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                             &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 7 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
+                                             &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
             >;
         };
 
@@ -463,7 +477,7 @@
 &kp TAB     &kp SLASH       &kp C           &kt L        &mt LG(A) M       &kp K       &kp Z                    &kp F      &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N      &kp E        &kp A  &kp O    &kp SEMI
 &kp DELETE  &kp PERIOD      &ht4 LG(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B                    &kp H      &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                            &lt 9 TAB    &lt 10 ENTER      &ht1 7 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
+                                            &lt 9 TAB    &lt 10 ENTER      &ht1 8 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
             >;
         };
 
@@ -476,17 +490,6 @@
             >;
 
             label = "FUNC";
-        };
-
-        SHORTCUT_LAYER_WIN {
-            bindings = <
-&kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &none  &none  &none  &none  &none  &none
-&kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &none  &none  &none  &none  &none  &none
-&kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &none  &none  &none  &none  &none  &none
-                                                     &ht0 10 0             &lt 9 ENTER           &kp LEFT_SHIFT    &none  &none  &none
-            >;
-
-            label = "SHCT";
         };
 
         NUM_PAD_LEFT {
@@ -567,7 +570,7 @@
 &kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y         &kp U                    &kp I         &kp O    &kp P     &kp BSPC
 &kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H         &kp J                    &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
 &kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N         &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
-                          &kp LEFT_GUI  &kp LCTRL  &lt 7 SPACE    &lt 10 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
+                          &kp LEFT_GUI  &kp LCTRL  &lt 8 SPACE    &lt 10 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
             >;
 
             label = "QWERT";
@@ -578,7 +581,7 @@
 &kp TAB     &kp Y           &kp C           &kp L        &kp M             &kp K          &kp Z                    &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N      &kp E      &kp A      &kp O    &kp SEMI
 &kp DELETE  &kp Q           &kp V           &kp W        &kp D             &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                                            &lt 10 TAB   &kp ENTER         &lt 7 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp SPACE
+                                            &lt 10 TAB   &kp ENTER         &lt 8 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp SPACE
             >;
 
             label = "ISRT_SS";
