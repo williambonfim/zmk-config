@@ -37,12 +37,12 @@ layers:
   - Y
   - X
   - )
-  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow'}
-  - {t: '$$mdi:keyboard-return$$', h: '&num_word 4'}
+  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 2'}
+  - {t: '$$mdi:keyboard-return$$', h: '&num_word 1'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&key_repeat', h: '&num_word 5'}
-  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow'}
+  - {t: '&key_repeat', h: '&num_word 4'}
+  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 5'}
   SMART_NUM_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -166,12 +166,12 @@ layers:
   - Y
   - X
   - )
-  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow'}
-  - {t: '$$mdi:keyboard-return$$', h: '&num_word 4'}
+  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 2'}
+  - {t: '$$mdi:keyboard-return$$', h: '&num_word 1'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&key_repeat', h: '&num_word 5'}
-  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow'}
+  - {t: '&key_repeat', h: '&num_word 4'}
+  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 5'}
   SMART_NUM_R:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
