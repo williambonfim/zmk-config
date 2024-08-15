@@ -100,7 +100,7 @@
         combo_delete_left {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <0 14 7 5>;
+            layers = <0 14 7 5 6>;
             timeout-ms = <20>;
         };
 
@@ -186,7 +186,7 @@
         combo_esc_shortcuts {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
-            layers = <7>;
+            layers = <6>;
         };
 
         to_0_L {

@@ -764,7 +764,7 @@ combos:
   l: [WB_LAYER, QWERT, SMART_NUM_L]
 - p: [15, 16]
   k: $$mdi:backspace-reverse-outline$$
-  l: [WB_LAYER, QWERT, MAC, SMART_NUM_R]
+  l: [WB_LAYER, QWERT, MAC, SMART_NUM_R, SHORTCUT_LAYER_WIN]
 - p: [14, 15]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_NUM_R, NUM_PAD_LEFT]
@@ -804,7 +804,7 @@ combos:
   l: [WB_LAYER, QWERT]
 - p: [14, 15]
   k: ESCAPE
-  l: [MAC]
+  l: [SHORTCUT_LAYER_WIN]
 - p: [38, 15]
   k: {t: WB_LAYER, h: toggle}
 - p: [39, 20]
