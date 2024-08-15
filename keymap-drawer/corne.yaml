@@ -358,10 +358,10 @@ layers:
   - F12
   - '&lu 11 RGB_COLOR_HSB_VAL(116,100,79)'
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {t: LEFT GUI, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LEFT ALT, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LEFT CONTROL, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LEFT SHIFT, h: '$$mdi:gesture-tap-hold$$'}
+  - '&mod_gui_dance'
+  - '&mod_alt_dance'
+  - '&mod_ctrl_dance'
+  - '&mod_shft_dance'
   - $$mdi:skip-next$$
   - RGB TOG
   - F4
