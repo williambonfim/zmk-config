@@ -47,7 +47,7 @@
         };
 
         combo_shortcuts_layer {
-            bindings = <&tog 3>;
+            bindings = <&tog 7>;
             key-positions = <28 26>;
         };
 
@@ -100,7 +100,7 @@
         combo_delete_num_pad_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <10 0 14 3>;
+            layers = <10 0 14 7>;
             timeout-ms = <20>;
         };
 
@@ -186,7 +186,7 @@
         combo_esc_shortcuts {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
-            layers = <3>;
+            layers = <7>;
         };
 
         to_0_L {
@@ -286,7 +286,7 @@
         num_word: num_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL BRACKTES>;
             ignore-numbers;
             label = "Smart Numpad Layer";
         };
@@ -388,6 +388,13 @@
             bindings = <&to 16 &bootloader>;
             label = "Dongle Bootloader";
         };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "BRACKETS";
+        };
     };
 
     keymap {
@@ -401,7 +408,7 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) SLASH  &kp C           &kp L               &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp TAB     &mt LA(P) SLASH  &mt LC(E) C     &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
 &kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E                 &kp A  &kp O    &kp SEMI
 &kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V                 &kp Y  &kp X    &kp RIGHT_PARENTHESIS
                                              &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
@@ -410,23 +417,53 @@
             label = "BASE";
         };
 
+        SMART_ARROW_L {
+            label = "ARROW_L";
+            bindings = <
+&trans  &trans          &trans          &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
         SMART_NUM_L {
             label = "SNUM_L";
             bindings = <
-&trans  &trans        &kp N7  &kp N8  &kp N9  &kp PLUS     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &brackets     &kp N7  &kp N8  &kp N9  &kp PLUS     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp N0       &trans  &trans  &trans  &trans  &trans  &trans
                               &trans  &trans  &trans       &trans  &trans  &trans
             >;
         };
 
-        SMART_ARROW_L {
-            label = "ARROW_L";
+        BASE_COPY {
+            label = "BASE_cp";
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans    &trans     &trans    &trans  &trans  &trans
+&trans  &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J     &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans       &trans            &trans    &trans  &trans  &trans
+            >;
+        };
+
+        SMART_ARROW_R {
+            label = "ARROW_R";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
+            >;
+        };
+
+        SMART_NUM_R {
+            label = "SNUM_R";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7     &kp N8  &kp N9  &brackets     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH     &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1     &kp N2  &kp N3  &kp ASTERISK  &trans
+                        &trans  &trans  &trans    &trans     &kp ENTER  &trans
             >;
         };
 
@@ -439,36 +476,6 @@
             >;
 
             label = "SHCT";
-        };
-
-        BASE_COPY {
-            label = "BASE_cp";
-            bindings = <
-&kp TAB     &mt LA(P) SLASH  &kp C           &kp L               &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E                 &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V                 &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                             &smart_arrow 2 TAB  &smart_num 1 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 4 0  &smart_arrow 5 SPACE
-            >;
-        };
-
-        SMART_NUM_R {
-            label = "SNUM_R";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7     &kp N8  &kp N9  &trans        &kp LEFT_PARENTHESIS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4     &kp N5  &kp N6  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
-                        &trans  &trans  &trans    &trans     &kp ENTER  &trans
-            >;
-        };
-
-        SMART_ARROW_R {
-            label = "ARROW_R";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans          &trans
-            >;
         };
 
         MAC_layer {
