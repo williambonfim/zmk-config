@@ -89,7 +89,7 @@
             key-positions = <27 28>;
             layers = <9 2>;
             require-prior-idle-ms = <125>;
-            timeout-ms = <60>;
+            timeout-ms = <20>;
         };
 
         combo_dot_right {
@@ -97,7 +97,7 @@
             key-positions = <31 32>;
             layers = <10 5>;
             require-prior-idle-ms = <125>;
-            timeout-ms = <60>;
+            timeout-ms = <20>;
         };
 
         combo_delete_right {
@@ -329,9 +329,7 @@
 
             mods = <(MOD_LSFT)>;
         };
-
-        /omit-if-no-ref/
-
+        
         num_word: num_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
