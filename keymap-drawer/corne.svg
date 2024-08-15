@@ -586,9 +586,8 @@ path.combo {
 <g transform="translate(408, 304) rotate(15.0)" class="key keypos-37">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-return"/>
-<a href="#NUM_PAD_RIGHT">
-<text x="0" y="34" class="key hold layer-activator"><tspan style="font-size: 62%">NUM_PAD…</tspan></text>
-</a></g>
+<text x="0" y="34" class="key hold"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
+</g>
 <g transform="translate(502, 320) rotate(30.0)" class="key keypos-38">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key"/>
 <text x="0" y="0" class="key tap">&amp;td0</text>
@@ -603,10 +602,10 @@ path.combo {
 </g>
 <g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">&amp;td2</text>
-<a href="#NUM_PAD_RIGHT">
-<text x="0" y="34" class="key hold layer-activator"><tspan style="font-size: 62%">NUM_PAD…</tspan></text>
-</a></g>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.5em" style="font-size: 62%">&amp;smart_…</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">5</tspan>
+</text>
+</g>
 <g transform="translate(880, 293)" class="key keypos-41">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
@@ -1011,11 +1010,9 @@ path.combo {
 <tspan x="0" dy="-0.5em">LEFT</tspan><tspan x="0" dy="1.0em">ALT</tspan>
 </text>
 </g>
-<g transform="translate(792, 304) rotate(-15.0)" class="key keypos-40">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 62%">&amp;num_wo…</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">5</tspan>
-</text>
+<g transform="translate(792, 304) rotate(-15.0)" class="key none keypos-40">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(880, 293)" class="key none keypos-41">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>

@@ -38,10 +38,10 @@ layers:
   - X
   - )
   - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_LEFT}
-  - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
+  - {t: '$$mdi:keyboard-return$$', h: '&num_word 4'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&td2', h: NUM_PAD_RIGHT}
+  - '&smart_num_rpt 5'
   - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   MAC:
   - $$mdi:keyboard-tab$$
@@ -127,7 +127,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - LEFT ALT
-  - '&num_word 5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SHORTCUT_LAYER_WIN:
   - Ctl+Gui+ F
