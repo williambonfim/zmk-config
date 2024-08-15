@@ -4282,8 +4282,8 @@ path.combo {
 <g transform="translate(0, 0)">
 <g transform="translate(40, 40)" class="key  combo-separate keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key  combo-separate"/>
-<a href="#MAC">
-<text x="0" y="0" class="key  combo-separate tap layer-activator">MAC</text>
+<a href="#SHORTCUT_LAYER_WIN">
+<text x="0" y="0" class="key  combo-separate tap layer-activator"><tspan style="font-size: 62%">SHORTCU…</tspan></text>
 </a><text x="0" y="34" class="key  combo-separate hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(20, 116)" class="key keypos-1">

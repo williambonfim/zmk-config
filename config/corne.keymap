@@ -47,7 +47,7 @@
         };
 
         combo_shortcuts_layer {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <28 26>;
         };
 

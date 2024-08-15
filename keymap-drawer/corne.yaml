@@ -741,7 +741,7 @@ combos:
 - p: [31, 32, 33]
   k: {t: SYMBOLS, h: '$$mdi:gesture-tap-hold$$'}
 - p: [28, 26]
-  k: {t: MAC, h: toggle}
+  k: {t: SHORTCUT_LAYER_WIN, h: toggle}
 - p: [14, 3, 16]
   k: {t: NUM_PAD_RIGHT, h: toggle}
 - p: [19, 8, 21]
