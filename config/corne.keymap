@@ -420,10 +420,10 @@
         SMART_ARROW_L {
             label = "ARROW_L";
             bindings = <
-&trans  &trans          &trans          &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans     &trans    &trans  &trans  &trans
+&trans  &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans     &trans    &trans  &trans  &trans
             >;
         };
 
@@ -450,10 +450,10 @@
         SMART_ARROW_R {
             label = "ARROW_R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans
-                        &trans  &trans  &trans    &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
 
