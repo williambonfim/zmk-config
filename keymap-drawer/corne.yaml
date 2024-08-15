@@ -26,7 +26,7 @@ layers:
   - O
   - {t: ;, s: ':'}
   - $$mdi:backspace-reverse-outline$$
-  - PERIOD
+  - {t: ., s: '>'}
   - {t: '&comma', h: Ctl+ X}
   - {t: W, h: Ctl+ C}
   - {t: D, h: Ctl+ V}
@@ -37,12 +37,12 @@ layers:
   - Y
   - X
   - )
-  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 2'}
-  - {t: '$$mdi:keyboard-return$$', h: '&num_word 1'}
+  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 1'}
+  - {t: '$$mdi:keyboard-return$$', h: '&num_word 2'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&key_repeat', h: '&num_word 4'}
-  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 5'}
+  - {t: '&key_repeat', h: '&num_word 5'}
+  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 4'}
   SMART_ARROW_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -57,9 +57,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - UP ARROW
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,10 +192,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - UP ARROW
-  - RIGHT ARROW
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - ESCAPE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
