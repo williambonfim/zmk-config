@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '&num_word 4'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - '&smart_num_rpt 5'
+  - {t: '&key_repeat', h: '&num_word 5'}
   - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   MAC:
   - $$mdi:keyboard-tab$$
