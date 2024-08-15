@@ -752,28 +752,28 @@ combos:
   k: {t: SYMBOLS, h: '$$mdi:gesture-tap-hold$$'}
 - p: [27, 28]
   k: PERIOD
-  l: [NUM_PAD_LEFT]
+  l: [NUM_PAD_LEFT, SMART_NUM_L]
 - p: [31, 32]
   k: PERIOD
-  l: [NUM_PAD_RIGHT]
+  l: [NUM_PAD_RIGHT, SMART_NUM_R]
 - p: [20, 21]
   k: $$mdi:backspace-reverse-outline$$
-  l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
+  l: [WB_LAYER, QWERT]
 - p: [19, 20]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [NUM_PAD_LEFT, WB_LAYER, QWERT]
+  l: [WB_LAYER, QWERT]
 - p: [15, 16]
   k: $$mdi:backspace-reverse-outline$$
-  l: [NUM_PAD_RIGHT, WB_LAYER, QWERT, MAC]
+  l: [WB_LAYER, QWERT, MAC]
 - p: [14, 15]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [NUM_PAD_RIGHT, WB_LAYER, QWERT]
+  l: [NUM_PAD_RIGHT, WB_LAYER, QWERT, SMART_NUM_R]
 - p: [15, 16]
   k: {t: '=', s: +}
-  l: [NUM_PAD_LEFT]
+  l: [NUM_PAD_LEFT, SMART_NUM_L]
 - p: [19, 20]
   k: {t: '=', s: +}
-  l: [NUM_PAD_RIGHT]
+  l: [NUM_PAD_RIGHT, SMART_NUM_R]
 - p: [14, 16]
   k: {t: NAVIGATION_LAYER_WIN, h: '$$mdi:gesture-tap-hold$$'}
 - p: [36, 41]
@@ -809,3 +809,6 @@ combos:
   k: {t: WB_LAYER, h: toggle}
 - p: [39, 20]
   k: {t: WB_LAYER, h: toggle}
+- p: [20, 21]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [WB_LAYER, QWERT]

@@ -74,53 +74,53 @@
         combo_dot_left {
             bindings = <&kp PERIOD>;
             key-positions = <27 28>;
-            layers = <9>;
+            layers = <9 2>;
         };
 
         combo_dot_right {
             bindings = <&kp PERIOD>;
             key-positions = <31 32>;
-            layers = <10>;
+            layers = <10 5>;
         };
 
-        combo_delete_num_pad_left {
+        combo_delete_left {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
-            layers = <9 0 14>;
+            layers = <0 14>;
             timeout-ms = <20>;
         };
 
-        combo_backspace_num_pad_left {
+        combo_backspace_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            layers = <9 0 14>;
+            layers = <0 14>;
             timeout-ms = <20>;
         };
 
-        combo_delete_num_pad_right {
+        combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <10 0 14 7>;
+            layers = <0 14 7>;
             timeout-ms = <20>;
         };
 
-        combo_backspace_num_pad_right {
+        combo_backspace_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <10 0 14>;
+            layers = <10 0 14 5>;
             timeout-ms = <20>;
         };
 
         combo_equal_left {
             bindings = <&kp EQUAL>;
             key-positions = <15 16>;
-            layers = <9>;
+            layers = <9 2>;
         };
 
         combo_equal_right {
             bindings = <&kp EQUAL>;
             key-positions = <19 20>;
-            layers = <10>;
+            layers = <10 5>;
         };
 
         combo_navigation_layer {
@@ -199,6 +199,13 @@
             bindings = <&to 0>;
             key-positions = <39 20>;
             timeout-ms = <20>;
+        };
+
+        combo_backspace_left_num {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 21>;
+            timeout-ms = <20>;
+            layers = <0 14>;
         };
     };
 
