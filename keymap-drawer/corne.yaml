@@ -3,7 +3,7 @@ layers:
   WB_LAYER:
   - $$mdi:keyboard-tab$$
   - {t: /, h: Alt+ P, s: '?'}
-  - {t: C, h: Ctl+ E}
+  - {t: C, h: Gui+ E}
   - {t: L, h: Ctl+ F}
   - {t: M, h: Ctl+ A}
   - K
