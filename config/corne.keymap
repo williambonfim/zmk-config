@@ -41,67 +41,77 @@
         combo_num_pad_left_layer {
             bindings = <&tog 10>;
             key-positions = <19 20 21>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_settings_layer {
             bindings = <&tog 11>;
             key-positions = <1 2 3 4>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_symbols_layer {
             bindings = <&sl 12>;
             key-positions = <31 32 33>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_shortcuts_layer {
             bindings = <&tog 6>;
             key-positions = <28 26>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_num_pad_right_layer_Lhand {
             bindings = <&tog 10>;
             key-positions = <14 3 16>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_num_pad_left_layer_Rhand {
             bindings = <&tog 9>;
             key-positions = <19 8 21>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_default_layer {
             bindings = <&to 0>;
             key-positions = <38 39>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_symbols_layer_sticky {
             bindings = <&sl 12>;
             key-positions = <31 33>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_dot_left {
             bindings = <&kp PERIOD>;
             key-positions = <27 28>;
             layers = <9 2>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_dot_right {
             bindings = <&kp PERIOD>;
             key-positions = <31 32>;
             layers = <10 5>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
             layers = <0 14 2>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_backspace_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             layers = <0 14 2>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_delete_left {
@@ -115,103 +125,114 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
             layers = <0 14 2 5 9>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_equal_left {
             bindings = <&kp EQUAL>;
             key-positions = <15 16>;
             layers = <9 2>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_equal_right {
             bindings = <&kp EQUAL>;
             key-positions = <19 20>;
             layers = <10 5>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_navigation_layer {
             bindings = <&sl 13>;
             key-positions = <14 16>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_QWERTY_layer {
             bindings = <&tog 14>;
             key-positions = <36 41>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_left_arrow_Lhand {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <26 27>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_right_arrow_Lhand {
             bindings = <&kp RIGHT>;
             key-positions = <27 28>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_up_arrow_Lhand {
             bindings = <&kp UP_ARROW>;
             key-positions = <3 4>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_down_arrow_Lhand {
             bindings = <&kp DOWN>;
             key-positions = <3 2>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_left_arrow_Rhand {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <32 31>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_right_arrow_Rhand {
             bindings = <&kp RIGHT>;
             key-positions = <32 33>;
             layers = <0 14>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_up_arrow_Rhand {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8>;
             layers = <0 14>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_down_arrow_Rhand {
             bindings = <&kp DOWN>;
             key-positions = <8 9>;
             layers = <0 14>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_esc_shortcuts {
             bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
             layers = <6>;
+            require-prior-idle-ms = <125>;
         };
 
         to_0_L {
             bindings = <&to 0>;
             key-positions = <38 15>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         to_0_R {
             bindings = <&to 0>;
             key-positions = <39 20>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
         };
 
         combo_backspace_right_num {
             bindings = <&kp BACKSPACE>;
             key-positions = <21 8>;
-            timeout-ms = <20>;
+            require-prior-idle-ms = <125>;
             layers = <5>;
         };
     };
