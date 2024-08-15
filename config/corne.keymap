@@ -216,6 +216,7 @@
             #binding-cells = <1>;
             continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
             ignore-numbers;
+            label = "Smart Numpad Layer";
         };
 
         ht0: mo_to {
@@ -286,6 +287,34 @@
             label = "REPEAT_ENTER";
             #binding-cells = <0>;
             bindings = <&key_repeat>, <&kp ENTER>;
+        };
+
+        num_arrow: num_arrow {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <UP DOWN RIGHT LEFT>;
+            ignore-numbers;
+            label = "Smart arrow layer";
+        };
+
+        smart_num: smart_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Smart Numpad";
+            bindings = <&num_word>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "balanced";
+        };
+
+        smart_num_rpt: smart_num_rpt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Smart Numpad+Rpt";
+            bindings = <&num_word>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "balanced";
         };
     };
 
@@ -360,10 +389,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB     &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K       &kp Z        &kp F     &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P        &kp N     &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B        &kp H     &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                             &lt 4 TAB    &lt 5 ENTER       &ht1 2 0    &smart_shft  &ht3 5 0  &lt 4 SPACE
+&kp TAB     &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D         &kp J       &kp B        &kp H               &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                             &lt 4 TAB    &smart_num 0 ENTER  &ht1 2 0    &smart_shft  &smart_num_rpt 0 0  &lt 4 SPACE
             >;
 
             label = "BASE";
@@ -381,10 +410,10 @@
 
         FUNCTION_KEYS {
             bindings = <
-&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &to 10           &kp F7       &kp F8  &kp F9  &kp F12  &lu 6 RGB_COLOR_HSB_VAL(116,100,79)
-&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4       &kp F5  &kp F6  &kp F11  &to 11
-&out OUT_TOG  &kp LC(Z)     &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 6            &kp F1       &kp F2  &kp F3  &kp F10  &flash
-                                              &none              &none            &none             &kp LEFT_ALT     &num_word 5  &none
+&bt BT_SEL 0  &kp F2        &kp F3            &kp F4             &kp F5           &kp F8            &to 10           &kp F7  &kp F8  &kp F9  &kp F12  &lu 6 RGB_COLOR_HSB_VAL(116,100,79)
+&bt BT_SEL 1  &sk LEFT_GUI  &sk LEFT_ALT      &sk LEFT_CONTROL   &sk LEFT_SHIFT   &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to 11
+&out OUT_TOG  &kp LC(Z)     &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 6            &kp F1  &kp F2  &kp F3  &kp F10  &flash
+                                              &none              &none            &none             &kp LEFT_ALT     &none   &none
             >;
 
             label = "FUNC";
