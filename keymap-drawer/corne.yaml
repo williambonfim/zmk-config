@@ -25,7 +25,7 @@ layers:
   - A
   - O
   - {t: ;, s: ':'}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-caps$$
   - {t: ., s: '>'}
   - {t: '&comma', h: Ctl+ X}
   - {t: W, h: Ctl+ C}
