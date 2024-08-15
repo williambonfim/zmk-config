@@ -83,31 +83,31 @@
             layers = <10 5>;
         };
 
-        combo_delete_left {
-            bindings = <&kp DELETE>;
-            key-positions = <20 21>;
-            layers = <0 14>;
-            timeout-ms = <20>;
-        };
-
-        combo_backspace_left {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
-            layers = <0 14>;
-            timeout-ms = <20>;
-        };
-
         combo_delete_right {
             bindings = <&kp DELETE>;
-            key-positions = <15 16>;
-            layers = <0 14 7>;
+            key-positions = <20 21>;
+            layers = <0 14 2>;
             timeout-ms = <20>;
         };
 
         combo_backspace_right {
             bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            layers = <0 14 2>;
+            timeout-ms = <20>;
+        };
+
+        combo_delete_left {
+            bindings = <&kp DELETE>;
+            key-positions = <15 16>;
+            layers = <0 14 7 5>;
+            timeout-ms = <20>;
+        };
+
+        combo_backspace_left {
+            bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <10 0 14 5>;
+            layers = <0 14 2 5 9>;
             timeout-ms = <20>;
         };
 
@@ -201,11 +201,11 @@
             timeout-ms = <20>;
         };
 
-        combo_backspace_left_num {
+        combo_backspace_right_num {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
             timeout-ms = <20>;
-            layers = <0 14>;
+            layers = <5>;
         };
     };
 
