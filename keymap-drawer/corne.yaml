@@ -12,7 +12,7 @@ layers:
   - U
   - Q
   - {t: '''', s: '"'}
-  - (
+  - '&brackets'
   - $$mdi:keyboard-esc$$
   - {t: I, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
@@ -36,7 +36,7 @@ layers:
   - V
   - Y
   - X
-  - )
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 1'}
   - {t: '$$mdi:keyboard-return$$', h: '&num_word 2'}
   - {t: '&td0', h: FUNCTION_KEYS}
