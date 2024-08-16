@@ -381,6 +381,8 @@
             label = "MOD_GUI_DANCE";
             #binding-cells = <0>;
             bindings = <&sk LEFT_GUI>, <&kt LEFT_GUI>;
+
+            tapping-term-ms = <300>;
         };
 
         mod_alt_dance: mod_alt_dance {
@@ -388,6 +390,8 @@
             label = "MOD_ALT_DANCE";
             #binding-cells = <0>;
             bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+
+            tapping-term-ms = <300>;
         };
 
         mod_ctrl_dance: mod_ctrl_dance {
@@ -395,6 +399,8 @@
             label = "MOD_CTRL_DANCE";
             #binding-cells = <0>;
             bindings = <&sk LEFT_CONTROL>, <&kt LEFT_CONTROL>;
+
+            tapping-term-ms = <300>;
         };
 
         mod_shft_dance: mod_shft_dance {
@@ -402,6 +408,8 @@
             label = "MOD_SHFT_DANCE";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&kt LEFT_SHIFT>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -495,10 +503,10 @@
         SMART_ARROW_L {
             label = "ARROW_L";
             bindings = <
-&trans  &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans     &trans    &trans  &trans  &trans
+&trans  &trans    &trans    &kt LEFT_CONTROL  &kt LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP            &kp RIGHT       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans            &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans            &trans          &trans    &trans  &trans  &trans
             >;
         };
 
@@ -525,10 +533,10 @@
         SMART_ARROW_R {
             label = "ARROW_R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LEFT_SHIFT  &kt LEFT_CONTROL  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT        &kp DOWN          &kp UP  &kp RIGHT  &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans            &trans  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
 
