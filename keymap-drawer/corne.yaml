@@ -45,8 +45,8 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 4'}
   SMART_ARROW_L:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LEFT GUI, h: toggle}
+  - {t: LEFT ALT, h: toggle}
   - {t: LEFT CONTROL, h: toggle}
   - {t: LEFT SHIFT, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -182,8 +182,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LEFT SHIFT, h: toggle}
   - {t: LEFT CONTROL, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LEFT ALT, h: toggle}
+  - {t: LEFT GUI, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -758,16 +758,16 @@ combos:
   l: [NUM_PAD_RIGHT, SMART_NUM_R]
 - p: [20, 21]
   k: $$mdi:backspace-reverse-outline$$
-  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_ARROW_R]
+  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_ARROW_R, SMART_ARROW_L]
 - p: [19, 20]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_ARROW_R]
+  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_ARROW_R, SMART_ARROW_L]
 - p: [15, 16]
   k: $$mdi:backspace-reverse-outline$$
-  l: [WB_LAYER, QWERT, MAC, SMART_NUM_R, SHORTCUT_LAYER_WIN, SMART_ARROW_L]
+  l: [WB_LAYER, QWERT, MAC, SMART_NUM_R, SHORTCUT_LAYER_WIN, SMART_ARROW_L, SMART_ARROW_R]
 - p: [14, 15]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_NUM_R, NUM_PAD_LEFT, SMART_ARROW_L]
+  l: [WB_LAYER, QWERT, SMART_NUM_L, SMART_NUM_R, NUM_PAD_LEFT, SMART_ARROW_L, SMART_ARROW_R]
 - p: [15, 16]
   k: {t: '=', s: +}
   l: [NUM_PAD_LEFT, SMART_NUM_L]
