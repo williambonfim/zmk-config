@@ -341,7 +341,7 @@
         num_arrow: num_arrow {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <UP DOWN RIGHT LEFT LCONTROL LSHIFT>;
+            continue-list = <UP DOWN RIGHT LEFT LEFT_CONTROL LEFT_SHIFT>;
             ignore-numbers;
             label = "Smart arrow layer";
         };
