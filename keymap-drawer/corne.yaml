@@ -389,7 +389,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM_PAD_LEFT:
   - {t: (, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&brackets'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -441,7 +441,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&brackets'
   - (
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
