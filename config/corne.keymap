@@ -411,6 +411,15 @@
 
             tapping-term-ms = <300>;
         };
+
+        smrt_num_arrw: smart_num_arrw {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Smart Numpad and Arrowpad";
+            #binding-cells = <0>;
+            bindings = <&num_word>, <&num_arrow>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
@@ -491,10 +500,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB   &mt LA(P) SLASH  &mt LG(E) C     &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U                 &kp Q  &kp SQT  &brackets
-&kp ESC   &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E                 &kp A  &kp O    &kp SEMI
-&kp CAPS  &kp DOT          &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V                 &kp Y  &kp X    &kp BACKSPACE
-                                           &smart_arrow 1 TAB  &smart_num 2 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 5 0  &smart_arrow 4 SPACE
+&kp TAB   &mt LA(P) SLASH  &mt LG(E) C     &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U           &kp Q  &kp SQT  &brackets
+&kp ESC   &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E           &kp A  &kp O    &kp SEMI
+&kp CAPS  &kp DOT          &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V           &kp Y  &kp X    &kp BACKSPACE
+                                           &smart_arrow 1 TAB  &smart_num 2 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 5 0  &smrt_num_arrw
             >;
 
             label = "BASE";

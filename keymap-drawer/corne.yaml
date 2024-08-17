@@ -42,7 +42,7 @@ layers:
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '&key_repeat', h: '&num_word 5'}
-  - {t: '$$mdi:keyboard-space$$', h: '&num_arrow 4'}
+  - '&smrt_num_arrw'
   SMART_ARROW_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LEFT GUI, h: toggle}
