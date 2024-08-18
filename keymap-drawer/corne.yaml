@@ -13,7 +13,7 @@ layers:
   - Q
   - {t: '''', s: '"'}
   - '&brackets'
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - {t: I, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
