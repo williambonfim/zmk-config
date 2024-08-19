@@ -14,10 +14,10 @@ layers:
   - {t: '''', s: '"'}
   - '&brackets'
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
-  - {t: I, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
+  - {t: I, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: LEFT SHIFT}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - P
   - N
@@ -45,10 +45,10 @@ layers:
   - '&smrt_num_arrw'
   SMART_ARROW_L:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LEFT GUI, h: toggle}
-  - {t: LEFT ALT, h: toggle}
-  - {t: LEFT CONTROL, h: toggle}
-  - {t: LEFT SHIFT, h: toggle}
+  - {t: LGUI, h: toggle}
+  - {t: '$$mdi:apple-keyboard-option$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-control$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -180,10 +180,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LEFT SHIFT, h: toggle}
-  - {t: LEFT CONTROL, h: toggle}
-  - {t: LEFT ALT, h: toggle}
-  - {t: LEFT GUI, h: toggle}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-control$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-option$$', h: toggle}
+  - {t: LGUI, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

@@ -506,10 +506,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB   &mt LA(P) SLASH  &mt LG(E) C     &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U           &kp Q  &kp SQT  &brackets
-&gresc    &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R         &mt LEFT_SHIFT T    &kp G       &kp P        &kp N               &kp E           &kp A  &kp O    &kp SEMI
-&kp CAPS  &kp DOT          &ht4 LC(X) 0    &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V           &kp Y  &kp X    &kp BACKSPACE
-                                           &smart_arrow 1 TAB  &smart_num 2 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 5 0  &smrt_num_arrw
+&kp TAB   &mt LA(P) SLASH  &mt LG(E) C   &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U           &kp Q  &kp SQT  &brackets
+&gresc    &mt LGUI I       &mt LALT S    &mt LCTRL R         &mt LSHFT T         &kp G       &kp P        &kp N               &kp E           &kp A  &kp O    &kp SEMI
+&kp CAPS  &kp DOT          &ht4 LC(X) 0  &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V           &kp Y  &kp X    &kp BACKSPACE
+                                         &smart_arrow 1 TAB  &smart_num 2 ENTER  &ht1 8 0    &smart_shft  &smart_num_rpt 5 0  &smrt_num_arrw
             >;
 
             label = "BASE";
@@ -518,10 +518,10 @@
         SMART_ARROW_L {
             label = "ARROW_L";
             bindings = <
-&trans  &kt LEFT_GUI  &kt LEFT_ALT  &kt LEFT_CONTROL  &kt LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans            &trans          &trans    &trans  &trans  &trans
+&trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
 
@@ -548,10 +548,10 @@
         SMART_ARROW_R {
             label = "ARROW_R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LEFT_SHIFT  &kt LEFT_CONTROL  &kt LEFT_ALT  &kt LEFT_GUI  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT        &kp DOWN          &kp UP        &kp RIGHT     &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans            &trans        &trans        &trans
-                        &trans  &trans  &trans    &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans     &trans    &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans      &trans
             >;
         };
 
