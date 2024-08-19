@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     #- name: englmaxi
     #  url-base: https://github.com/englmaxi
     #- name: caksoylar
@@ -29,6 +31,11 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+
+    # Mouse movement
+    - name: zmk
+      revision: petejohanson
+      import: feat/pointers-move-scroll
 
     # modules
     #- name: zmk-rgbled-widget
