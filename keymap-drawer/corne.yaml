@@ -198,10 +198,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - ESCAPE
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc SCROLL_LEFT'
-  - '&msc SCROLL_DOWN'
-  - '&msc SCROLL_UP'
-  - '&msc SCROLL_RIGHT'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
