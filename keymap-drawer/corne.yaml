@@ -143,10 +143,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: I, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
+  - {t: I, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: LEFT SHIFT}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -297,7 +297,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: WB_LAYER, h: NUM_PAD_RIGHT}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -315,10 +315,10 @@ layers:
   - {t: '''', s: '"'}
   - (
   - $$mdi:keyboard-esc$$
-  - {t: I, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
+  - {t: I, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: LEFT SHIFT}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - P
   - N
@@ -341,7 +341,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_LEFT}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - {t: '&td0', h: FUNCTION_KEYS}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '&td2', h: NUM_PAD_RIGHT}
   - {t: '$$mdi:keyboard-space$$', h: NUM_PAD_LEFT}
   FUNCTION_KEYS:
@@ -384,7 +384,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - LEFT ALT
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM_PAD_LEFT:
@@ -396,7 +396,7 @@ layers:
   - +
   - PAGE UP
   - HOME
-  - UP ARROW
+  - $$mdi:arrow-up-bold$$
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -407,9 +407,9 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - PAGE DOWN
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - )
@@ -419,17 +419,17 @@ layers:
   - {t: '3', s: '#'}
   - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ LEFT ARROW
+  - Ctl+ $$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ RIGHT ARROW
+  - Ctl+ $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: held}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
-  - Ctl+ LEFT SHIFT
-  - LEFT SHIFT
-  - {t: LEFT CONTROL, type: held alternate}
+  - Ctl+ $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
   NUM_PAD_RIGHT:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -457,9 +457,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ LEFT ARROW
+  - Ctl+ $$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ RIGHT ARROW
+  - Ctl+ $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
   - {t: '1', s: '!'}
@@ -468,8 +468,8 @@ layers:
   - '*'
   - )
   - {t: '$$mdi:apple-keyboard-control$$', type: held}
-  - {t: LEFT SHIFT, type: held alternate}
-  - {t: Ctl+ LEFT SHIFT, type: held alternate}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
+  - {t: 'Ctl+ $$mdi:apple-keyboard-shift$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_LEFT}
   - {t: '$$mdi:keyboard-return$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
@@ -639,12 +639,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - )
-  - LEFT GUI
+  - LGUI
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-space$$', h: FUNCTION_KEYS}
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
-  - {t: LEFT SHIFT, h: '$$mdi:apple-keyboard-caps$$'}
-  - LEFT ALT
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
+  - $$mdi:apple-keyboard-option$$
   ISRT:
   - $$mdi:keyboard-tab$$
   - Y
@@ -659,10 +659,10 @@ layers:
   - {t: '''', s: '"'}
   - (
   - $$mdi:keyboard-esc$$
-  - {t: I, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
+  - {t: I, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: R, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: LEFT SHIFT}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - P
   - N
@@ -685,7 +685,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: NUM_PAD_RIGHT}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: FUNCTION_KEYS}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: LEFT SHIFT}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   bootloader:
@@ -779,25 +779,25 @@ combos:
 - p: [36, 41]
   k: {t: QWERT, h: toggle}
 - p: [26, 27]
-  k: LEFT ARROW
+  k: $$mdi:arrow-left-bold$$
   l: [WB_LAYER, QWERT]
 - p: [27, 28]
   k: $$mdi:arrow-right-bold$$
   l: [WB_LAYER, QWERT]
 - p: [3, 4]
-  k: UP ARROW
+  k: $$mdi:arrow-up-bold$$
   l: [WB_LAYER, QWERT]
 - p: [3, 2]
   k: $$mdi:arrow-down-bold$$
   l: [WB_LAYER, QWERT]
 - p: [32, 31]
-  k: LEFT ARROW
+  k: $$mdi:arrow-left-bold$$
   l: [WB_LAYER, QWERT]
 - p: [32, 33]
   k: $$mdi:arrow-right-bold$$
   l: [WB_LAYER, QWERT]
 - p: [7, 8]
-  k: UP ARROW
+  k: $$mdi:arrow-up-bold$$
   l: [WB_LAYER, QWERT]
 - p: [8, 9]
   k: $$mdi:arrow-down-bold$$

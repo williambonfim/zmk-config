@@ -160,7 +160,7 @@
         };
 
         combo_left_arrow_Lhand {
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>;
             key-positions = <26 27>;
             layers = <0 14>;
             require-prior-idle-ms = <125>;
@@ -176,7 +176,7 @@
         };
 
         combo_up_arrow_Lhand {
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp UP>;
             key-positions = <3 4>;
             layers = <0 14>;
             require-prior-idle-ms = <125>;
@@ -192,7 +192,7 @@
         };
 
         combo_left_arrow_Rhand {
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>;
             key-positions = <32 31>;
             layers = <0 14>;
             require-prior-idle-ms = <125>;
@@ -208,7 +208,7 @@
         };
 
         combo_up_arrow_Rhand {
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp UP>;
             key-positions = <7 8>;
             layers = <0 14>;
             require-prior-idle-ms = <125>;
@@ -311,7 +311,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "STICK_TOGGLE_ALT";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+            bindings = <&sk LALT>, <&kt LALT>;
         };
 
         td2: repeat_enter {
@@ -340,7 +340,7 @@
         num_arrow: num_arrow {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <UP DOWN RIGHT LEFT LEFT_GUI LEFT_ALT LEFT_CONTROL LEFT_SHIFT BACKSPACE DELETE>;
+            continue-list = <UP DOWN RIGHT LEFT LGUI LALT LCTRL LSHFT BACKSPACE DELETE>;
             ignore-numbers;
             label = "Smart arrow layer";
         };
@@ -379,7 +379,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOD_GUI_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_GUI>, <&kt LEFT_GUI>;
+            bindings = <&sk LGUI>, <&kt LGUI>;
 
             tapping-term-ms = <300>;
         };
@@ -388,7 +388,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOD_ALT_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+            bindings = <&sk LALT>, <&kt LALT>;
 
             tapping-term-ms = <300>;
         };
@@ -397,7 +397,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOD_CTRL_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_CONTROL>, <&kt LEFT_CONTROL>;
+            bindings = <&sk LCTRL>, <&kt LCTRL>;
 
             tapping-term-ms = <300>;
         };
@@ -406,7 +406,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOD_SHFT_DANCE";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&kt LEFT_SHIFT>;
+            bindings = <&sk LSHFT>, <&kt LSHFT>;
 
             tapping-term-ms = <300>;
         };
@@ -483,7 +483,7 @@
         brackets: brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "BRACKETS";
         };
 
@@ -539,7 +539,7 @@
             label = "BASE_cp";
             bindings = <
 &trans  &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt LEFT_GUI I   &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LGUI I       &mt LALT S      &mt LCTRL R  &mt LSHFT T       &kp G     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J     &trans  &trans  &trans  &trans  &trans  &trans
                                          &trans       &trans            &trans    &trans  &trans  &trans
             >;
@@ -570,7 +570,7 @@
 &kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &trans  &trans  &trans  &trans  &trans  &trans
-                                                     &ht0 10 0             &lt 9 ENTER           &kp LEFT_SHIFT    &trans  &trans  &trans
+                                                     &ht0 10 0             &lt 9 ENTER           &kp LSHFT         &trans  &trans  &trans
             >;
 
             label = "SHCT";
@@ -579,10 +579,10 @@
         MAC_layer {
             label = "baseM";
             bindings = <
-&kp TAB     &kp SLASH       &kp C           &kt L        &mt LG(A) M       &kp K       &kp Z                    &kp F      &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G       &kp P                    &kp N      &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD      &ht4 LG(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B                    &kp H      &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                            &lt 9 TAB    &lt 10 ENTER      &ht1 8 0    &mt LEFT_SHIFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
+&kp TAB     &kp SLASH       &kp C           &kt L        &mt LG(A) M       &kp K       &kp Z               &kp F      &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I      &mt LALT S      &mt LCTRL R  &mt LSHFT T       &kp G       &kp P               &kp N      &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD      &ht4 LG(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B               &kp H      &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                            &lt 9 TAB    &lt 10 ENTER      &ht1 8 0    &mt LSHFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
             >;
         };
 
@@ -591,7 +591,7 @@
 &bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8            &to 15           &kp F7  &kp F8  &kp F9  &kp F12  &lu 11 RGB_COLOR_HSB_VAL(116,100,79)
 &bt BT_SEL 1  &mod_gui_dance  &mod_alt_dance    &mod_ctrl_dance    &mod_shft_dance  &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to 16
 &out OUT_TOG  &kp LC(Z)       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to 11           &kp F1  &kp F2  &kp F3  &kp F10  &flash
-                                                &none              &none            &none             &kp LEFT_ALT     &none   &none
+                                                &none              &none            &none             &kp LALT         &none   &none
             >;
 
             label = "FUNC";
@@ -599,10 +599,10 @@
 
         NUM_PAD_LEFT {
             bindings = <
-&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS        &kp PAGE_UP         &kp HOME            &kp UP_ARROW      &kp END              &none  &none
-&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &kp PAGE_DOWN       &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none  &none
-&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0          &none               &kp LC(LEFT_ARROW)  &none             &kp LC(RIGHT_ARROW)  &none  &none
-                                             &none   &kp ENTER  &lt 10 ENTER    &kp LC(LEFT_SHIFT)  &kp LEFT_SHIFT      &kp LEFT_CONTROL
+&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS        &kp PAGE_UP    &kp HOME      &kp UP      &kp END        &none  &none
+&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &kp PAGE_DOWN  &kp LEFT      &kp DOWN    &kp RIGHT      &none  &none
+&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0          &none          &kp LC(LEFT)  &none       &kp LC(RIGHT)  &none  &none
+                                             &none   &kp ENTER  &lt 10 ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
             >;
 
             label = "NUM_L";
@@ -610,10 +610,10 @@
 
         NUM_PAD_RIGHT {
             bindings = <
-&none  &none  &kp HOME            &kp UP     &kp END              &kp PAGE_UP           &kp PLUS     &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
-&none  &none  &kp LEFT            &kp DOWN   &kp RIGHT            &kp PAGE_DOWN         &kp MINUS    &kp N4     &kp N5  &kp N6  &kp SLASH     &none
-&none  &none  &kp LC(LEFT_ARROW)  &none      &kp LC(RIGHT_ARROW)  &none                 &kp N0       &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
-                                  &kp RCTRL  &kp LEFT_SHIFT       &kp LC(LEFT_SHIFT)    &lt 9 ENTER  &kp ENTER  &none
+&none  &none  &kp HOME      &kp UP     &kp END        &kp PAGE_UP      &kp PLUS     &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
+&none  &none  &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS    &kp N4     &kp N5  &kp N6  &kp SLASH     &none
+&none  &none  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none            &kp N0       &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
+                            &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt 9 ENTER  &kp ENTER  &none
             >;
 
             label = "NUM_R";
@@ -672,10 +672,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y         &kp U                    &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D         &kp F      &kp G          &kp H         &kp J                    &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N         &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
-                          &kp LEFT_GUI  &kp LCTRL  &lt 8 SPACE    &lt 10 ENTER  &mt CAPSLOCK LEFT_SHIFT  &kp LEFT_ALT
+&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y         &kp U               &kp I         &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H         &kp J               &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
+&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N         &kp M               &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+                          &kp LGUI  &kp LCTRL  &lt 8 SPACE    &lt 10 ENTER  &mt CAPSLOCK LSHFT  &kp LALT
             >;
 
             label = "QWERT";
@@ -683,10 +683,10 @@
 
         ISRT {
             bindings = <
-&kp TAB     &kp Y           &kp C           &kp L        &kp M             &kp K          &kp Z                    &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LEFT_GUI I  &mt LEFT_ALT S  &mt LCTRL R  &mt LEFT_SHIFT T  &kp G          &kp P                    &kp N      &kp E      &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q           &kp V           &kp W        &kp D             &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                                            &lt 10 TAB   &kp ENTER         &lt 8 SPACE    &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp SPACE
+&kp TAB     &kp Y       &kp C       &kp L        &kp M        &kp K          &kp Z                    &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I  &mt LALT S  &mt LCTRL R  &mt LSHFT T  &kp G          &kp P                    &kp N      &kp E      &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q       &kp V       &kp W        &kp D        &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
+                                    &lt 10 TAB   &kp ENTER    &lt 8 SPACE    &mt LSHFT CAPSLOCK       &kp ENTER  &kp SPACE
             >;
 
             label = "ISRT_SS";
