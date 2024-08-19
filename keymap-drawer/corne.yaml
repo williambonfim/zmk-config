@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&arw_f_num'
+  - {t: '$$mdi:transfer$$', type: trans}
   SMART_NUM_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&brackets'
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&arw_f_num'
   BASE_COPY:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, h: Alt+ P, s: '?'}
