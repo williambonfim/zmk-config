@@ -488,9 +488,9 @@
         };
 
         arw_f_num: arw_f_num {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &num_arrow>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &num_arrow MACRO_PLACEHOLDER>;
             label = "Smart Arrow from Numpad";
         };
     };
