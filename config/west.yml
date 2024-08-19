@@ -33,7 +33,7 @@ manifest:
       revision: main
 
     # Mouse movement
-    - name: zmk-mouse
+    - name: zmk
       remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
