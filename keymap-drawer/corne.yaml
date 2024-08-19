@@ -257,7 +257,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&arw_f_num'
   SHORTCUT_LAYER_WIN:
   - Ctl+Gui+ F
   - {t: Ctl+Gui+ 1, s: Ctl+Gui+ !}
