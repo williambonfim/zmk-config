@@ -34,8 +34,8 @@ manifest:
 
     # Mouse movement
     - name: zmk
-      revision: petejohanson
-      import: feat/pointers-move-scroll
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
 
     # modules
     #- name: zmk-rgbled-widget
