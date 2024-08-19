@@ -538,20 +538,20 @@
         BASE_COPY {
             label = "BASE_cp";
             bindings = <
-&trans  &mt LA(P) SLASH  &kp C           &kp L        &mt LC(A) M       &kp K     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt LGUI I       &mt LALT S      &mt LCTRL R  &mt LSHFT T       &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PERIOD       &ht4 LC(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J     &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans       &trans            &trans    &trans  &trans  &trans
+&trans  &mt LA(P) SLASH  &kp C         &kp L        &mt LC(A) M  &kp K     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LGUI I       &mt LALT S    &mt LCTRL R  &mt LSHFT T  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PERIOD       &ht4 LC(X) 0  &mt LC(C) W  &mt LC(V) D  &kp J     &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans       &trans       &trans    &trans  &trans  &trans
             >;
         };
 
         SMART_ARROW_R {
             label = "ARROW_R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans     &trans    &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans      &trans
+&trans  &trans            &trans            &trans          &trans             &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
+&trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP    &mmv MOVE_RIGHT    &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
+&trans  &msc SCROLL_LEFT  &msc SCROLL_DOWN  &msc SCROLL_UP  &msc SCROLL_RIGHT  &trans    &trans  &trans      &trans     &trans    &trans     &trans
+                                            &trans          &trans             &trans    &trans  &trans      &trans
             >;
         };
 
@@ -579,10 +579,10 @@
         MAC_layer {
             label = "baseM";
             bindings = <
-&kp TAB     &kp SLASH       &kp C           &kt L        &mt LG(A) M       &kp K       &kp Z               &kp F      &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LGUI I      &mt LALT S      &mt LCTRL R  &mt LSHFT T       &kp G       &kp P               &kp N      &kp E        &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD      &ht4 LG(X) 0    &mt LC(C) W  &mt LC(V) D       &kp J       &kp B               &kp H      &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                            &lt 9 TAB    &lt 10 ENTER      &ht1 8 0    &mt LSHFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
+&kp TAB     &kp SLASH   &kp C         &kt L        &mt LG(A) M   &kp K       &kp Z               &kp F      &kp U        &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I  &mt LALT S    &mt LCTRL R  &mt LSHFT T   &kp G       &kp P               &kp N      &kp E        &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD  &ht4 LG(X) 0  &mt LC(C) W  &mt LC(V) D   &kp J       &kp B               &kp H      &kp V        &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+                                      &lt 9 TAB    &lt 10 ENTER  &ht1 8 0    &mt LSHFT CAPSLOCK  &ht3 10 0  &lt 9 SPACE
             >;
         };
 
@@ -599,9 +599,9 @@
 
         NUM_PAD_LEFT {
             bindings = <
-&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS        &kp PAGE_UP    &kp HOME      &kp UP      &kp END        &none  &none
-&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &kp PAGE_DOWN  &kp LEFT      &kp DOWN    &kp RIGHT      &none  &none
-&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0          &none          &kp LC(LEFT)  &none       &kp LC(RIGHT)  &none  &none
+&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS        &kp PAGE_UP    &kp HOME      &kp UP     &kp END        &none  &none
+&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &kp PAGE_DOWN  &kp LEFT      &kp DOWN   &kp RIGHT      &none  &none
+&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0          &none          &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none  &none
                                              &none   &kp ENTER  &lt 10 ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
             >;
 
@@ -672,9 +672,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y         &kp U               &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H         &kp J               &kp K         &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N         &kp M               &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y         &kp U               &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H         &kp J               &kp K      &kp L    &kp SQT   &kp LEFT_PARENTHESIS
+&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N         &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
                           &kp LGUI  &kp LCTRL  &lt 8 SPACE    &lt 10 ENTER  &mt CAPSLOCK LSHFT  &kp LALT
             >;
 
@@ -683,10 +683,10 @@
 
         ISRT {
             bindings = <
-&kp TAB     &kp Y       &kp C       &kp L        &kp M        &kp K          &kp Z                    &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LGUI I  &mt LALT S  &mt LCTRL R  &mt LSHFT T  &kp G          &kp P                    &kp N      &kp E      &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q       &kp V       &kp W        &kp D        &kp J          &kp B                    &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
-                                    &lt 10 TAB   &kp ENTER    &lt 8 SPACE    &mt LSHFT CAPSLOCK       &kp ENTER  &kp SPACE
+&kp TAB     &kp Y       &kp C       &kp L        &kp M        &kp K          &kp Z               &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I  &mt LALT S  &mt LCTRL R  &mt LSHFT T  &kp G          &kp P               &kp N      &kp E      &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q       &kp V       &kp W        &kp D        &kp J          &kp B               &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
+                                    &lt 10 TAB   &kp ENTER    &lt 8 SPACE    &mt LSHFT CAPSLOCK  &kp ENTER  &kp SPACE
             >;
 
             label = "ISRT_SS";
