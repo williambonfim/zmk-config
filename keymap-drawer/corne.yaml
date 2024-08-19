@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&arw_f_num'
   SMART_NUM_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&brackets'

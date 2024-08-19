@@ -518,10 +518,10 @@
         SMART_ARROW_L {
             label = "ARROW_L";
             bindings = <
-&trans  &kt LEFT_GUI  &kt LEFT_ALT  &kt LEFT_CONTROL  &kt LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans            &trans          &trans    &trans  &trans  &trans
+&trans  &kt LEFT_GUI  &kt LEFT_ALT  &kt LEFT_CONTROL  &kt LEFT_SHIFT  &trans    &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT       &trans    &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans      &trans  &trans  &trans
+                                    &trans            &trans          &trans    &trans  &trans  &arw_f_num
             >;
         };
 
