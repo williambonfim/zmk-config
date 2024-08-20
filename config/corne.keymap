@@ -253,6 +253,11 @@
             require-prior-idle-ms = <125>;
             layers = <5>;
         };
+
+        to_mouse {
+            bindings = <&to 6>;
+            key-positions = <4 5>;
+        };
     };
 
     behaviors {

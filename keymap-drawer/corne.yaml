@@ -290,10 +290,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc SCROLL_LEFT'
-  - '&msc SCROLL_DOWN'
-  - '&msc SCROLL_UP'
-  - '&msc SCROLL_LEFT'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -855,3 +855,5 @@ combos:
 - p: [21, 8]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [SMART_NUM_R]
+- p: [4, 5]
+  k: {t: MOUSE, h: toggle}
