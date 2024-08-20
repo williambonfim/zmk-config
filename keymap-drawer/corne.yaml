@@ -258,6 +258,49 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&arw_f_num 4'
+  MOUSE:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-control$$', h: toggle}
+  - {t: '$$mdi:apple-keyboard-option$$', h: toggle}
+  - {t: LGUI, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - ESCAPE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
   SHORTCUT_LAYER_WIN:
   - Ctl+Gui+ F
   - {t: Ctl+Gui+ 1, s: Ctl+Gui+ !}
@@ -351,12 +394,12 @@ layers:
   - F4
   - F5
   - F8
-  - {t: ISRT, h: toggle}
+  - {t: '16', h: toggle}
   - F7
   - F8
   - F9
   - F12
-  - '&lu 11 RGB_COLOR_HSB_VAL(116,100,79)'
+  - '&lu 12 RGB_COLOR_HSB_VAL(116,100,79)'
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - '&mod_gui_dance'
   - '&mod_alt_dance'
@@ -645,7 +688,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
   - $$mdi:apple-keyboard-option$$
-  ISRT:
+  '16':
   - $$mdi:keyboard-tab$$
   - Y
   - C
@@ -812,3 +855,5 @@ combos:
 - p: [21, 8]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [SMART_NUM_R]
+- p: [4, 5]
+  k: {t: MOUSE, h: toggle}

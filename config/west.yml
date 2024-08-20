@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     #- name: englmaxi
     #  url-base: https://github.com/englmaxi
     #- name: caksoylar
@@ -15,10 +17,10 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
+    #- name: zmk
+    #  remote: zmkfirmware
+    #  revision: main
+    #  import: app/west.yml
     
     # Auto Layer
     - name: zmk-auto-layer
@@ -29,6 +31,12 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+
+    # Mouse movement
+    - name: zmk
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
+      import: app/west.yml
 
     # modules
     #- name: zmk-rgbled-widget

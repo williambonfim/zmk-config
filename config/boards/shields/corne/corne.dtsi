@@ -6,6 +6,20 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
+#define MOUSE_KEYS
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1250  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100    // 10
+
+#include <dt-bindings/zmk/mouse.h>
+
+
+
+#ifdef MOUSE_KEYS
+#    define MS_ACT(key) &lt MSE key
+#else
+#    define MS_ACT(key) &kp key
+#endif
+
 / {
     chosen {
         zmk,matrix-transform = &default_transform;
