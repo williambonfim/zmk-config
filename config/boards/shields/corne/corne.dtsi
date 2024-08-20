@@ -12,8 +12,6 @@
 
 #include <dt-bindings/zmk/mouse.h>
 
-
-
 #ifdef MOUSE_KEYS
 #    define MS_ACT(key) &lt MSE key
 #else
