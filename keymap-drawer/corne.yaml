@@ -394,7 +394,7 @@ layers:
   - F4
   - F5
   - F8
-  - {t: ISRT, h: toggle}
+  - {t: '16', h: toggle}
   - F7
   - F8
   - F9
@@ -688,7 +688,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NUM_PAD_RIGHT}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
   - $$mdi:apple-keyboard-option$$
-  ISRT:
+  '16':
   - $$mdi:keyboard-tab$$
   - Y
   - C

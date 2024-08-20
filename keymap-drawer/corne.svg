@@ -2182,8 +2182,8 @@ path.combo {
 </g>
 <g transform="translate(760, 60)" class="key keypos-6">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<a href="#ISRT">
-<text x="0" y="0" class="key tap layer-activator">ISRT</text>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">16</text>
 </a><text x="0" y="34" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(840, 50)" class="key keypos-7">
@@ -3550,8 +3550,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 6278)" class="layer-ISRT">
-<text x="0" y="0" class="label" id="ISRT">ISRT</text>
+<g transform="translate(0, 6278)" class="layer-16">
+<text x="0" y="0" class="label" id="x_x">16</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 70)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
