@@ -111,7 +111,7 @@
         combo_dot_left {
             bindings = <&kp PERIOD>;
             key-positions = <27 28>;
-            layers = <NUML 2>;
+            layers = <NUML SNUL>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -119,7 +119,7 @@
         combo_dot_right {
             bindings = <&kp PERIOD>;
             key-positions = <31 32>;
-            layers = <NUMR 5>;
+            layers = <NUMR SNUR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -127,7 +127,7 @@
         combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
-            layers = <BASE QWER SNUL SARR 1>;
+            layers = <BASE QWER SNUL SARR SARL>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -135,7 +135,7 @@
         combo_backspace_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            layers = <BASE QWER SNUL SARR 1>;
+            layers = <BASE QWER SNUL SARR SARL>;
             timeout-ms = <20>;
         };
 
@@ -150,7 +150,7 @@
         combo_backspace_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <BASE QWER SNUL 5 NUML SARL SARR>;
+            layers = <BASE QWER SNUL SNUR NUML SARL SARR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -166,7 +166,7 @@
         combo_equal_right {
             bindings = <&kp EQUAL>;
             key-positions = <19 20>;
-            layers = <NUMR 5>;
+            layers = <NUMR SNUR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -270,7 +270,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <21 8>;
             require-prior-idle-ms = <125>;
-            layers = <5>;
+            layers = <SNUR>;
         };
 
         to_mouse {
@@ -535,10 +535,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB   &mt LA(P) SLASH  &mt LG(E) C   &mt LC(F) L         &mt LC(A) M         &kp K       &kp Z        &kp F               &kp U           &kp Q  &kp SQT  &brackets
-&gresc    &mt LGUI I       &mt LALT S    &mt LCTRL R         &mt LSHFT T         &kp G       &kp P        &kp N               &kp E           &kp A  &kp O    &kp SEMI
-&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W         &mt LC(V) D         &kp J       &kp B        &kp H               &kp V           &kp Y  &kp X    &kp BACKSPACE
-                                         &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw
+&kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F                  &kp U           &kp Q  &kp SQT  &brackets
+&gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N                  &kp E           &kp A  &kp O    &kp SEMI
+&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H                  &kp V           &kp Y  &kp X    &kp BACKSPACE
+                                            &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw
             >;
 
             label = "BASE";
@@ -587,10 +587,10 @@
         SMART_NUM_R {
             label = "SNUM_R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8        &kp N9  &brackets     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5        &kp N6  &kp SLASH     &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1  &kp N2        &kp N3  &kp ASTERISK  &trans
-                        &trans  &trans  &trans    &trans     &trans  &arw_f_num 4
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8           &kp N9  &brackets     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5           &kp N6  &kp SLASH     &kp ESCAPE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1  &kp N2           &kp N3  &kp ASTERISK  &trans
+                        &trans  &trans  &trans    &trans     &trans  &arw_f_num SARR
             >;
         };
 
@@ -606,9 +606,9 @@
 
         SHORTCUT_LAYER_WIN {
             bindings = <
-&kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))        &kp LG(LC(N9))        &kp LG(LC(N0))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))         &kp LC(LG(D))         &kp LC(LG(E))     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LG(F))  &kp LC(LG(N1))        &kp LC(LG(N2))  &kp LC(LG(NUMBER_3))       &kp LC(LG(NUMBER_4))    &kp LC(LG(N5))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LC(G))  &kp LC(LG(NUMBER_6))  &kp LC(LG(N7))  &kp LC(LG(N8))             &kp LG(LC(N9))          &kp LG(LC(N0))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LG(H))  &kp LC(LG(A))         &kp LC(LG(B))   &kp LC(LG(C))              &kp LC(LG(D))           &kp LC(LG(E))     &trans  &trans  &trans  &trans  &trans  &trans
                                                      &ht0 NUMR BASE             &lt NUML ENTER          &kp LSHFT         &trans  &trans  &trans
             >;
 
@@ -618,18 +618,18 @@
         MAC_layer {
             label = "baseM";
             bindings = <
-&kp TAB     &kp SLASH   &kp C         &kt L        &mt LG(A) M   &kp K       &kp Z               &kp F      &kp U         &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LGUI I  &mt LALT S    &mt LCTRL R  &mt LSHFT T   &kp G       &kp P               &kp N      &kp E         &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD  &ht4 LG(X) 0  &mt LC(C) W  &mt LC(V) D   &kp J       &kp B               &kp H      &kp V         &kp Y  &kp X    &kp RIGHT_PARENTHESIS
+&kp TAB     &kp SLASH   &kp C         &kt L          &mt LG(A) M     &kp K          &kp Z               &kp F        &kp U           &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I  &mt LALT S    &mt LCTRL R    &mt LSHFT T     &kp G          &kp P               &kp N        &kp E           &kp A  &kp O    &kp SEMI
+&kp DELETE  &kp PERIOD  &ht4 LG(X) 0  &mt LC(C) W    &mt LC(V) D     &kp J          &kp B               &kp H        &kp V           &kp Y  &kp X    &kp RIGHT_PARENTHESIS
                                       &lt NUML TAB   &lt NUMR ENTER  &ht1 FUNC 0    &mt LSHFT CAPSLOCK  &ht3 NUMR 0  &lt NUML SPACE
             >;
         };
 
         FUNCTION_KEYS {
             bindings = <
-&bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8            &to ISRT           &kp F7  &kp F8  &kp F9  &kp F12  &lu SETT RGB_COLOR_HSB_VAL(116,100,79)
+&bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8            &to ISRT         &kp F7  &kp F8  &kp F9  &kp F12  &lu SETT RGB_COLOR_HSB_VAL(116,100,79)
 &bt BT_SEL 1  &mod_gui_dance  &mod_alt_dance    &mod_ctrl_dance    &mod_shft_dance  &kp C_NEXT        &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to BOOT
-&out OUT_TOG  &kp LC(Z)       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to SETT           &kp F1  &kp F2  &kp F3  &kp F10  &flash
+&out OUT_TOG  &kp LC(Z)       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS    &to SETT         &kp F1  &kp F2  &kp F3  &kp F10  &flash
                                                 &none              &none            &none             &kp LALT         &none   &none
             >;
 
@@ -638,9 +638,9 @@
 
         NUM_PAD_LEFT {
             bindings = <
-&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS        &kp PAGE_UP    &kp HOME      &kp UP     &kp END        &none  &none
-&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &kp PAGE_DOWN  &kp LEFT      &kp DOWN   &kp RIGHT      &none  &none
-&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0          &none          &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none  &none
+&kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS          &kp PAGE_UP    &kp HOME      &kp UP     &kp END        &none  &none
+&none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS         &kp PAGE_DOWN  &kp LEFT      &kp DOWN   &kp RIGHT      &none  &none
+&kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0            &none          &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none  &none
                                              &none   &kp ENTER  &lt NUMR ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
             >;
 
@@ -649,9 +649,9 @@
 
         NUM_PAD_RIGHT {
             bindings = <
-&none  &none  &kp HOME      &kp UP     &kp END        &kp PAGE_UP      &kp PLUS      &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
-&none  &none  &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS     &kp N4     &kp N5  &kp N6  &kp SLASH     &none
-&none  &none  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none            &kp N0        &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
+&none  &none  &kp HOME      &kp UP     &kp END        &kp PAGE_UP      &kp PLUS        &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
+&none  &none  &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS       &kp N4     &kp N5  &kp N6  &kp SLASH     &none
+&none  &none  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none            &kp N0          &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
                             &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt NUML ENTER  &kp ENTER  &none
             >;
 
@@ -669,7 +669,7 @@
 &soft_off   &none         &none         &none              &out OUT_TOG      &ext_power EP_TOG    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI                  &rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_COLOR_HSB(0,0,100)     &rgb_ug RGB_COLOR_HSB(0,95,49)
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4         &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                  &rgb_ug RGB_BRD                  &rgb_ug RGB_BRI                    &none                              &rgb_ug RGB_SPI
 &none       &none         &none         &ext_power EP_OFF  &ext_power EP_ON  &none                &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(111,100,50)  &rgb_ug RGB_COLOR_HSB(263,100,50)  &rgb_ug RGB_SPD
-                                        &none              &none             &to BASE                &to BASE            &none                            &none
+                                        &none              &none             &to BASE             &to BASE         &none                            &none
             >;
 
             label = "SETT";
@@ -711,9 +711,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y         &kp U               &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H         &kp J               &kp K      &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N         &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
+&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T             &kp Y           &kp U               &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G             &kp H           &kp J               &kp K      &kp L    &kp SQT   &kp LEFT_PARENTHESIS
+&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B             &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
                           &kp LGUI  &kp LCTRL  &lt FUNC SPACE    &lt NUMR ENTER  &mt CAPSLOCK LSHFT  &kp LALT
             >;
 
@@ -722,9 +722,9 @@
 
         ISRT {
             bindings = <
-&kp TAB     &kp Y       &kp C       &kp L        &kp M        &kp K          &kp Z               &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LGUI I  &mt LALT S  &mt LCTRL R  &mt LSHFT T  &kp G          &kp P               &kp N      &kp E      &kp A      &kp O    &kp SEMI
-&kp DELETE  &kp Q       &kp V       &kp W        &kp D        &kp J          &kp B               &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
+&kp TAB     &kp Y       &kp C       &kp L          &kp M        &kp K             &kp Z               &kp F      &kp U      &kp COMMA  &kp SQT  &kp LEFT_PARENTHESIS
+&kp ESC     &mt LGUI I  &mt LALT S  &mt LCTRL R    &mt LSHFT T  &kp G             &kp P               &kp N      &kp E      &kp A      &kp O    &kp SEMI
+&kp DELETE  &kp Q       &kp V       &kp W          &kp D        &kp J             &kp B               &kp H      &kp FSLH   &kp DOT    &kp X    &kp RIGHT_PARENTHESIS
                                     &lt NUMR TAB   &kp ENTER    &lt FUNC SPACE    &mt LSHFT CAPSLOCK  &kp ENTER  &kp SPACE
             >;
 
