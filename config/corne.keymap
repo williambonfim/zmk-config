@@ -46,9 +46,17 @@
 
 &sk { quick-release; };
 
-&mmv { time-to-max-speed-ms = <500>; };
+&mmv {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <1500>;
+  delay-ms = <0>;
+};
 
-&msc { time-to-max-speed-ms = <40>; };
+&msc {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <5000>;
+  delay-ms = <0>;
+};
 
 / {
     combos {
