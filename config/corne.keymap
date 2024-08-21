@@ -369,7 +369,7 @@
         num_word: num_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL LEFT_PARENTHESIS RIGHT_PARENTHESIS LEFT>;
+            continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL LEFT_PARENTHESIS RIGHT_PARENTHESIS LEFT X>;
             ignore-numbers;
             label = "Smart Numpad Layer";
         };
