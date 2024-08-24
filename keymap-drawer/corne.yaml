@@ -855,5 +855,5 @@ combos:
 - p: [21, 8]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [SMART_NUM_R]
-- p: [5, 16]
+- p: [4, 17]
   k: {t: MOUSE, h: toggle}
