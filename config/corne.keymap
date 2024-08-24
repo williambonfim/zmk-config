@@ -283,7 +283,7 @@
 
         to_mouse {
             bindings = <&to MOUS>;
-            key-positions = <4 5>;
+            key-positions = <5 16>;
         };
     };
 
