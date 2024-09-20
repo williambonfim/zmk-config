@@ -11,7 +11,7 @@ layers:
   - F
   - U
   - Q
-  - {t: '''', s: '"'}
+  - {t: '''', h: '!', s: '"'}
   - '&brackets'
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - {t: I, h: LGUI}
