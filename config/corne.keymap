@@ -553,7 +553,7 @@
         };
 
         SMART_ARROW_L {
-            label = "ARROW_L";
+            label = "ARW_L";
             bindings = <
 &trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -563,7 +563,7 @@
         };
 
         SMART_NUM_L {
-            label = "SNUM_L";
+            label = "NUM_L";
             bindings = <
 &trans            &brackets       &kp N7  &kp N8           &kp N9  &kp PLUS     &trans  &trans  &trans        &trans  &trans  &trans
 &mt COMMA ESCAPE  &kp SLASH       &kp N4  &kp N5           &kp N6  &kp MINUS    &trans  &trans  &trans        &trans  &trans  &trans
@@ -583,7 +583,7 @@
         };
 
         SMART_ARROW_R {
-            label = "ARROW_R";
+            label = "ARW_R";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
@@ -593,7 +593,7 @@
         };
 
         SMART_NUM_R {
-            label = "SNUM_R";
+            label = "NUM_R";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8           &kp N9  &brackets       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5           &kp N6  &kp SLASH       &mt COMMA ESCAPE
@@ -652,7 +652,7 @@
                                              &none   &kp ENTER  &lt NUMR ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
             >;
 
-            label = "NUM_L";
+            label = "NUML";
         };
 
         NUM_PAD_RIGHT {
@@ -663,7 +663,7 @@
                             &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt NUML ENTER  &kp ENTER  &none
             >;
 
-            label = "NUM_R";
+            label = "NUMR";
         };
 
         SETTINGS {
