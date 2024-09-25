@@ -452,7 +452,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Smart Numpad and Arrowpad";
             #binding-cells = <0>;
-            bindings = <&num_word SNUR>, <&num_arrow SARR>;
+            bindings = <&num_word SARR>, <&num_arrow SNUR>;
 
             tapping-term-ms = <300>;
         };
@@ -543,10 +543,10 @@
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
 
             bindings = <
-&kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F                  &kp U                     &kp Q  &mt EXCLAMATION SQT  &brackets
-&gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N                  &kp E                     &kp A  &kp O                &kp SEMI
-&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H                  &kp V                     &kp Y  &kp X                &kp BACKSPACE
-                                            &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw SARL SNUL
+&kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F                  &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
+&gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N                  &kp E           &kp A  &kp O                &kp SEMI
+&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H                  &kp V           &kp Y  &kp X                &kp BACKSPACE
+                                            &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw 
             >;
 
             label = "BASE";
