@@ -530,6 +530,13 @@
             bindings = <&to BASE &macro_param_1to1 &num_arrow MACRO_PLACEHOLDER>;
             label = "Smart Arrow from Numpad";
         };
+
+        n_a: n_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp SLASH &kp A>;
+            label = "N_A";
+        };
     };
 
     keymap {
@@ -546,7 +553,7 @@
 &kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F                  &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
 &gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N                  &kp E           &kp A  &kp O                &kp SEMI
 &kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H                  &kp V           &kp Y  &kp X                &kp BACKSPACE
-                                            &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw 
+                                            &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw
             >;
 
             label = "BASE";
@@ -730,10 +737,10 @@
 
         ISRT {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&none     &none  &none     &none   &none  &none    &none  &none  &none  &none  &none  &none
+&none     &kp N  &kp DOWN  &kp UP  &kp Y  &none    &none  &none  &none  &none  &none  &none
+&kp CAPS  &none  &none     &none   &n_a   &none    &none  &none  &none  &none  &none  &none
+                           &none   &none  &none    &none  &none  &none
             >;
 
             label = "ISRT_SS";
