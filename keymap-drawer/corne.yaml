@@ -405,7 +405,7 @@ layers:
   - '&mod_alt_dance'
   - '&mod_ctrl_dance'
   - '&mod_shft_dance'
-  - $$mdi:skip-next$$
+  - Ctl+Sft+ U
   - RGB TOG
   - F4
   - F5
@@ -417,7 +417,7 @@ layers:
   - PLAY PAUSE
   - VOLUME DOWN
   - VOLUME UP
-  - PREVIOUS
+  - $$mdi:skip-next$$
   - {t: SETTINGS, h: toggle}
   - F1
   - F2
