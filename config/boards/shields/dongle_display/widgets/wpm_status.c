@@ -12,9 +12,9 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/events/wpm_state_changed.h>
 #include <zmk/event_manager.h>
 #include <zmk/endpoints.h>
-//#include <zmk/wpm.h>
+#include <zmk/wpm.h>
 
-#include "wpm_status.h"
+//#include "wpm_status.h"
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
