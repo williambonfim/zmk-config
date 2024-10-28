@@ -11,6 +11,7 @@
 #include "widgets/layer_status.h"
 #include "widgets/output_status.h"
 #include "widgets/hid_indicators.h"
+
 #include "widgets/wpm_status.h"
 
 #include <zephyr/logging/log.h>
@@ -62,8 +63,8 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_align_to(zmk_widget_layer_status_obj(&layer_status_widget), zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_OUT_TOP_LEFT, 0, -15);
 
     zmk_widget_wpm_status_init(&wpm_status_widget, screen);
-    //lv_obj_align(zmk_widget_wpm_status_obj(&wpm_status_widget), NULL, LV_ALIGN_IN_BOTTOM_RIGHT, 0, 0);
-    lv_obj_align_to(zmk_widget_layer_status_obj(&wpm_status_widget), zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
+    lv_obj_align(zmk_widget_wpm_status_obj(&wpm_status_widget), LV_ALIGN_IN_BOTTOM_RIGHT, 0, 0);
+    //lv_obj_align_to(zmk_widget_layer_status_obj(&wpm_status_widget), zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
 
     zmk_widget_dongle_battery_status_init(&dongle_battery_status_widget, screen);
     lv_obj_align(zmk_widget_dongle_battery_status_obj(&dongle_battery_status_widget), LV_ALIGN_TOP_RIGHT, 0, 0);
