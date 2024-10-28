@@ -16,12 +16,3 @@ struct zmk_widget_bongo_cat {
 
 int zmk_widget_bongo_cat_init(struct zmk_widget_bongo_cat *widget, lv_obj_t *parent);
 lv_obj_t *zmk_widget_bongo_cat_obj(struct zmk_widget_bongo_cat *widget);
-
-// adding wpm_widget
-struct zmk_widget_wpm_status {
-    sys_snode_t node;
-    lv_obj_t *obj;
-};
-
-int zmk_widget_wpm_status_init(struct zmk_widget_wpm_status *widget, lv_obj_t *parent);
-lv_obj_t *zmk_widget_wpm_status_obj(struct zmk_widget_wpm_status *widget);
