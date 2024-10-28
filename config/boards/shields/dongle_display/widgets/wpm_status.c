@@ -6,7 +6,7 @@
 
 #include <device.h>
 #include <init.h>
-#include <kernel.h>
+#include <zephyr/kernel.h>
 
 #include <logging/log.h>
 
