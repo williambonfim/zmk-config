@@ -30,8 +30,8 @@
 #define SETT 12
 #define SYMB 13
 #define NAV 14
-#define QWER 15
-#define ISRT 16
+//#define QWER 15
+#define CHECK 16
 #define BOOT 17
 
 //&led_strip { chain-length = <27>; };
@@ -135,7 +135,7 @@
         combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
-            layers = <BASE QWER SNUL SARR SARL>;
+            layers = <BASE SNUL SARR SARL>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -143,14 +143,14 @@
         combo_backspace_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            layers = <BASE QWER SNUL SARR SARL>;
+            layers = <BASE SNUL SARR SARL>;
             timeout-ms = <20>;
         };
 
         combo_delete_left {
             bindings = <&kp DELETE>;
             key-positions = <15 16>;
-            layers = <BASE QWER BMAC SNUR SHCT SARL SARR>;
+            layers = <BASE BMAC SNUR SHCT SARL SARR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -158,7 +158,7 @@
         combo_backspace_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <BASE QWER SNUL SNUR NUML SARL SARR>;
+            layers = <BASE SNUL SNUR NUML SARL SARR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -185,16 +185,10 @@
             require-prior-idle-ms = <125>;
         };
 
-        combo_QWERTY_layer {
-            bindings = <&tog QWER>;
-            key-positions = <36 41>;
-            require-prior-idle-ms = <125>;
-        };
-
         combo_left_arrow_Lhand {
             bindings = <&kp LEFT>;
             key-positions = <26 27>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -202,7 +196,7 @@
         combo_right_arrow_Lhand {
             bindings = <&kp RIGHT>;
             key-positions = <27 28>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -210,7 +204,7 @@
         combo_up_arrow_Lhand {
             bindings = <&kp UP>;
             key-positions = <3 4>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -218,7 +212,7 @@
         combo_down_arrow_Lhand {
             bindings = <&kp DOWN>;
             key-positions = <3 2>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -226,7 +220,7 @@
         combo_left_arrow_Rhand {
             bindings = <&kp LEFT>;
             key-positions = <32 31>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -234,7 +228,7 @@
         combo_right_arrow_Rhand {
             bindings = <&kp RIGHT>;
             key-positions = <32 33>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -242,7 +236,7 @@
         combo_up_arrow_Rhand {
             bindings = <&kp UP>;
             key-positions = <7 8>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -250,7 +244,7 @@
         combo_down_arrow_Rhand {
             bindings = <&kp DOWN>;
             key-positions = <8 9>;
-            layers = <BASE QWER>;
+            layers = <BASE>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -560,7 +554,7 @@
         };
 
         SMART_ARROW_L {
-            label = "ARW_L";
+            label = "SMRT_ARROW_LEFT";
             bindings = <
 &trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -569,8 +563,8 @@
             >;
         };
 
-        SMART_NUM_L {
-            label = "NUM_L";
+        SMART_NUMPAD_L {
+            label = "SMRT_NUM_LEFT";
             bindings = <
 &trans            &brackets       &kp N7  &kp N8           &kp N9  &kp PLUS     &trans  &trans  &trans        &trans  &trans  &trans
 &mt COMMA ESCAPE  &kp SLASH       &kp N4  &kp N5           &kp N6  &kp MINUS    &trans  &trans  &trans        &trans  &trans  &trans
@@ -590,7 +584,7 @@
         };
 
         SMART_ARROW_R {
-            label = "ARW_R";
+            label = "SMRT_ARROW_RIGHT";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
@@ -599,8 +593,8 @@
             >;
         };
 
-        SMART_NUM_R {
-            label = "NUM_R";
+        SMART_NUMPAD_R {
+            label = "SMRT_NUM_RIGHT";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8           &kp N9  &brackets       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5           &kp N6  &kp SLASH       &mt COMMA ESCAPE
@@ -627,7 +621,7 @@
                                                      &ht0 NUMR BASE        &lt NUML ENTER        &kp LSHFT         &trans  &trans  &trans
             >;
 
-            label = "SHCT";
+            label = "SHORTCUT";
         };
 
         MAC_layer {
@@ -642,13 +636,13 @@
 
         FUNCTION_KEYS {
             bindings = <
-&bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8           &to ISRT         &kp F7  &kp F8  &kp F9  &kp F12  &lu SETT RGB_COLOR_HSB_VAL(116,100,79)
+&bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8           &to CHECK         &kp F7  &kp F8  &kp F9  &kp F12  &lu SETT RGB_COLOR_HSB_VAL(116,100,79)
 &bt BT_SEL 1  &mod_gui_dance  &mod_alt_dance    &mod_ctrl_dance    &mod_shft_dance  &kp LC(LS(U))    &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to BOOT
 &out OUT_TOG  &kp LC(Z)       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &to SETT         &kp F1  &kp F2  &kp F3  &kp F10  &flash
                                                 &none              &none            &none            &kp LALT         &none   &none
             >;
 
-            label = "FUNC";
+            label = "FUNCTIONS";
         };
 
         NUM_PAD_LEFT {
@@ -687,7 +681,7 @@
                                         &none              &none             &to BASE             &to BASE         &none                            &none
             >;
 
-            label = "SETT";
+            label = "SETTINGS";
         };
 
         SYMBOLS {
@@ -704,7 +698,7 @@
                              &kp LGUI    &none          &kp SPACE    &kp RET    &none      &kp RALT
             >;
 
-            label = "SYMB";
+            label = "SYMBOLS";
         };
 
         NAVIGATION_LAYER_WIN {
@@ -715,27 +709,10 @@
                                                &none             &none             &none         &none  &none  &none
             >;
 
-            label = "NAV";
+            label = "NAVIGATION";
         };
 
-        QWERT {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            bindings = <
-&kp TAB     &kp Q  &kp W  &kp E     &kp R      &kp T             &kp Y           &kp U               &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G             &kp H           &kp J               &kp K      &kp L    &kp SQT   &kp LEFT_PARENTHESIS
-&kp DELETE  &kp Z  &kp X  &kp C     &kp V      &kp B             &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_PARENTHESIS
-                          &kp LGUI  &kp LCTRL  &lt FUNC SPACE    &lt NUMR ENTER  &mt CAPSLOCK LSHFT  &kp LALT
-            >;
-
-            label = "QWERT";
-        };
-
-        ISRT {
+        CHECKLIST {
             bindings = <
 &none     &none  &none     &none   &none  &none    &none  &none  &none  &none  &none  &none
 &none     &kp N  &kp DOWN  &kp UP  &kp Y  &none    &none  &none  &none  &none  &none  &none
@@ -743,7 +720,7 @@
                            &none   &none  &none    &none  &none  &none
             >;
 
-            label = "ISRT_SS";
+            label = "SER CHECKLIST";
         };
 
         bootloader_layer {
