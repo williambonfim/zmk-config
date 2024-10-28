@@ -554,7 +554,7 @@
         };
 
         SMART_ARROW_L {
-            label = "SMRT_ARROW_LEFT";
+            label = "S_ARW_LEFT";
             bindings = <
 &trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -564,7 +564,7 @@
         };
 
         SMART_NUMPAD_L {
-            label = "SMRT_NUM_LEFT";
+            label = "S_NUM_LEFT";
             bindings = <
 &trans            &brackets       &kp N7  &kp N8           &kp N9  &kp PLUS     &trans  &trans  &trans        &trans  &trans  &trans
 &mt COMMA ESCAPE  &kp SLASH       &kp N4  &kp N5           &kp N6  &kp MINUS    &trans  &trans  &trans        &trans  &trans  &trans
@@ -584,7 +584,7 @@
         };
 
         SMART_ARROW_R {
-            label = "SMRT_ARROW_RIGHT";
+            label = "S_ARW_RIGHT";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kt LSHIFT  &kt LCTRL  &kt LALT  &kt LGUI   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &kp ESCAPE
@@ -594,7 +594,7 @@
         };
 
         SMART_NUMPAD_R {
-            label = "SMRT_NUM_RIGHT";
+            label = "S_NUM_RIGHT";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N7  &kp N8           &kp N9  &brackets       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5           &kp N6  &kp SLASH       &mt COMMA ESCAPE
