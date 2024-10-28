@@ -31,8 +31,8 @@
 #define SYMB 13
 #define NAV 14
 //#define QWER 15
-#define CHECK 16
-#define BOOT 17
+#define CHECK 15
+#define BOOT 16
 
 //&led_strip { chain-length = <27>; };
 
