@@ -541,15 +541,13 @@
             // | ESC |  I  |  S  |  R   |  T   |  G   |   |  P   |  N  |  E  |  A  |  O  |  ;  |
             // | DEL |  .  |  ,  |  W   |  D   |  J   |   |  B   |  H  |  V  |  Y  |  X  |  ]  |
             //                   | SHFT | BKSP | CTRL |   | CTRL | ENT | GUI |
-
+            label = "BASE";
             bindings = <
 &kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F                  &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
 &gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N                  &kp E           &kp A  &kp O                &kp SEMI
 &kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H                  &kp V           &kp Y  &kp X                &kp BACKSPACE
                                             &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &smart_num_rpt SNUR 0  &smrt_num_arrw
             >;
-
-            label = "BASE";
         };
 
         SMART_ARROW_L {
@@ -634,36 +632,33 @@
         };
 
         FUNCTION_KEYS {
+            label = "FUNC";
             bindings = <
 &bt BT_SEL 0  &kp F2          &kp F3            &kp F4             &kp F5           &kp F8           &to CHECK         &kp F7  &kp F8  &kp F9  &kp F12  &lu SETT RGB_COLOR_HSB_VAL(116,100,79)
 &bt BT_SEL 1  &mod_gui_dance  &mod_alt_dance    &mod_ctrl_dance    &mod_shft_dance  &kp LC(LS(U))    &rgb_ug RGB_TOG  &kp F4  &kp F5  &kp F6  &kp F11  &to BOOT
 &out OUT_TOG  &kp LC(Z)       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &to SETT         &kp F1  &kp F2  &kp F3  &kp F10  &flash
                                                 &none              &none            &none            &kp LALT         &none   &none
             >;
-
-            label = "FUNCTIONS";
         };
 
         NUM_PAD_LEFT {
+            label = "NUML";
             bindings = <
 &kt LEFT_PARENTHESIS   &brackets     &kp N7  &kp N8  &kp N9     &kp PLUS          &kp PAGE_UP    &kp HOME      &kp UP     &kp END        &none  &none
 &none                  &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS         &kp PAGE_DOWN  &kp LEFT      &kp DOWN   &kp RIGHT      &none  &none
 &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp N1  &kp N2  &kp N3     &kp N0            &none          &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none  &none
                                              &none   &kp ENTER  &lt NUMR ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
             >;
-
-            label = "NUML";
         };
 
         NUM_PAD_RIGHT {
+            label = "NUMR";
             bindings = <
 &none  &none  &kp HOME      &kp UP     &kp END        &kp PAGE_UP      &kp PLUS        &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
 &none  &none  &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS       &kp N4     &kp N5  &kp N6  &kp SLASH     &none
 &none  &none  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none            &kp N0          &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
                             &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt NUML ENTER  &kp ENTER  &none
             >;
-
-            label = "NUMR";
         };
 
         SETTINGS {
@@ -672,15 +667,13 @@
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "SETTINGS";
             bindings = <
 &soft_off   &none         &none         &none              &out OUT_TOG      &ext_power EP_TOG    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI                  &rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_COLOR_HSB(0,0,100)     &rgb_ug RGB_COLOR_HSB(0,95,49)
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4         &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                  &rgb_ug RGB_BRD                  &rgb_ug RGB_BRI                    &none                              &rgb_ug RGB_SPI
 &none       &none         &none         &ext_power EP_OFF  &ext_power EP_ON  &none                &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,100,98)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(111,100,50)  &rgb_ug RGB_COLOR_HSB(263,100,50)  &rgb_ug RGB_SPD
                                         &none              &none             &to BASE             &to BASE         &none                            &none
             >;
-
-            label = "SETTINGS";
         };
 
         SYMBOLS {
@@ -689,48 +682,43 @@
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "SYMBOLS";
             bindings = <
 &kp TAB    &kp EXCL  &kp AT  &kp DOLLAR  &kp POUND      &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &none     &none   &none       &kp LC(POUND)  &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &none     &none   &none       &none          &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI    &none          &kp SPACE    &kp RET    &none      &kp RALT
             >;
-
-            label = "SYMBOLS";
         };
 
         NAVIGATION_LAYER_WIN {
+            label = "NAVIGATION";
             bindings = <
 &kp RG(F)  &kp RG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)    &none  &none  &none  &none  &none  &none
 &kp RG(G)  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)    &none  &none  &none  &none  &none  &none
 &kp RG(H)  &kp RG(A)         &kp RG(B)         &kp RG(C)         &kp RG(D)         &kp RG(E)     &none  &none  &none  &none  &none  &none
                                                &none             &none             &none         &none  &none  &none
             >;
-
-            label = "NAVIGATION";
         };
 
         CHECKLIST {
+            label = "SER CHECK";
             bindings = <
 &none     &none  &none     &none   &none  &none    &none  &none  &none  &none  &none  &none
 &none     &kp N  &kp DOWN  &kp UP  &kp Y  &none    &none  &none  &none  &none  &none  &none
 &kp CAPS  &none  &none     &none   &n_a   &none    &none  &none  &none  &none  &none  &none
                            &none   &none  &none    &none  &none  &none
             >;
-
-            label = "SER CHECKLIST";
         };
 
         bootloader_layer {
+            label = "flash mode";
             bindings = <
 &none  &none  &none  &none        &none   &none    &none  &none   &none        &none  &none  &none
 &none  &none  &none  &bootloader  &flash  &none    &none  &flash  &bootloader  &none  &none  &none
 &none  &none  &none  &none        &none   &none    &none  &none   &none        &none  &none  &none
                      &none        &none   &none    &none  &none   &none
             >;
-
-            label = "flash mode";
         };
     };
 };
