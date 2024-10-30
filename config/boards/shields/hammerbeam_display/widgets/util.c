@@ -7,6 +7,7 @@
 
 #include <zephyr/kernel.h>
 #include "util.h"
+#include "colors.h"
 
 LV_IMG_DECLARE(bolt);
 
