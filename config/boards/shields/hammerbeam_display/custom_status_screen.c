@@ -6,6 +6,7 @@
  */
 
 #include "widgets/status.h"
+#include "custom_status_screen.h"
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
