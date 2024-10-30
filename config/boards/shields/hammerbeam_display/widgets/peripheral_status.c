@@ -23,6 +23,8 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
+#define LVGL_FOREGROUND lv_color_hex(0xFFFFFF)  // Replace with desired color
+
 LV_IMG_DECLARE(hammerbeam1);
 LV_IMG_DECLARE(hammerbeam2);
 LV_IMG_DECLARE(hammerbeam3);
