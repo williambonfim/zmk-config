@@ -5,7 +5,7 @@
  *
  */
 
-#include "widgets/status.h"
+#include "widgets/peripheral_status.h"
 #include "custom_status_screen.h"
 
 #include <zephyr/logging/log.h>
