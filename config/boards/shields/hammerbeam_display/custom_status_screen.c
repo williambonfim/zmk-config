@@ -7,7 +7,7 @@
 
 #include "widgets/peripheral_status.h"
 #include "custom_status_screen.h"
-#include "keycode_state_changed.h"
+#include <zmk/events/keycode_state_changed.h>
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
