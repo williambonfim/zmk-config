@@ -9,6 +9,13 @@
 #include "util.h"
 #include "colors.h"
 
+//WB
+#include <zmk/event_manager.h>
+#include <zmk/events/wpm_state_changed.h>
+#include <zmk/events/keycode_state_changed.h>
+#include <zmk/wpm.h>
+
+
 
 LV_IMG_DECLARE(bolt);
 
