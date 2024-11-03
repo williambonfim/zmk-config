@@ -146,6 +146,7 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
 
     // Draw circles
+    /*
     int circle_offsets[5][2] = {
         {13, 13}, {55, 13}, {34, 34}, {13, 55}, {55, 55},
     };
@@ -166,7 +167,7 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
         lv_canvas_draw_text(canvas, circle_offsets[i][0] - 8, circle_offsets[i][1] - 10, 16,
                             (selected ? &label_dsc_black : &label_dsc), label);
     }
-
+    */
     // Rotate canvas
     rotate_canvas(canvas, cbuf);
 }
@@ -183,6 +184,7 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
 
     // Draw layer
+    /*
     if (state->layer_label == NULL) {
         char text[10] = {};
 
@@ -192,7 +194,7 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     } else {
         lv_canvas_draw_text(canvas, 0, 5, 68, &label_dsc, state->layer_label);
     }
-
+    */
     // Rotate canvas
     rotate_canvas(canvas, cbuf);
 }
