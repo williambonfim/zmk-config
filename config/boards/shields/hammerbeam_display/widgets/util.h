@@ -13,6 +13,7 @@
 #include <zmk/wpm.h>
 
 //WB
+#include <zephyr/kernel.h>
 #include <zmk/battery.h>
 #include <zmk/display.h>
 #include <zmk/events/usb_conn_state_changed.h>
@@ -27,6 +28,7 @@
 #include <zmk/endpoints.h>
 #include <zmk/keymap.h>
 #include <zmk/wpm.h>
+
 
 
 #define CANVAS_SIZE 68
