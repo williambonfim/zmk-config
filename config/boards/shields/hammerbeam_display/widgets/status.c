@@ -69,7 +69,7 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
     // Draw output status
     char output_text[10] = {};
 
-    switch (state->selected_endpoint.transport) {
+    switch (state.selected_endpoint.transport) {
     case ZMK_TRANSPORT_USB:
         strcat(output_text, LV_SYMBOL_USB);
         break;
