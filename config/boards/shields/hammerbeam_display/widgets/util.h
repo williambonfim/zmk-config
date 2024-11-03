@@ -6,7 +6,11 @@
  */
 
 #include <lvgl.h>
+#include <zmk/event_manager.h>
+#include <zmk/events/endpoint_changed.h>
+#include <zmk/events/wpm_state_changed.h>
 #include <zmk/endpoints.h>
+#include <zmk/wpm.h>
 
 #define CANVAS_SIZE 68
 
