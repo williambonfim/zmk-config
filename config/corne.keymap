@@ -554,9 +554,9 @@
 
             label = "BASE";
             bindings = <
-&kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F            &kp U      &kp Q  &mt EXCLAMATION SQT  &brackets
-&gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N            &kp E      &kp A  &kp O                &kp SEMI
-&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H            &kp V      &kp Y  &kp X                &kp BACKSPACE
+&kp TAB   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M            &kp K          &kp Z        &kp F            &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
+&gresc    &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T            &kp G          &kp P        &kp N            &kp E           &kp A  &kp O                &kp SEMI
+&kp CAPS  &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D            &kp J          &kp B        &kp H            &kp V           &kp Y  &kp X                &kp BACKSPACE
                                             &smart_arrow SARL TAB  &smart_num SNUL ENTER  &ht1 FUNC 0    &smart_shft  &numpad_rpt 5 0  &num_word SNUR
             >;
         };
@@ -564,10 +564,10 @@
         SMART_ARROW_L {
             label = "ARW_L";
             bindings = <
-&trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans     &trans     &trans    &trans  &trans  &trans
+&trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp PAGE_UP      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans     &trans           &trans  &trans  &trans
             >;
         };
 
