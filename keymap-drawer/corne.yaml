@@ -41,8 +41,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '&num_word 2'}
   - {t: '&td0', h: FUNCTION_KEYS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&key_repeat', h: '&num_word 5'}
-  - '&smrt_num_arrw'
+  - {t: '&key_repeat', h: SMART_NUMPAD_R}
+  - '&num_word 5'
   SMART_ARROW_L:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LGUI, h: toggle}
@@ -256,7 +256,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - '&arw_f_num 4'
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
