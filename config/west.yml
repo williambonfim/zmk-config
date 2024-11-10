@@ -14,13 +14,25 @@ manifest:
     #  url-base: https://github.com/caksoylar
     #- name: dhruvinsh
     #  url-base: https://github.com/dhruvinsh
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     #- name: zmk
     #  remote: zmkfirmware
     #  revision: main
     #  import: app/west.yml
+    - name: zmk
+      remote: williambonfim
+      revision: main
+      import: app/west.yml
+    
+    # Dongle display
+    - name: zmk-dongle-display
+      remote: williambonfim
+      revision: main
+
+    # Hammerbeam display 
+    - name: zmk-hammerbeam-display
+      remote: williambonfim
+      revision: main
     
     # Auto Layer
     - name: zmk-auto-layer
@@ -37,11 +49,6 @@ manifest:
     #  remote: petejohanson
     #  revision: feat/pointers-move-scroll
     #  import: app/west.yml
-
-    - name: zmk
-      remote: williambonfim
-      revision: main
-      import: app/west.yml
 
     # modules
     #- name: zmk-rgbled-widget
