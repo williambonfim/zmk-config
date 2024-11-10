@@ -4,39 +4,51 @@ manifest:
     #  url-base: https://github.com/williambonfim
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: williambonfim
+      url-base: https://github.com/williambonfim
     #- name: englmaxi
     #  url-base: https://github.com/englmaxi
     #- name: caksoylar
     #  url-base: https://github.com/caksoylar
     #- name: dhruvinsh
     #  url-base: https://github.com/dhruvinsh
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     #- name: zmk
     #  remote: zmkfirmware
     #  revision: main
     #  import: app/west.yml
+    - name: zmk
+      remote: williambonfim
+      revision: main
+      import: app/west.yml
+    
+    # Dongle display
+    - name: zmk-dongle-display
+      remote: williambonfim
+      revision: main
+
+    # Hammerbeam display 
+    - name: zmk-hammerbeam-display
+      remote: williambonfim
+      revision: main
     
     # Auto Layer
     - name: zmk-auto-layer
-      remote: urob
+      remote: williambonfim
       revision: main
     
     # Helper Macros
     - name: zmk-helpers
-      remote: urob
+      remote: williambonfim
       revision: main
 
     # Mouse movement
-    - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-move-scroll
-      import: app/west.yml
+    #- name: zmk
+    #  remote: petejohanson
+    #  revision: feat/pointers-move-scroll
+    #  import: app/west.yml
 
     # modules
     #- name: zmk-rgbled-widget
