@@ -2418,9 +2418,9 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">HOME</text>
 </g>
-<g transform="translate(920, 40)" class="key keypos-8">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:arrow-up-bold"/>
+<g transform="translate(920, 40)" class="key none keypos-8">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(1000, 50)" class="key keypos-9">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -2479,11 +2479,11 @@ path.combo {
 </g>
 <g transform="translate(1000, 130)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:arrow-right-bold"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:arrow-up-bold"/>
 </g>
-<g transform="translate(1080, 150)" class="key none keypos-22">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(1080, 150)" class="key keypos-22">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:arrow-right-bold"/>
 </g>
 <g transform="translate(1160, 150)" class="key none keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
@@ -2531,15 +2531,15 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(1000, 210)" class="key keypos-33">
+<g transform="translate(1000, 210)" class="key none keypos-33">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+</g>
+<g transform="translate(1080, 230)" class="key keypos-34">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.5em" style="font-size: 62%">Ctl+</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">$$mdi:a…</tspan>
 </text>
-</g>
-<g transform="translate(1080, 230)" class="key none keypos-34">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(1160, 230)" class="key none keypos-35">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
