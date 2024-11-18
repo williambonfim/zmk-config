@@ -427,9 +427,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
   NUM_PAD_LEFT:
   - {t: (, h: toggle}
   - '&brackets'
