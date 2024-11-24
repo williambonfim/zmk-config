@@ -278,6 +278,12 @@
             bindings = <&to MOUS>;
             key-positions = <4 17>;
         };
+
+        MAC_layer {
+            bindings = <&tog 1>;
+            key-positions = <38 4>;
+            require-prior-idle-ms = <125>;
+        };
     };
 
     behaviors {
@@ -562,7 +568,7 @@
         };
 
         MAC_layer {
-            label = "baseM";
+            label = "MAC BASE";
             bindings = <
 &kp TAB   &kp SLASH   &kp C            &mt LG(F) L     &mt LG(A) M  &kp K          &kp Z               &kp F           &kp U  &kp Q  &mt EXCLAMATION SQT  &brackets
 &gresc    &mt LGUI I  &mt LALT S       &mt LCTRL R     &mt LSHFT T  &kp G          &kp P               &kp N           &kp E  &kp A  &kp O                &kp SEMI
