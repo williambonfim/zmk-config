@@ -134,7 +134,7 @@
         combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <20 21>;
-            layers = <BASE SNUL SARR SARL>;
+            layers = <BASE BMAC SNUL SARR SARL>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };
@@ -142,7 +142,7 @@
         combo_backspace_right {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            layers = <BASE SNUL SARR SARL>;
+            layers = <BASE BMAC SNUL SARR SARL>;
             timeout-ms = <20>;
         };
 
@@ -157,7 +157,7 @@
         combo_backspace_left {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
-            layers = <BASE SNUL SNUR NUML SARL SARR>;
+            layers = <BASE BMAC SNUL SNUR NUML SARL SARR>;
             require-prior-idle-ms = <125>;
             timeout-ms = <20>;
         };

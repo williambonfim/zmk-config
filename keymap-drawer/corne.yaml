@@ -758,16 +758,16 @@ combos:
   l: [NUMR, NUM_R]
 - p: [20, 21]
   k: $$mdi:backspace-reverse-outline$$
-  l: [BASE, NUM_L, ARW_R, ARW_L]
+  l: [BASE, MAC BASE, NUM_L, ARW_R, ARW_L]
 - p: [19, 20]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [BASE, NUM_L, ARW_R, ARW_L]
+  l: [BASE, MAC BASE, NUM_L, ARW_R, ARW_L]
 - p: [15, 16]
   k: $$mdi:backspace-reverse-outline$$
   l: [BASE, MAC BASE, NUM_R, SHORTCUT, ARW_L, ARW_R]
 - p: [14, 15]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [BASE, NUM_L, NUM_R, NUML, ARW_L, ARW_R]
+  l: [BASE, MAC BASE, NUM_L, NUM_R, NUML, ARW_L, ARW_R]
 - p: [15, 16]
   k: {t: '=', s: +}
   l: [NUML, NUM_L]
