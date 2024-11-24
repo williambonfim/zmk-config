@@ -16,14 +16,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
-#define SARL 1
-#define SNUL 2
-#define BSCP 3
-#define SARR 4
-#define SNUR 5
-#define MOUS 6
-#define SHCT 7
-#define BMAC 8
+#define BMAC 1
+#define SARL 2
+#define SNUL 3
+#define BSCP 4
+#define SARR 5
+#define SNUR 6
+#define MOUS 7
+#define SHCT 8
 #define FUNC 9
 #define NUML 10
 #define NUMR 11
@@ -561,6 +561,16 @@
             >;
         };
 
+        MAC_layer {
+            label = "baseM";
+            bindings = <
+&kp TAB   &kp SLASH   &k C             &mt LG(F) L            &mt LG(A) M     &kp K          &kp Z        &kp F            &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
+&gresc    &mt LGUI I  &mt LALT S       &mt LCTRL R            &mt LSHFT T     &kp G          &kp P        &kp N            &kp E           &kp A  &kp O                &kp SEMI
+&kp CAPS  &kp DOT     &ht4 LG(X) BASE  &mt LG(C) W            &mt LG(V) D     &kp J          &kp B        &kp H            &kp V           &kp Y  &kp X
+                                       &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0    &smart_shft  &numpad_rpt 5 0  &num_word SNUR
+            >;
+        };
+
         SMART_ARROW_L {
             label = "ARW_L";
             bindings = <
@@ -630,16 +640,6 @@
             >;
 
             label = "SHORTCUT";
-        };
-
-        MAC_layer {
-            label = "baseM";
-            bindings = <
-&kp TAB     &kp SLASH   &kp C         &kt L         &mt LG(A) M     &kp K          &kp Z               &kp F        &kp U           &kp Q  &kp SQT  &kp LEFT_PARENTHESIS
-&kp ESC     &mt LGUI I  &mt LALT S    &mt LCTRL R   &mt LSHFT T     &kp G          &kp P               &kp N        &kp E           &kp A  &kp O    &kp SEMI
-&kp DELETE  &kp PERIOD  &ht4 LG(X) 0  &mt LC(C) W   &mt LC(V) D     &kp J          &kp B               &kp H        &kp V           &kp Y  &kp X    &kp RIGHT_PARENTHESIS
-                                      &lt NUML TAB  &lt NUMR ENTER  &ht1 FUNC 0    &mt LSHFT CAPSLOCK  &ht3 NUMR 0  &lt NUML SPACE
-            >;
         };
 
         FUNCTION_KEYS {
