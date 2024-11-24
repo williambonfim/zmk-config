@@ -570,10 +570,10 @@
         MAC_layer {
             label = "MAC BASE";
             bindings = <
-&kp TAB   &kp SLASH   &kp C            &mt LG(F) L            &mt LG(A) M     &kp K          &kp Z        &kp F               &kp U  &kp Q  &mt EXCLAMATION SQT  &brackets
-&gresc    &mt LGUI I  &mt LALT S       &mt LCTRL R            &mt LSHFT T     &kp G          &kp P        &kp N               &kp E  &kp A  &kp O                &kp SEMI
-&kp CAPS  &kp DOT     &ht4 LG(X) BASE  &mt LG(C) W            &mt LG(V) D     &kp J          &kp B        &kp H               &kp V  &kp Y  &kp X                &kp BACKSPACE
-                                       &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0    &smart_shft  &numpad_rpt SNUR 0  &num_word SNUR
+&trans  &kp SLASH  &kp C            &mt LG(F) L  &mt LG(A) M  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans           &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &ht4 LG(X) BASE  &mt LG(C) W  &mt LG(V) D  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans       &trans       &trans    &trans  &trans  &trans
             >;
         };
 
