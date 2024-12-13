@@ -731,6 +731,49 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  typing:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
+  - C
+  - L
+  - M
+  - K
+  - Z
+  - F
+  - U
+  - Q
+  - {t: '''', h: '!', s: '"'}
+  - '&brackets'
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - I
+  - S
+  - R
+  - T
+  - G
+  - P
+  - N
+  - E
+  - A
+  - O
+  - {t: ;, s: ':'}
+  - $$mdi:apple-keyboard-caps$$
+  - {t: ., s: '>'}
+  - {t: '&comma', h: Ctl+ X}
+  - W
+  - D
+  - J
+  - B
+  - H
+  - V
+  - Y
+  - X
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 2'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '&key_repeat', h: NUM_R}
+  - '&num_word 6'
 combos:
 - p: [2, 3, 4]
   k: {t: NUML, h: toggle}
@@ -814,3 +857,5 @@ combos:
   k: {t: MOUSE, h: toggle}
 - p: [38, 4]
   k: {t: MAC BASE, h: toggle}
+- p: [36, 41]
+  k: {t: typing, h: toggle}

@@ -284,6 +284,11 @@
             key-positions = <38 4>;
             require-prior-idle-ms = <125>;
         };
+
+        typing_layer {
+            bindings = <&to 17>;
+            key-positions = <36 41>;
+        };
     };
 
     behaviors {
@@ -737,6 +742,16 @@
 &none  &none  &none  &bootloader  &flash  &none    &none  &flash  &bootloader  &none  &none  &none
 &none  &none  &none  &none        &none   &none    &none  &none   &none        &none  &none  &none
                      &none        &none   &none    &none  &none   &none
+            >;
+        };
+
+        Typing {
+            label = "typing";
+            bindings = <
+&none     &kp SLASH  &kp C            &kp L                  &kp M      &kp K        &kp Z        &kp F               &kp U           &kp Q  &mt EXCLAMATION SQT  &brackets
+&gresc    &kp I      &kp S            &kp R                  &kp T      &kp G        &kp P        &kp N               &kp E           &kp A  &kp O                &kp SEMI
+&kp CAPS  &kp DOT    &ht4 LC(X) BASE  &kp W                  &kp D      &kp J        &kp B        &kp H               &kp V           &kp Y  &kp X                &kp BACKSPACE
+                                      &smart_arrow SARL TAB  &kp ENTER  &kp SPACE    &smart_shft  &numpad_rpt SNUR 0  &num_word SNUR
             >;
         };
     };
