@@ -550,6 +550,13 @@
             bindings = <&kp N &kp SLASH &kp A>;
             label = "N_A";
         };
+
+        mouse_jump: mouse_jump {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LG(LS(D)) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "MOUSE_JUMP";
+        };
     };
 
     keymap {
@@ -634,10 +641,10 @@
         MOUSE {
             label = "MOUSE";
             bindings = <
-&none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none        &none      &kt LSHIFT      &kt LCTRL       &kt LALT      &kt LGUI         &none
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none        &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp ESCAPE
-&none   &kp LC(A)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &none        &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                        &mkp MCLK     &mkp RCLK        &mkp LCLK    &mkp LCLK  &mkp RCLK       &mkp MCLK
+&none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none                    &none      &kt LSHIFT      &kt LCTRL       &kt LALT      &kt LGUI         &none
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mouse_jump LEFT         &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp ESCAPE
+&none   &kp LC(A)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &mouse_jump RIGHT        &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                        &mkp MCLK     &mkp RCLK        &mkp LCLK                &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
