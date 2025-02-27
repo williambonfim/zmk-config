@@ -20,10 +20,10 @@ layers:
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - P
-  - N
-  - E
-  - A
-  - O
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: LGUI}
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-caps$$
   - {t: ., s: '>'}
@@ -319,7 +319,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
-  - '&mouse_jump LEFT'
+  - Gui+Sft+D
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -331,7 +331,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - '&mouse_jump RIGHT'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
@@ -400,7 +400,7 @@ layers:
   - F9
   - F12
   - '&lu 12 RGB_COLOR_HSB_VAL(116,100,79)'
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - Gui+Sft+D
   - '&mod_gui_dance'
   - '&mod_alt_dance'
   - '&mod_ctrl_dance'
