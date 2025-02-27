@@ -319,7 +319,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mouse_jump LEFT'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -331,7 +331,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mouse_jump RIGHT'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
