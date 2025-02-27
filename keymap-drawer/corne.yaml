@@ -20,10 +20,10 @@ layers:
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - P
-  - N
-  - E
-  - A
-  - O
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: LGUI}
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-caps$$
   - {t: ., s: '>'}
