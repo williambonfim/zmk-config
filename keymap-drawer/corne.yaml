@@ -1,7 +1,7 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   BASE:
-  - $$mdi:keyboard-tab$$
+  - '&key_repeat'
   - {t: /, h: Alt+P, s: '?'}
   - {t: C, h: Gui+E}
   - {t: L, h: Ctl+F}
