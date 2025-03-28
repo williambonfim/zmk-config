@@ -581,10 +581,10 @@
 
             label = "BASE";
             bindings = <
-&key_repeat   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K          &kp Z        &kp F               &ht5 MCLK U     &kp Q       &mt EXCLAMATION SQT  &brackets
-&gresc        &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G    &kp P        &mt LSHFT N         &mt LCTRL E     &mt LALT A  &mt LGUI O           &kp SEMI
-&kp CAPS      &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &kp J          &kp B        &kp H               &kp V           &kp Y       &kp X                &kp BACKSPACE
-                                                &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0    &smart_shft  &numpad_rpt SNUR 0  &num_word SNUR
+&key_repeat   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K          &kp Z        &mt LC(A) F         &ht5 MCLK U          &kp Q        &mt EXCLAMATION SQT  &brackets
+&gresc        &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G    &kp P        &mt LSHFT N         &mt LCTRL E          &mt LALT A   &mt LGUI O           &kp SEMI
+&kp CAPS      &kp DOT          &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &kp J          &kp B        &mt LC(V) H         &mt LC(C) V          &mt LC(X) Y  &kp X                &kp BACKSPACE
+                                                &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0    &smart_shft  &numpad_rpt SNUR 0  &smart_num SNUR TAB
             >;
         };
 
