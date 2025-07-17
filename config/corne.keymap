@@ -734,9 +734,9 @@
         NAVIGATION_LAYER_WIN {
             label = "NAVIGATION";
             bindings = <
-&kp RG(F)  &kp RG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)    &none  &none  &none  &none  &none  &none
-&kp RG(G)  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)    &none  &none  &none  &none  &none  &none
-&kp RG(H)  &kp RG(A)         &kp RG(B)         &kp RG(C)         &kp RG(D)         &kp RG(E)     &none  &none  &none  &none  &none  &none
+&kp RG(F)  &kp RG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)    &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&kp RG(G)  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&kp RG(H)  &kp RG(A)         &kp RG(B)         &kp RG(C)         &kp RG(D)         &kp RG(E)     &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
                                                &none             &none             &none         &none  &none  &none
             >;
         };
