@@ -8,7 +8,7 @@ layers:
   - {t: M, h: Ctl+A}
   - K
   - Z
-  - F
+  - {t: F, h: Ctl+A}
   - {t: U, h: '&mkp MCLK'}
   - Q
   - {t: '''', h: '!', s: '"'}
@@ -32,9 +32,9 @@ layers:
   - {t: D, h: Ctl+V}
   - J
   - B
-  - H
-  - V
-  - Y
+  - {t: H, h: Ctl+V}
+  - {t: V, h: Ctl+C}
+  - {t: Y, h: Ctl+X}
   - X
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: '&num_arrow 2'}
@@ -42,7 +42,7 @@ layers:
   - {t: '&td0', h: FUNC}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '&key_repeat', h: NUM_R}
-  - '&num_word 6'
+  - {t: '$$mdi:keyboard-tab$$', h: '&num_word 6'}
   MAC BASE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
