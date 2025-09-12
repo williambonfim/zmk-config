@@ -744,10 +744,10 @@
         CHECKLIST {
             label = "SER CHECK";
             bindings = <
-&none     &none  &none     &none   &none  &none    &none  &none  &none  &none  &none  &none
-&none     &kp N  &kp DOWN  &kp UP  &kp Y  &none    &none  &none  &none  &none  &none  &none
-&kp CAPS  &none  &none     &none   &n_a   &none    &none  &none  &none  &none  &none  &none
-                           &none   &none  &none    &none  &none  &none
+&none     &none  &none  &none  &none  &none    &none  &none  &none     &none   &none  &none
+&none     &none  &none  &none  &none  &none    &none  &kp N  &kp DOWN  &kp UP  &none  &none
+&kp CAPS  &none  &none  &none  &none  &none    &none  &n_a   &none     &kp Y   &none  &none
+                        &none  &none  &none    &none  &none  &none
             >;
         };
 
