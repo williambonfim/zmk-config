@@ -589,7 +589,7 @@
             >;
         };
 
-        MAC_layer 
+        MAC_layer {
             label = "MAC BASE";
             bindings = <
 &trans  &kp SLASH  &kp C            &mt LG(F) L  &mt LG(A) M  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -597,7 +597,7 @@
 &trans  &trans     &ht4 LG(X) BASE  &mt LG(C) W  &mt LG(V) D  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans       &trans       &trans    &trans  &trans  &trans
             >;
-        ;
+        };
 
         SMART_ARROW_L {
             label = "ARW_L";
