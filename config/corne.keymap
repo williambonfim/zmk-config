@@ -6,12 +6,13 @@
 
 #include <behaviors/num_word.dtsi>
 #include "zmk-helpers/helper.h"
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
@@ -33,6 +34,7 @@
 #define BOOT 16
 #define TYPI 17
 #define RonL 18
+
 //&led_strip { chain-length = <27>; };
 
 &sl { release-after-ms = <2000>; };
@@ -582,21 +584,22 @@
 
             label = "BASE";
             bindings = <
-&key_repeat   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K             &kp Z        &mt LC(A) F         &ht5 MCLK U          &kp Q        &mt EXCLAMATION SQT  &brackets
-&gresc        &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G       &kp P        &mt LSHFT N         &mt LCTRL E          &mt LALT A   &mt LGUI O           &kp SEMI
-&kp CAPS      &lt RonL DOT     &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &mt LC(MCLK) J    &kp B        &mt LC(V) H         &mt LC(C) V          &mt LC(X) Y  &kp X                &kp BACKSPACE
-                                                &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0       &smart_shft  &numpad_rpt SNUR 0  &smart_num SNUR TAB
+&key_repeat  &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K             &kp Z        &mt LC(A) F         &ht5 MCLK U          &kp Q        &mt EXCLAMATION SQT  &brackets
+&gresc       &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G       &kp P        &mt LSHFT N         &mt LCTRL E          &mt LALT A   &mt LGUI O           &kp SEMI
+&kp CAPS     &lt 17 DOT       &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &mt LC(MCLK) J    &kp B        &mt LC(V) H         &mt LC(C) V          &mt LC(X) Y  &kp X                &kp BACKSPACE
+                                               &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0       &smart_shft  &numpad_rpt SNUR 0  &smart_num SNUR TAB
             >;
         };
 
-        MAC_layer 
-            label = "MAC BASE";
-            bindings = <
+        MAC_layer = label, "MAC BASE";
+
+        bindings = <
 &trans  &kp SLASH  &kp C            &mt LG(F) L  &mt LG(A) M  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans           &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &ht4 LG(X) BASE  &mt LG(C) W  &mt LG(V) D  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans       &trans       &trans    &trans  &trans  &trans
-            >;
+        >;
+
         ;
 
         SMART_ARROW_L {
@@ -738,7 +741,7 @@
 &kp RG(F)  &kp RG(NUMBER_1)  &kp RG(NUMBER_2)  &kp RG(NUMBER_3)  &kp RG(NUMBER_4)  &kp RG(N5)    &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
 &kp RG(G)  &kp RG(NUMBER_6)  &kp RG(N7)        &kp RG(N8)        &kp RG(N9)        &kp RG(N0)    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
 &kp RG(H)  &kp RG(A)         &kp RG(B)         &kp RG(C)         &kp RG(D)         &kp RG(E)     &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                               &none             &none             &none         &none  &none  &none
+                                               &none             &none             &none         &none  &none   &none
             >;
         };
 
@@ -775,10 +778,10 @@
         R_on_L_layer {
             label = "R on L";
             bindings = <
-&none  &none  &kp Q  &kp U   &kp F   &kp Z    &none  &none  &none  &none  &none  &none
-&none  &kp O  &kp A  &kp E   &kp N   &kp P    &none  &none  &none  &none  &none  &none
-&none  &none  &kp Y  &kp V   &kp H   &kp B    &none  &none  &none  &none  &none  &none
-                       &none  &none  &none    &none  &none  &none
+&none  &none  &kp Q  &kp U  &kp F  &kp Z    &none  &none  &none  &none  &none  &none
+&none  &kp O  &kp A  &kp E  &kp N  &kp P    &none  &none  &none  &none  &none  &none
+&none  &none  &kp Y  &kp V  &kp H  &kp B    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
