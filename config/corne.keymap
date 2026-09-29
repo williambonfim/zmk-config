@@ -584,10 +584,10 @@
 
             label = "BASE";
             bindings = <
-&key_repeat   &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K             &kp Z        &mt LC(A) F         &ht5 MCLK U          &kp Q        &mt EXCLAMATION SQT  &brackets
-&gresc        &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G       &kp P        &mt LSHFT N         &mt LCTRL E          &mt LALT A   &mt LGUI O           &kp SEMI
-&kp CAPS      &lt RonL DOT     &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &mt LC(MCLK) J    &kp B        &mt LC(V) H         &mt LC(C) V          &mt LC(X) Y  &kp X                &kp BACKSPACE
-                                                &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0       &smart_shft  &numpad_rpt SNUR 0  &smart_num SNUR TAB
+&key_repeat  &mt LA(P) SLASH  &mt LG(E) C      &mt LC(F) L            &mt LC(A) M     &kp K             &kp Z        &mt LC(A) F         &ht5 MCLK U          &kp Q        &mt EXCLAMATION SQT  &brackets
+&gresc       &mt LGUI I       &mt LALT S       &mt LCTRL R            &mt LSHFT T     &ht5 MCLK G       &kp P        &mt LSHFT N         &mt LCTRL E          &mt LALT A   &mt LGUI O           &kp SEMI
+&kp CAPS     &lt RonL DOT     &ht4 LC(X) BASE  &mt LC(C) W            &mt LC(V) D     &mt LC(MCLK) J    &kp B        &mt LC(V) H         &mt LC(C) V          &mt LC(X) Y  &kp X                &kp BACKSPACE
+                                               &smart_arrow SARL TAB  &lt NUML ENTER  &ht1 FUNC 0       &smart_shft  &numpad_rpt SNUR 0  &smart_num SNUR TAB
             >;
         };
 
@@ -606,7 +606,7 @@
             bindings = <
 &trans  &kt LGUI  &kt LALT  &kt LCTRL  &kt LSHFT  &trans           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp PAGE_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp H     &kp J     &kp K      &kp L      &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
                             &trans     &trans     &trans           &trans  &trans  &trans
             >;
         };
@@ -685,20 +685,20 @@
         NUM_PAD_LEFT {
             label = "NUML";
             bindings = <
-&kt LEFT_PARENTHESIS   &brackets       &kp N7       &kp N8        &kp N9             &kp PLUS          &kp PAGE_UP    &kp HOME      &none      &kp END  &none          &none
-&none                  &mt LGUI SLASH  &mt LALT N4  &mt LCTRL N5  &mt LEFT_SHIFT N6  &kp MINUS         &kp PAGE_DOWN  &kp LEFT      &kp DOWN   &kp UP   &kp RIGHT      &none
-&kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp N1       &kp N2        &kp N3             &kp N0            &none          &kp LC(LEFT)  &none      &none    &kp LC(RIGHT)  &none
-                                                    &none         &kp ENTER          &lt NUMR ENTER    &kp LC(LSHFT)  &kp LSHFT     &kp LCTRL
+&kt LEFT_PARENTHESIS   &brackets       &kp N7       &kp N8        &kp N9             &kp PLUS          &kp PAGE_UP    &kp HOME   &none      &kp END  &none      &none
+&kp ESCAPE             &mt LGUI SLASH  &mt LALT N4  &mt LCTRL N5  &mt LEFT_SHIFT N6  &kp MINUS         &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT  &none
+&kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp N1       &kp N2        &kp N3             &kp N0            &none          &kp H      &kp J      &kp K    &kp L      &none
+                                                    &none         &kp ENTER          &lt NUMR ENTER    &kp LC(LSHFT)  &kp LSHFT  &kp LCTRL
             >;
         };
 
         NUM_PAD_RIGHT {
             label = "NUMR";
             bindings = <
-&none  &none  &kp HOME      &kp UP     &kp END        &kp PAGE_UP      &kp PLUS        &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
-&none  &none  &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS       &kp N4     &kp N5  &kp N6  &kp SLASH     &none
-&none  &none  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none            &kp N0          &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
-                            &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt NUML ENTER  &kp ENTER  &none
+&none  &none  &kp HOME  &kp UP     &kp END        &kp PAGE_UP      &kp PLUS        &kp N7     &kp N8  &kp N9  &brackets     &kp LEFT_PARENTHESIS
+&none  &none  &kp LEFT  &kp DOWN   &kp RIGHT      &kp PAGE_DOWN    &kp MINUS       &kp N4     &kp N5  &kp N6  &kp SLASH     &none
+&none  &kp H  &kp J     &kp K      &kp LC(RIGHT)  &none            &kp N0          &kp N1     &kp N2  &kp N3  &kp ASTERISK  &kp RIGHT_PARENTHESIS
+                        &kp RCTRL  &kp LSHFT      &kp LC(LSHFT)    &lt NUML ENTER  &kp ENTER  &none
             >;
         };
 
